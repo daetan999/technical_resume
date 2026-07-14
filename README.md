@@ -15,8 +15,9 @@ Every project below is a **sanitized public blueprint of a production system**: 
 |---|---|---|---|
 | **[MERIDIAN — Enterprise MLOps Platform](https://github.com/daetan999/hospitality-mlops-platform)** | ML-driven hospitality asset intelligence | PyTorch · Feast · Kafka · Airflow · MLflow · Triton · EKS · Snowflake · Redis | **>$8.3M annualized** across 5 value paths |
 | **[HR Timesheet Tool](https://github.com/daetan999/hr_timesheet_tool)** | Workforce time-capture automation | Python · FastAPI · Jinja2 · PyMuPDF · openpyxl | Payroll cycle: **days → minutes**; auditable review trail |
-| Agentic FP&A Analytics *(blueprint in preparation)* | LLM agent system for marketing-mix P&L analytics | Google Agent Development Kit (ADK) · GCP | — |
-| Enterprise GCP Data Platform *(blueprint in preparation)* | Cloud data platform & workflow design | GCP · warehouse-centric data lake · UML-documented architecture | — |
+| **[Agentic FP&A Analytics](https://github.com/daetan999/adk-fpa-agent-blueprint)** | LLM agent for marketing-mix P&L + operational analytics | Google ADK · Gemini · BigQuery · Next.js | Self-serve finance Q&A with **zero ungoverned SQL** — every query passes one guarded, allowlisted tool |
+| **[Enterprise GCP Data & Intelligence Platform](https://github.com/daetan999/gcp-data-platform-blueprint)** | Private-VPC lakehouse + AI newsletter & reporting products | GCP · BigQuery · Cloud Run · Gemini · SendGrid | **7 AI-curated executive newsletters + 2 report cadences, fully unattended** — analyst curation time per issue → zero |
+| Semiconductor Analysis Platform *(private; publication pending cleanup)* | Equity & options analytics for the semiconductor sector | Python · Flask · DCF engine · options greeks · Gemini | ~22k-line personal quant platform: DCF, IV-rank & greeks analytics, regime-aware AI conviction scoring |
 
 ---
 
@@ -53,10 +54,19 @@ An automated capture-to-payroll workflow replacing paper time cards and spreadsh
 
 ---
 
-## In-Flight Blueprints
+## Featured: Agentic FP&A Analytics — Guarded-SQL ADK Agent
 
-- **Agentic FP&A Analytics** — an LLM agent system built on Google's **Agent Development Kit** for marketing-mix-modeling P&L analysis on GCP. Sanitized public duplicate in preparation; architecture diagrams will accompany it.
-- **Enterprise GCP Data Platform** — a cloud data platform with UML-documented workflows and GCP infrastructure design. Sanitized public duplicate in preparation.
+An LLM agent on **Google's Agent Development Kit** that answers natural-language finance and operations questions (P&L lines, ADR, RevPAR, occupancy) with grounded, dual-currency, chart-ready answers. The engineering thesis: an analytics agent is only as trustworthy as the guardrails around its SQL — so every query passes a single guarded tool (frozen table allowlist, single-SELECT parsing, byte-billing cap, KPI anti-summing semantics), property identity resolves through a mandatory two-step code lookup across three source systems, and impossible results (occupancy > 100%) surface as **flagged data-quality findings, never answers**.
+
+**→ Full blueprint: [`adk-fpa-agent-blueprint`](https://github.com/daetan999/adk-fpa-agent-blueprint)** — topology, request-lifecycle sequence, deployment view, and an 11-entry lessons-learned engineering log.
+
+---
+
+## Featured: Enterprise GCP Data & Intelligence Platform
+
+A production GCP platform for a multinational hospitality group: a no-public-IP private-VPC lakehouse (Dataflow/Composer/Dataproc → BigQuery silver/gold, hybrid IPsec to on-prem financial systems) carrying two serverless products — **seven AI-curated executive newsletters** (three-stage Gemini pipeline with a deterministic anti-hallucination year gate) and **weekly/monthly property performance reports** (deterministic KPI SQL, model narrates only). Includes the full sandbox → UAT → production migration playbook: nine services deployed paused, send-disabled dry runs, single-operator test lanes.
+
+**→ Full blueprint: [`gcp-data-platform-blueprint`](https://github.com/daetan999/gcp-data-platform-blueprint)** — infrastructure, workflow and unsubscribe-flow diagrams, reliability contracts, runnable SQL shapes.
 
 ---
 
@@ -68,7 +78,9 @@ An automated capture-to-payroll workflow replacing paper time cards and spreadsh
 | **ML Engineering** | Quantile TFT forecasting, DQN RL with bounded action spaces, LSTM autoencoders, survival analysis, fine-tuned BERT | PyTorch · pytorch-forecasting · scikit-learn |
 | **Data Platforms** | Dual-layer Feast feature store, Kafka streaming, Spark SQL window features, warehouse modeling | Feast · Kafka · Airflow · Spark · Snowflake · Redis |
 | **Backend & Product Engineering** | Timesheet capture-to-payroll workflow, exception-driven review UX, document processing | Python · FastAPI · Jinja2 · PyMuPDF · openpyxl |
-| **Agentic AI** | ADK-based FP&A agent system (blueprint in preparation) | Google ADK · GCP |
+| **Agentic AI** | Guarded-SQL ADK finance agent: allowlisted BigQuery tool, two-step property-code resolution, grounded chart output | Google ADK · Gemini · BigQuery · Next.js |
+| **Cloud Data Platforms (GCP)** | Private-VPC lakehouse, serverless runner pattern, config-as-data recipient model, UAT→PRD migration playbook | BigQuery · Cloud Run · Dataflow · Composer · Cloud Scheduler · Secret Manager |
+| **LLM Reliability Engineering** | Deterministic anti-hallucination year gate; KPI sanity gates that flag impossible values instead of reporting them; fail-open vs hard-fail contracts | Gemini · prompt fidelity contracts · deterministic validators |
 | **Architecture Communication** | Every repo: diagrams-as-code, hand-built SVG system diagrams, ERDs, value-transmission maps | SVG · Mermaid · UML |
 
 ---
