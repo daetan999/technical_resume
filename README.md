@@ -174,14 +174,6 @@ A ~22,000-line personal quant research platform for the semiconductor sector: DC
 
 ---
 
-## Let's talk
-
-I'm looking to break into **AI-infrastructure solutions engineering / sales engineering**. If you're building out a technical pre-sales team, I bring the rare combination of production infra depth and a real closing record.
-
-📧 **daetan999@gmail.com**  ·  🐙 **[github.com/daetan999](https://github.com/daetan999)**
-
----
-
 ## License
 
 Portfolio content and diagrams released under the MIT License.
