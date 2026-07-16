@@ -52,7 +52,7 @@ Every model KPI is wired to a specific financial-statement line — the **five e
 
 | # | Project | What it proves for infra sales | Core Stack | Quantified Outcome |
 |---|---|---|---|---|
-| 1 | **[MERIDIAN — Enterprise MLOps Platform](https://github.com/daetan999/hospitality-mlops-platform)** | GPU serving economics + technical-to-P&L translation | Triton · EKS · PyTorch · Feast · Kafka · MLflow | **>$8.3M** annualized across 5 value paths · GPU util **5%→80%** |
+| 1 | **[MERIDIAN — Enterprise MLOps Platform](https://github.com/daetan999/mlops-hosp)** | GPU serving economics + technical-to-P&L translation | Triton · EKS · PyTorch · Feast · Kafka · MLflow | **>$8.3M** annualized across 5 value paths · GPU util **5%→80%** |
 | 2 | **[Enterprise GCP Data & Intelligence Platform](https://github.com/daetan999/gcp-data-platform-blueprint)** | Serverless FinOps + private-VPC governance at scale | GCP · BigQuery · Cloud Run · Gemini · SendGrid | **7 AI newsletters + 2 report cadences, fully unattended** — curation hours → zero |
 | 3 | **[Agentic FP&A Analytics](https://github.com/daetan999/adk-fpa-agent-blueprint)** | LLM cost/safety guardrails buyers ask about | Google ADK · Gemini · BigQuery · Next.js | Self-serve finance Q&A with **zero ungoverned SQL** · time-to-insight **hours → <1 min** |
 | 4 | **[HR Timesheet Tool](https://github.com/daetan999/hr_timesheet_tool)** | End-to-end delivery a customer can adopt | Python · FastAPI · Jinja2 · PyMuPDF · openpyxl | Payroll cycle **days → minutes** · **95%+** manual processing eliminated |
@@ -68,7 +68,7 @@ Eight model families — quantile demand forecasting (Temporal Fusion Transforme
 
 > **Infra-buyer's-eye value:** this is the GPU-serving TCO story in full — 100+ models consolidated onto a dynamically batched T4 cluster, with an explicit p99 SLA and a five-path map from model metrics to the P&L.
 
-[![MERIDIAN platform architecture](docs/assets/meridian-platform-architecture.svg)](https://github.com/daetan999/hospitality-mlops-platform)
+[![MERIDIAN platform architecture](docs/assets/meridian-platform-architecture.svg)](https://github.com/daetan999/mlops-hosp)
 
 **Principal-level engineering signals:**
 
@@ -77,9 +77,9 @@ Eight model families — quantile demand forecasting (Temporal Fusion Transforme
 - **Self-correcting production** — Evidently drift tiers (warn / auto-retrain / halt-and-page) reduced manual model maintenance by 85%.
 - **Metrics that land on the P&L** — every model KPI maps to a financial statement line:
 
-[![Technical-to-financial transmission](docs/assets/meridian-value-transmission.svg)](https://github.com/daetan999/hospitality-mlops-platform)
+[![Technical-to-financial transmission](docs/assets/meridian-value-transmission.svg)](https://github.com/daetan999/mlops-hosp)
 
-**→ Full blueprint: [`hospitality-mlops-platform`](https://github.com/daetan999/hospitality-mlops-platform)**
+**→ Full blueprint: [`mlops-hosp`](https://github.com/daetan999/mlops-hosp)**
 
 ---
 
