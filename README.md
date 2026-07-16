@@ -1,8 +1,8 @@
 # Technical Project Portfolio
 
-[![AI Infrastructure](https://img.shields.io/badge/AI%20Infrastructure-Triton%20%C2%B7%20EKS%20%C2%B7%20GPU-76B900)](#enterprise-mlops-platform)
-[![Google Cloud](https://img.shields.io/badge/Google%20Cloud-Cloud%20Run%20%C2%B7%20BigQuery-669DF6)](#gcp-data--intelligence-platform)
-[![Agentic AI](https://img.shields.io/badge/Agentic%20AI-ADK%20%C2%B7%20Gemini-8E75B2)](#agentic-fpa-analytics)
+[![AI Infrastructure](https://img.shields.io/badge/AI%20Infrastructure-Triton%20%C2%B7%20EKS%20%C2%B7%20GPU-76B900)](#1-enterprise-mlops-platform)
+[![Google Cloud](https://img.shields.io/badge/Google%20Cloud-Cloud%20Run%20%C2%B7%20BigQuery-669DF6)](#2-gcp-data--intelligence-platform)
+[![Agentic AI](https://img.shields.io/badge/Agentic%20AI-ADK%20%C2%B7%20Gemini-8E75B2)](#3-agentic-fpa-analytics)
 [![Value Engineering](https://img.shields.io/badge/Value%20Engineering-TCO%20%C2%B7%20ROI-8a4a12)](#supporting-solution-design-artifacts)
 [![License](https://img.shields.io/badge/license-MIT-lightgrey)](#license)
 
