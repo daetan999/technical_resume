@@ -1,175 +1,217 @@
-# Technical Projects Overview
+# Technical Project Portfolio
 
-[![AI Infrastructure](https://img.shields.io/badge/AI%20Infrastructure-Triton%20%C2%B7%20EKS%20%C2%B7%20GPU-76B900)](#)
-[![Value Engineering](https://img.shields.io/badge/value%20engineering-TCO%20%2F%20ROI-8a4a12)](docs/value-engineering.md)
-[![GCP](https://img.shields.io/badge/Google%20Cloud-serverless%20%2B%20BigQuery-669DF6)](#)
-[![Commercial](https://img.shields.io/badge/B2B%20closed-~%24700K-1b2733)](#)
-[![Diagrams](https://img.shields.io/badge/diagrams-as%20code-2e5d43)](#)
-[![License](https://img.shields.io/badge/license-MIT-lightgrey)](#)
+[![AI Infrastructure](https://img.shields.io/badge/AI%20Infrastructure-Triton%20%C2%B7%20EKS%20%C2%B7%20GPU-76B900)](#enterprise-mlops-platform)
+[![Google Cloud](https://img.shields.io/badge/Google%20Cloud-Cloud%20Run%20%C2%B7%20BigQuery-669DF6)](#gcp-data--intelligence-platform)
+[![Agentic AI](https://img.shields.io/badge/Agentic%20AI-ADK%20%C2%B7%20Gemini-8E75B2)](#agentic-fpa-analytics)
+[![Value Engineering](https://img.shields.io/badge/Value%20Engineering-TCO%20%C2%B7%20ROI-8a4a12)](#supporting-solution-design-artifacts)
+[![License](https://img.shields.io/badge/license-MIT-lightgrey)](#license)
 
-> Most solutions-engineering candidates are engineers who can't run a deal, or closers who can't read an architecture. I'm the intersection: I've shipped production GPU-serving and MLOps infrastructure **and** carried a quota to ~$700K. This portfolio is the proof of both halves — sanitized architectural blueprints of real production systems, each wired to the business case that funds it.
+Selected projects across AI/ML infrastructure, cloud data platforms, agentic analytics, and workflow automation. This repository provides a single index; the linked repositories contain the detailed architecture, representative code, diagrams, design decisions, and operational documentation.
 
----
+## Public Portfolio Scope
 
-## Why this profile fits AI-infrastructure sales
+The public repositories are sanitized project blueprints rather than production source-code dumps.
 
-| I build it | I sell it |
-|---|---|
-| Consolidated 100+ single-tenant CPU pods onto a shared, dynamically batched **Triton / EKS GPU** cluster: utilization ~5% → **80%+**, hosting **−58%**, 10× traffic headroom at **p99 < 150 ms** | **~$700K** cumulative B2B revenue closed; promoted to Sales Lead running a 4-person team; consistently **+30% over quota** |
-| Re-architected **Kafka · Airflow · Feast · Redis · Snowflake** pipelines — feature latency **24 h → <5 min** | Full-cycle ownership: prospecting → qualification → **PoC scoping** → ROI/TCO → close, on **Salesforce CRM** |
-| Built an **ADK + BigQuery** natural-language agent — time-to-insight **hours → <1 min** | Translate architecture, SLA, and **GPU FinOps** into ROI/TCO business cases a CFO believes |
-| Co-engineered an MLOps platform across 6 business units — forecast MAPE **12.5% → 4.5%** | Oxford (Saïd) AI executive programme · Google Cloud & Salesforce certified |
-
-**The through-line:** I don't hand a customer a benchmark chart. I hand them a sentence they can repeat to their CFO — *"−$240K/year because utilization went 5%→80% via batching, and the freed headroom 10×'s our traffic without a re-architecture."*
+- Client and employer names, internal codenames, credentials, endpoints, project IDs, service accounts, production datasets, recipients, and proprietary integrations are removed, renamed, or mocked.
+- Sample data and identifiers are synthetic.
+- Representative interfaces, configuration patterns, architecture decisions, failure controls, and operating procedures are retained.
+- Quantified outcomes are rounded or aggregated. Modeled figures are identified as such in the detailed project repositories.
+- Current implementations, target-state designs, and illustrative components are labelled separately to avoid implying that planned infrastructure is already deployed.
 
 ---
 
-## Value Engineering — from GPU metrics to the P&L
+## Projects at a Glance
 
-The artifact most portfolios are missing. An infra deal closes on a **TCO model a CFO believes** and a **PoC criterion an engineer trusts** — not a feature list. This is the move at the center of every project below:
-
-![GPU FinOps serving economics — consolidating a single-tenant CPU fleet onto a shared, dynamically batched GPU cluster cuts hosting cost 58% while holding a sub-150ms p99 SLA](docs/assets/gpu-finops-tco.svg)
-
-Every model KPI is wired to a specific financial-statement line — the **five economic transmission paths**:
-
-| Technical signal | Economic mechanism | P&L outcome |
-|---|---|---|
-| Forecast MAPE **12.5% → 4.5%** | Prices the last ~20% of inventory correctly | **+4.2% RevPAR → +$4.8M** profit |
-| LSTM meter-anomaly detection | Overnight-leak flag in 30 min; HVAC load-shift off peak tariffs | **−14% utility waste → −$1.8M** OpEx |
-| Weibull MTTF early-warning | Swap a $500 bearing, not a $120K seized compressor | **−42% downtime → −$1.5M** deferred CapEx |
-| Triton shared-GPU batching | Linear CPU fleet → one dense cluster | **−58% hosting → −$240K/yr** |
-| Fine-tuned BERT routing | MTTR **35 → 8 min** | **+3% repeat bookings** |
-
-**→ The full playbook: [`docs/value-engineering.md`](docs/value-engineering.md)** — the value-based selling motion, the discovery/quantification question bank, and a reusable inference-serving TCO model.
-
-**→ Worked example: [`docs/tco-worked-example.md`](docs/tco-worked-example.md)** — a fictional prospect taken discovery → TCO → close, with a cost waterfall. Paired with a [PoC playbook](https://github.com/daetan999/mlops-hosp/blob/main/docs/poc-playbook.md) for proving the number on a customer's own cluster.
-
----
-
-## Projects
-
-| # | Project | What it proves for infra sales | Core Stack | Quantified Outcome |
+| # | Project | Scope | Core Stack | Selected Outcome / Coverage |
 |---|---|---|---|---|
-| 1 | **[MERIDIAN — Enterprise MLOps Platform](https://github.com/daetan999/mlops-hosp)** | GPU serving economics + technical-to-P&L translation | Triton · EKS · PyTorch · Feast · Kafka · MLflow | **>$8.3M** annualized across 5 value paths · GPU util **5%→80%** |
-| 2 | **[Enterprise GCP Data & Intelligence Platform](https://github.com/daetan999/gcp-data-platform-blueprint)** | Serverless FinOps + private-VPC governance at scale | GCP · BigQuery · Cloud Run · Gemini · SendGrid | **7 AI newsletters + 2 report cadences, fully unattended** — curation hours → zero |
-| 3 | **[Agentic FP&A Analytics](https://github.com/daetan999/adk-fpa-agent-blueprint)** | LLM cost/safety guardrails buyers ask about | Google ADK · Gemini · BigQuery · Next.js | Self-serve finance Q&A with **zero ungoverned SQL** · time-to-insight **hours → <1 min** |
-| 4 | **[HR Timesheet Tool](https://github.com/daetan999/hr_timesheet_tool)** | End-to-end delivery a customer can adopt | Python · FastAPI · Jinja2 · PyMuPDF · openpyxl | Payroll cycle **days → minutes** · **95%+** manual processing eliminated |
-| 5 | Semiconductor Analysis Platform *(private · publication pending)* | Quant depth + AI conviction modeling | Python · Flask · DCF · options greeks · Gemini | ~22k-line platform: DCF, IV-rank, regime-aware AI conviction |
-
-Every public project is a **sanitized blueprint of a production system**: client identifiers, internal codenames, credentials, endpoints, and proprietary integrations are removed or mocked — the architecture, the engineering judgment, and the measured business impact are what remain. All diagrams are hand-built SVG (rendered natively by GitHub) with Mermaid diagram-as-code sources alongside in each repo.
+| 1 | **[Enterprise MLOps Platform](https://github.com/daetan999/mlops-hosp)** | Shared training, feature, serving, and monitoring backbone for forecasting, pricing, anomaly detection, maintenance, and NLP workloads | Triton · EKS · PyTorch · MLflow · Feast · Kafka · Snowflake · Redis | 100+ model deployments consolidated onto shared GPU serving; utilization ~5% → 80%+; p99 <150 ms; hosting cost −58% |
+| 2 | **[GCP Data & Intelligence Platform](https://github.com/daetan999/gcp-data-platform-blueprint)** | Private-cloud data platform with serverless AI newsletters and performance reporting | GCP · BigQuery · Cloud Run · Cloud Scheduler · Gemini · SendGrid | Seven newsletter workflows, weekly/monthly reporting, nine serverless services, and unattended scheduled delivery |
+| 3 | **[Agentic FP&A Analytics](https://github.com/daetan999/adk-fpa-agent-blueprint)** | Natural-language finance and operations analytics over governed BigQuery data | Google ADK · Gemini · BigQuery · Next.js · Python | Grounded dual-currency answers and charts through a single guarded SQL execution path |
+| 4 | **[HR Timesheet Tool](https://github.com/daetan999/hr_timesheet_tool)** | Capture-to-payroll workflow for document intake, validation, exception review, and export | Python · FastAPI · Jinja2 · PyMuPDF · openpyxl | Working public prototype covering upload → validation → human review → payroll-ready Excel export |
+| 5 | **Semiconductor Analysis Platform** *(private; publication pending)* | Personal quantitative research platform for semiconductor equities and options | Python · Flask · DCF · options analytics · regression · Gemini | Integrated valuation, volatility, strategy testing, and regime-aware research workflows |
 
 ---
 
-## 1 · MERIDIAN — Enterprise MLOps Platform
+## 1. Enterprise MLOps Platform
 
-Eight model families — quantile demand forecasting (Temporal Fusion Transformer), a bounded-action **DQN reinforcement-learning pricing agent**, LSTM-autoencoder ESG anomaly detection, Weibull survival predictive maintenance, fine-tuned BERT ticket routing — on one shared data and serving backbone, with fully automated drift-triggered retraining (no human in the hot path).
+A sanitized architecture blueprint for operating multiple machine-learning workloads on a shared data, feature, training, serving, and monitoring platform.
 
-> **Infra-buyer's-eye value:** this is the GPU-serving TCO story in full — 100+ models consolidated onto a dynamically batched T4 cluster, with an explicit p99 SLA and a five-path map from model metrics to the P&L.
+[![Enterprise MLOps platform architecture](docs/assets/meridian-platform-architecture.svg)](https://github.com/daetan999/mlops-hosp)
 
-[![MERIDIAN platform architecture](docs/assets/meridian-platform-architecture.svg)](https://github.com/daetan999/mlops-hosp)
+### Project scope
 
-**Principal-level engineering signals:**
+- Eight model families covering demand forecasting, constrained reinforcement-learning pricing, ESG anomaly detection, predictive maintenance, asset clustering, feasibility analysis, and NLP ticket routing.
+- Kafka and Airflow pipelines feeding a Feast feature store with Redis for online access and Snowflake for point-in-time offline training data.
+- PyTorch training, MLflow registry gates, ONNX packaging, EKS deployment, and NVIDIA Triton inference serving.
+- Evidently-based monitoring with separate warning, automated retraining, and halt-and-page responses for different drift classes.
 
-- **Serving economics** — Triton dynamic batching consolidated 100+ single-tenant CPU pods onto a small shared GPU cluster: utilization ~5% → 80%+, hosting spend **−58% (−$240K/yr)**, 10× traffic headroom at **p99 < 150 ms**.
-- **A feature store as the contract** — Feast with Redis online (< 15 ms p99) and Snowflake offline guarantees zero training/serving skew; 70%+ feature reuse cut new-feature delivery from months to days.
-- **Self-correcting production** — Evidently drift tiers (warn / auto-retrain / halt-and-page) reduced manual model maintenance by 85%.
-- **Metrics that land on the P&L** — every model KPI maps to a financial statement line:
+### Key design decisions
 
-[![Technical-to-financial transmission](docs/assets/meridian-value-transmission.svg)](https://github.com/daetan999/mlops-hosp)
+- **Shared GPU serving:** dynamic batching and multi-model concurrency replace a linear single-tenant CPU deployment pattern.
+- **Feature-store contract:** shared feature definitions reduce training-serving skew and support reuse across model families.
+- **Registry-gated promotion:** models move through evaluation and staged promotion before serving.
+- **Closed-loop operations:** monitored drift can trigger retraining while severe concept drift pauses automated pricing for human review.
+- **Falsifiable PoC criteria:** throughput, p99 latency, GPU utilization, and cost per inference are defined as measurable acceptance criteria.
 
-**→ Full blueprint: [`mlops-hosp`](https://github.com/daetan999/mlops-hosp)**
+### Public repository contents
 
----
+- Platform and MLOps lifecycle diagrams
+- Illustrative feature definitions and model configuration
+- Triton dynamic-batching configuration
+- EKS deployment manifest shapes
+- Drift-monitoring thresholds
+- GPU-serving PoC playbook
 
-## 2 · Enterprise GCP Data & Intelligence Platform
-
-A production GCP platform for a multinational hospitality group: a **no-public-IP private-VPC lakehouse** (Dataflow / Composer / Dataproc → BigQuery silver/gold, hybrid IPsec to on-prem financial systems) carrying two serverless products — seven AI-curated executive newsletters and weekly/monthly property performance reports.
-
-> **Infra-buyer's-eye value:** serverless FinOps (pay-per-run runners, scheduler-paused by default) plus the private-VPC + governance posture a security-conscious enterprise buyer requires before they'll adopt anything.
-
-[![GCP platform infrastructure — sources, private VPC, lakehouse, consumers](docs/assets/gcp-platform-infrastructure.svg)](https://github.com/daetan999/gcp-data-platform-blueprint)
-
-**Principal-level engineering signals:**
-
-- **A three-layer anti-hallucination stack** — prompt fidelity contract, in-prompt self-check, and a deterministic year-gate validator that feeds the retry loop; born from a real LLM date-mutation incident, now structurally prevented.
-- **Fail-open vs hard-fail contracts** — every failure mode is deliberately classified: a preference-API outage degrades footers but never blocks sends, while an empty recipient list is a surfaced incident, never a silent no-op.
-- **Config as data** — newsletter topics live in a BigQuery catalog table; registering a topic is one guarded `MERGE`, zero code changes.
-- **Migration discipline** — nine services promoted sandbox → UAT → production with paused-by-default schedulers, send-disabled dry runs, and a single-operator test lane.
-
-[![Beacon AI newsletter engine — end-to-end send workflow](docs/assets/gcp-platform-newsletter-pipeline.svg)](https://github.com/daetan999/gcp-data-platform-blueprint)
-
-**→ Full blueprint: [`gcp-data-platform-blueprint`](https://github.com/daetan999/gcp-data-platform-blueprint)** — infrastructure, workflow and unsubscribe-flow diagrams, reliability contracts, migration playbook, runnable SQL shapes.
+**Repository:** [`mlops-hosp`](https://github.com/daetan999/mlops-hosp)
 
 ---
 
-## 3 · Agentic FP&A Analytics — Guarded-SQL ADK Agent
+## 2. GCP Data & Intelligence Platform
 
-An LLM agent on **Google's Agent Development Kit** that answers natural-language finance and operations questions — P&L lines, ADR, RevPAR, occupancy — with grounded, dual-currency, chart-ready answers. The engineering thesis: **an analytics agent is only as trustworthy as the guardrails around its SQL.**
+A sanitized blueprint of an enterprise Google Cloud data platform and the serverless products running on top of it.
 
-> **Infra-buyer's-eye value:** the cost-control and safety story every AI-infra buyer probes — a byte-billing cost cap, a frozen table allowlist, and single-SELECT parsing so the model can never run away with the warehouse bill or the data.
+[![GCP data platform architecture](docs/assets/gcp-platform-infrastructure.svg)](https://github.com/daetan999/gcp-data-platform-blueprint)
 
-[![FP&A agent system topology — chat UI, ADK runtime, guarded SQL tool, BigQuery](docs/assets/adk-agent-topology.svg)](https://github.com/daetan999/adk-fpa-agent-blueprint)
+### Platform scope
 
-**Principal-level engineering signals:**
+- Private-VPC ingestion and processing using Dataflow, Dataproc, Composer, Cloud Run, Cloud Storage, and BigQuery silver/gold layers.
+- Hybrid connectivity patterns for on-premises financial systems and governed access to curated data products.
+- Seven topic-specific AI newsletter workflows using resilient RSS ingestion, Gemini-based curation, BigQuery-managed recipients, and SendGrid delivery.
+- Weekly and monthly performance reporting with deterministic BigQuery calculations and model-generated narrative restricted to computed figures.
 
-- **One guarded tool as the choke point** — frozen table allowlist, single-SELECT parsing, byte-billing cost cap, injected row limits, KPI anti-summing semantics; the model never touches the warehouse directly.
-- **Two-step property resolution** — three source systems use three different property-code schemes; the agent resolves codes through mandatory master lookups before any fact query.
-- **Honest uncertainty** — impossible computed results (occupancy > 100%) are presented as flagged data-quality findings with raw components, never as answers.
-- **An 11-entry lessons-learned engineering log** — every production failure class (JOIN explosion, scan-limit blowups, silent source fallback, duplicate-row inflation) converted into a structural safeguard.
+[![AI newsletter workflow](docs/assets/gcp-platform-newsletter-pipeline.svg)](https://github.com/daetan999/gcp-data-platform-blueprint)
 
-[![FP&A agent request lifecycle — one question, guarded SQL, grounded answer](docs/assets/adk-agent-request-lifecycle.svg)](https://github.com/daetan999/adk-fpa-agent-blueprint)
+### Key design decisions
 
-**→ Full blueprint: [`adk-fpa-agent-blueprint`](https://github.com/daetan999/adk-fpa-agent-blueprint)** — topology, request-lifecycle sequence, deployment view, lessons-learned log.
+- **Scale-to-zero services:** Cloud Run and Cloud Scheduler support pay-per-run execution with no idle application compute.
+- **Deterministic controls around LLM output:** prompt fidelity rules, model self-checks, and a code-level date validator reduce factual mutation.
+- **Explicit failure contracts:** non-critical preference-link failures degrade safely, while missing recipients, delivery failures, stale data, and child-process errors surface as failed runs.
+- **Configuration as data:** newsletter types and recipient rules are managed through guarded BigQuery operations rather than code changes.
+- **Controlled migration:** sandbox, UAT, and production promotion use paused schedulers, disabled-send dry runs, test lanes, validation checks, and rollback steps.
+- **Secrets and identity separation:** credentials remain in Secret Manager and environment configuration rather than scripts or bucket artifacts.
 
----
+### Public repository contents
 
-## 4 · HR Timesheet Tool — Workforce Time-Capture Blueprint
+- Infrastructure, newsletter, reporting, and unsubscribe-flow diagrams
+- Representative Cloud Run runner and service structures
+- BigQuery DDL and guarded `MERGE` operation shapes
+- Reliability contracts and validation patterns
+- Environment migration and rollback playbooks
+- Synthetic configuration and recipient examples
 
-An automated capture-to-payroll workflow replacing paper time cards and spreadsheet reconciliation: structured ingestion of scanned time cards, deterministic validation with exception surfacing, an exception-driven HR review queue, and payroll-ready Excel export — server-rendered FastAPI/Jinja2 with a pluggable (mocked) extraction layer.
-
-> **Infra-buyer's-eye value:** proof I can take a solution the whole way to adoption — real UX, real data model, real hand-off — not just a diagram.
-
-[![Timesheet end-to-end submission pipeline](docs/assets/timesheet-system-flow.svg)](https://github.com/daetan999/hr_timesheet_tool)
-
-| Relational schema, designed for 1:1 SQL promotion | Product — exception-driven review queue |
-| --- | --- |
-| [![Timesheet relational schema](docs/assets/timesheet-data-schema.svg)](https://github.com/daetan999/hr_timesheet_tool) | [![Review queue screenshot](docs/assets/timesheet-review.png)](https://github.com/daetan999/hr_timesheet_tool) |
-
-**→ Full blueprint: [`hr_timesheet_tool`](https://github.com/daetan999/hr_timesheet_tool)**
-
----
-
-## 5 · Semiconductor Analysis Platform *(private)*
-
-A ~22,000-line personal quant research platform for the semiconductor sector: DCF valuation engine, options greeks and IV-rank analytics, alpha regression, strategy optimization, and a Gemini-based analyst layer with regime-aware confidence scoring — Flask-served with a full report UI. Built on public market data; repository publication pending final cleanup.
+**Repository:** [`gcp-data-platform-blueprint`](https://github.com/daetan999/gcp-data-platform-blueprint)
 
 ---
 
-## Engineering + Commercial Competency Matrix
+## 3. Agentic FP&A Analytics
 
-| Discipline | Evidenced By | Technologies |
-|---|---|---|
-| **AI-Infra Solutions Engineering** | GPU serving economics, TCO/ROI modeling, PoC scoping, technical-to-P&L value maps | Triton · EKS · GPU FinOps · ROI/TCO · Salesforce |
-| **Commercial / GTM** | ~$700K B2B closed, Sales Lead over a 4-person team, +30% over quota, full-cycle pipeline ownership | Prospecting · qualification · solution pitching · closing · CRM |
-| **MLOps & Model Serving** | MERIDIAN registry-gated CD, drift-triggered retraining, GPU serving economics | MLflow · ONNX · Triton · Evidently · EKS/Kubernetes |
-| **ML Engineering** | Quantile TFT forecasting, DQN RL with bounded action spaces, LSTM autoencoders, survival analysis, fine-tuned BERT | PyTorch · pytorch-forecasting · scikit-learn |
-| **Agentic AI** | Guarded-SQL ADK finance agent: allowlisted BigQuery tool, two-step property-code resolution, grounded chart output | Google ADK · Gemini · BigQuery · Next.js |
-| **Cloud Data Platforms (GCP)** | Private-VPC lakehouse, serverless runner pattern, config-as-data recipient model, UAT→PRD migration playbook | BigQuery · Cloud Run · Dataflow · Composer · Cloud Scheduler · Secret Manager |
-| **LLM Reliability Engineering** | Deterministic anti-hallucination year gate; KPI sanity gates that flag impossible values; fail-open vs hard-fail contracts | Gemini · prompt fidelity contracts · deterministic validators |
-| **Data Platforms & Streaming** | Dual-layer Feast feature store, Kafka streaming, Spark SQL window features, warehouse modeling | Feast · Kafka · Airflow · Spark · Snowflake · Redis |
-| **Architecture Communication** | Every repo: diagrams-as-code, hand-built SVG system diagrams, ERDs, sequence diagrams, value-transmission maps | SVG · Mermaid · UML |
+A Google ADK agent for natural-language finance and operational analysis over governed BigQuery data. The public project separates the working development implementation from the proposed production deployment design.
+
+[![FP&A agent topology](docs/assets/adk-agent-topology.svg)](https://github.com/daetan999/adk-fpa-agent-blueprint)
+
+### Project scope
+
+- Natural-language questions across P&L measures, budget variance, occupancy, ADR, RevPAR, and property performance.
+- Google ADK runtime with Gemini on Vertex AI and a Next.js chat interface.
+- Dual-currency answers and declarative chart specifications grounded in query results.
+- Multi-source property resolution where finance, asset-management, and property-management systems use different identifiers.
+
+### Guarded SQL execution
+
+All warehouse access passes through one tool that applies:
+
+- Single-statement, `SELECT`-only parsing
+- Frozen approved-table allowlist
+- Per-query byte-billing cap
+- Automatic row limits for detail queries
+- Restricted property-master lookup shapes
+- Warnings for non-additive measures such as ADR, RevPAR, and occupancy
+- Data-quality handling for impossible outputs rather than silent correction
+
+[![FP&A agent request lifecycle](docs/assets/adk-agent-request-lifecycle.svg)](https://github.com/daetan999/adk-fpa-agent-blueprint)
+
+### Delivery status
+
+- **Current development implementation:** ADK API server and Next.js frontend running in a development environment with read-only BigQuery access.
+- **Target production design:** managed agent hosting, Cloud Run frontend, enterprise authentication, and a dedicated least-privilege service identity.
+- The target-state deployment is documented as a design and is not presented as already deployed.
+
+**Repository:** [`adk-fpa-agent-blueprint`](https://github.com/daetan999/adk-fpa-agent-blueprint)
 
 ---
 
-## How These Blueprints Are Built
+## 4. HR Timesheet Tool
 
-1. **Confidentiality inventory** — every project name, client identifier, dataset/table name, endpoint, and credential in the source system is catalogued before anything is published.
-2. **Sanitize, don't lobotomize** — identifiers are renamed or mocked; architecture, data models, SLOs, and failure-mode engineering are preserved faithfully.
-3. **Diagrams as code** — system diagrams are generated SVG (strict-XML-valid, GitHub-native rendering) with Mermaid sources embedded for maintainability.
-4. **Impact stays quantified** — business results are kept as aggregated, portfolio-level figures with the mechanism that produced them, because architecture without outcomes is decoration.
+A working public prototype for replacing paper and spreadsheet-based time capture with a structured review and export workflow. The extraction layer runs in mock mode in the public repository; no production integrations or employee data are included.
+
+[![Timesheet workflow](docs/assets/timesheet-system-flow.svg)](https://github.com/daetan999/hr_timesheet_tool)
+
+### Workflow
+
+1. Create a submission period and upload PDF, image, HEIC, or spreadsheet files.
+2. Normalize documents and convert extracted fields into structured timesheet rows.
+3. Apply deterministic checks for dates, duplicate entries, codes, hours, and confidence thresholds.
+4. Route exceptions to an HR review queue with explicit reasons.
+5. Preserve reviewed records through idempotent updates and audit fields.
+6. Export approved entries into a payroll-ready Excel workbook.
+
+### Architecture
+
+- FastAPI backend with server-rendered Jinja2 interfaces
+- PyMuPDF and Pillow-based document preprocessing
+- Pluggable extraction service boundary
+- Relational schema for employees, sessions, entries, approval workflows, and reference codes
+- File-backed public prototype designed for later promotion to a transactional SQL database
+- openpyxl export for downstream payroll processing
+
+| Relational data model | Exception review interface |
+|---|---|
+| [![Timesheet relational schema](docs/assets/timesheet-data-schema.svg)](https://github.com/daetan999/hr_timesheet_tool) | [![Timesheet review queue](docs/assets/timesheet-review.png)](https://github.com/daetan999/hr_timesheet_tool) |
+
+**Repository:** [`hr_timesheet_tool`](https://github.com/daetan999/hr_timesheet_tool)
+
+---
+
+## 5. Semiconductor Analysis Platform *(Private)*
+
+A personal quantitative research platform for semiconductor equities and options. The repository remains private while data-source handling and publication boundaries are reviewed.
+
+### Included modules
+
+- Discounted cash-flow valuation
+- Options Greeks and implied-volatility ranking
+- Alpha and factor regression
+- Strategy optimization and backtesting
+- Regime-aware confidence scoring
+- Gemini-assisted research synthesis
+- Flask-based report interface
+
+Only public market data is used. Publication will exclude API credentials, licensed datasets, cached provider responses, and any non-redistributable material.
+
+---
+
+## Supporting Solution-Design Artifacts
+
+The portfolio also includes reusable artifacts for evaluating and communicating infrastructure projects:
+
+- **[Value-engineering playbook](docs/value-engineering.md):** discovery, value hypotheses, TCO construction, technical-to-financial mapping, and expansion planning.
+- **[Worked TCO example](docs/tco-worked-example.md):** a fictional prospect scenario taken from discovery inputs through infrastructure comparison and business-case construction.
+- **[GPU-serving PoC playbook](https://github.com/daetan999/mlops-hosp/blob/main/docs/poc-playbook.md):** workload definition, baseline capture, test design, acceptance criteria, and result reporting.
+
+These documents use fictional or sanitized assumptions and are intended to show the evaluation process rather than disclose customer economics.
+
+---
+
+## Repository Conventions
+
+- Architecture diagrams are maintained as SVG and Mermaid diagram-as-code where practical.
+- Public code is representative and focuses on interfaces, controls, configuration, and deployment patterns.
+- Synthetic examples replace production data and identifiers.
+- Redacted proprietary components are marked as stubs rather than represented as complete implementations.
+- Each project documents what is implemented, illustrative, modeled, or proposed.
 
 ---
 
 ## License
 
-Portfolio content and diagrams released under the MIT License.
+Portfolio content and diagrams are released under the MIT License unless a linked repository states otherwise.
