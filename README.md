@@ -46,6 +46,8 @@ Every model KPI is wired to a specific financial-statement line — the **five e
 
 **→ The full playbook: [`docs/value-engineering.md`](docs/value-engineering.md)** — the value-based selling motion, the discovery/quantification question bank, and a reusable inference-serving TCO model.
 
+**→ Worked example: [`docs/tco-worked-example.md`](docs/tco-worked-example.md)** — a fictional prospect taken discovery → TCO → close, with a cost waterfall. Paired with a [PoC playbook](https://github.com/daetan999/mlops-hosp/blob/main/docs/poc-playbook.md) for proving the number on a customer's own cluster.
+
 ---
 
 ## Projects
