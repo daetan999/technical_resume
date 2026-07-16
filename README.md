@@ -1,8 +1,4 @@
-# Dae Tan — AI Infrastructure Solutions Engineer
-
-### I architect the platform, model the TCO, and close the business case.
-
-The rare hybrid an infra-sales team actually needs: hands-on AI-infrastructure and MLOps engineering — **NVIDIA Triton · AWS EKS · GPU serving · GCP · BigQuery** — paired with **~$700K in closed B2B revenue**. I turn latency, throughput, and GPU-utilization numbers into P&L outcomes a buyer will sign for.
+# Technical Projects Overview
 
 [![AI Infrastructure](https://img.shields.io/badge/AI%20Infrastructure-Triton%20%C2%B7%20EKS%20%C2%B7%20GPU-76B900)](#)
 [![Value Engineering](https://img.shields.io/badge/value%20engineering-TCO%20%2F%20ROI-8a4a12)](docs/value-engineering.md)
