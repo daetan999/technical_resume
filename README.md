@@ -29,7 +29,7 @@ The repositories are sanitized project blueprints and public prototypes rather t
 | 2 | **[GCP Data & Intelligence Platform](https://github.com/daetan999/gcp-data-platform-blueprint)** | Private-cloud data platform with serverless AI newsletters and performance reporting | GCP · BigQuery · Cloud Run · Cloud Scheduler · Gemini · SendGrid | Seven newsletter workflows, weekly/monthly reporting, nine serverless services, and unattended scheduled delivery |
 | 3 | **[Agentic FP&A Analytics](https://github.com/daetan999/adk-fpa-agent-blueprint)** | Natural-language finance and operations analytics over governed BigQuery data | Google ADK · Gemini · BigQuery · Next.js · Python | Grounded dual-currency answers and charts through a single guarded SQL execution path |
 | 4 | **[HR Timesheet Tool](https://github.com/daetan999/hr_timesheet_tool)** | Capture-to-payroll workflow for document intake, validation, exception review, and export | Python · FastAPI · Jinja2 · PyMuPDF · openpyxl | Working public prototype covering upload → validation → human review → payroll-ready Excel export |
-| 5 | **[AI Infrastructure Account Intelligence](https://github.com/daetan999/Semis-Analysis-Web)** | Account planning for accelerated compute, cloud AI, networking, MLOps, and data-center solution motions | FastAPI · Python · Gemini · Jinja2 · Docker | Runnable offline workflow producing workload hypotheses, buyer maps, discovery questions, objections, and measurable PoC criteria |
+| 5 | **[AI Infrastructure Account Intelligence](https://github.com/daetan999/Semis-Analysis-Web)** | Account planning for accelerated compute, cloud AI, networking, MLOps, and data-center solution motions | FastAPI · Python · Gemini · Jinja2 · Docker | Generates 3 value hypotheses, a 4-role buyer map, discovery and objection plans, and a measurable 2–4 week PoC structure |
 
 ---
 
@@ -155,7 +155,23 @@ A working public prototype for replacing paper and spreadsheet-based time captur
 
 ## 5. AI Infrastructure Account Intelligence
 
-A runnable account-planning application for AI-infrastructure solution selling. The project was rebuilt from a finance-heavy semiconductor trading application into a workflow aligned with enterprise infrastructure discovery and technical sales execution.
+A runnable account-planning workbench for AI-infrastructure solution selling. It turns a company, solution motion, customer segment, and known context into a structured commercial and technical brief.
+
+[![Rendered AI Infrastructure Account Intelligence workbench](docs/assets/account-intelligence-workbench.svg)](https://github.com/daetan999/Semis-Analysis-Web)
+
+The rendered example shows an enterprise NVIDIA GPU-compute motion: three measurable opportunity hypotheses, four buyer roles, and a bounded 2–4 week PoC with explicit acceptance criteria.
+
+### Commercial value demonstrated
+
+| Common failure in infrastructure sales | Workbench output | Value it is designed to create |
+|---|---|---|
+| Generic account research becomes a product pitch | Testable workload, pressure, and constraint hypotheses | Better first-meeting discovery and earlier qualification |
+| One contact is treated as “the customer” | Economic buyer, technical buyer, champion, and commercial gate map | Clearer multi-threading gaps and stakeholder strategy |
+| Technical claims are disconnected from economics | Technical baseline paired with a business or unit-economic metric | A value hypothesis that can support TCO and ROI work |
+| PoCs begin without a decision contract | Acceptance criteria, evidence, production owner, rollback, and decision date | Fewer open-ended technical trials |
+| Weak deals remain in pipeline | Explicit next actions to advance, reshape, or disqualify | Stronger pipeline discipline |
+
+[![AI infrastructure account intelligence value path](docs/assets/account-intelligence-value-path.svg)](https://github.com/daetan999/Semis-Analysis-Web)
 
 ### Application scope
 
