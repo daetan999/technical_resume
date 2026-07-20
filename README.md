@@ -3,11 +3,20 @@
 [![AI Infrastructure](https://img.shields.io/badge/AI%20Infrastructure-Triton%20%C2%B7%20EKS%20%C2%B7%20GPU-76B900)](#1-enterprise-mlops-platform)
 [![Google Cloud](https://img.shields.io/badge/Google%20Cloud-Cloud%20Run%20%C2%B7%20BigQuery-669DF6)](#2-gcp-data--intelligence-platform)
 [![Agentic AI](https://img.shields.io/badge/Agentic%20AI-ADK%20%C2%B7%20Gemini-8E75B2)](#3-agentic-fpa-analytics)
-[![Account Intelligence](https://img.shields.io/badge/Account%20Intelligence-Discovery%20%C2%B7%20PoC-8EDC3B)](#5-ai-infrastructure-account-intelligence)
-[![Value Engineering](https://img.shields.io/badge/Value%20Engineering-TCO%20%C2%B7%20ROI-8a4a12)](#supporting-solution-design-artifacts)
+[![Account Intelligence](https://img.shields.io/badge/Account%20Intelligence-Discovery%20%C2%B7%20PoC-8EDC3B)](#4-ai-infrastructure-account-intelligence)
+[![Roadmap](https://img.shields.io/badge/Roadmap-TCO%20%C2%B7%20Sizing%20%C2%B7%20Configuration-4F86F7)](#portfolio-build-roadmap)
 [![License](https://img.shields.io/badge/license-MIT-lightgrey)](#license)
 
-Selected projects across AI/ML infrastructure, cloud data platforms, agentic analytics, account intelligence, and workflow automation. This repository provides a single index; the linked repositories contain detailed architecture, representative code, diagrams, design decisions, controls, and operating documentation.
+Selected projects across AI/ML infrastructure, cloud data platforms, agentic analytics, and enterprise AI-infrastructure selling workflows.
+
+This repository is the **content map for the portfolio**. It separates:
+
+- Current projects that can be inspected now
+- Supporting value-engineering artifacts
+- Planned products that still need to be built
+- The role each project plays in an AI-infrastructure BDR, account-development, or early-career enterprise-sales story
+
+The intended portfolio signal is not “software engineer.” It is **commercial capability supported by enough technical depth to discover, qualify, quantify, and communicate complex AI-infrastructure opportunities credibly**.
 
 ## Public Portfolio Scope
 
@@ -18,18 +27,20 @@ The repositories are sanitized project blueprints and public prototypes rather t
 - Representative interfaces, configuration patterns, architecture decisions, failure controls, and operating procedures are retained.
 - Quantified outcomes are rounded or aggregated. Modeled figures are identified as such in the detailed project repositories.
 - Current implementations, target-state designs, and illustrative components are labelled separately.
+- Planned projects below are specifications only. They must not be presented as completed work until working repositories, tests, and rendered examples exist.
 
 ---
 
-## Projects at a Glance
+## Current Flagship Projects
 
-| # | Project | Scope | Core Stack | Selected Outcome / Coverage |
+| # | Project | Portfolio role | Core stack | Current evidence |
 |---|---|---|---|---|
-| 1 | **[Enterprise MLOps Platform](https://github.com/daetan999/mlops-hosp)** | Shared training, feature, serving, and monitoring backbone for forecasting, pricing, anomaly detection, maintenance, and NLP workloads | Triton · EKS · PyTorch · MLflow · Feast · Kafka · Snowflake · Redis | 100+ model deployments consolidated onto shared GPU serving; utilization ~5% → 80%+; p99 <150 ms; modeled hosting cost −58% |
-| 2 | **[GCP Data & Intelligence Platform](https://github.com/daetan999/gcp-data-platform-blueprint)** | Private-cloud data platform with serverless AI newsletters and performance reporting | GCP · BigQuery · Cloud Run · Cloud Scheduler · Gemini · SendGrid | Seven newsletter workflows, weekly/monthly reporting, nine serverless services, and unattended scheduled delivery |
-| 3 | **[Agentic FP&A Analytics](https://github.com/daetan999/adk-fpa-agent-blueprint)** | Natural-language finance and operations analytics over governed BigQuery data | Google ADK · Gemini · BigQuery · Next.js · Python | Grounded dual-currency answers and charts through a single guarded SQL execution path |
-| 4 | **[HR Timesheet Tool](https://github.com/daetan999/hr_timesheet_tool)** | Capture-to-payroll workflow for document intake, validation, exception review, and export | Python · FastAPI · Jinja2 · PyMuPDF · openpyxl | Working public prototype covering upload → validation → human review → payroll-ready Excel export |
-| 5 | **[AI Infrastructure Account Intelligence](https://github.com/daetan999/Semis-Analysis-Web)** | Account planning for accelerated compute, cloud AI, networking, MLOps, and data-center solution motions | FastAPI · Python · Gemini · Jinja2 · Docker | Generates 3 value hypotheses, a 4-role buyer map, discovery and objection plans, and a measurable 2–4 week PoC structure |
+| 1 | **[Enterprise MLOps Platform](https://github.com/daetan999/mlops-hosp)** | Demonstrates technical understanding of the infrastructure being sold: GPU serving, orchestration, feature stores, model lifecycle, reliability, and FinOps | Triton · EKS · PyTorch · MLflow · Feast · Kafka · Snowflake · Redis | 100+ model deployments consolidated onto shared GPU serving; utilization ~5% → 80%+; p99 <150 ms; modeled hosting cost −58% |
+| 2 | **[GCP Data & Intelligence Platform](https://github.com/daetan999/gcp-data-platform-blueprint)** | Demonstrates enterprise cloud delivery, managed services, governance, migration discipline, and business-facing AI products | GCP · BigQuery · Cloud Run · Cloud Scheduler · Gemini · SendGrid | Seven newsletter workflows, weekly/monthly reporting, nine serverless services, and unattended scheduled delivery |
+| 3 | **[Agentic FP&A Analytics](https://github.com/daetan999/adk-fpa-agent-blueprint)** | Demonstrates governed enterprise AI applications, guarded data access, and communication of technical controls to business users | Google ADK · Gemini · BigQuery · Next.js · Python | Grounded dual-currency answers and charts through a single guarded SQL execution path |
+| 4 | **[AI Infrastructure Account Intelligence](https://github.com/daetan999/Semis-Analysis-Web)** | Demonstrates account research, buying-group mapping, technical discovery, value hypotheses, objection preparation, and PoC qualification | FastAPI · Python · Gemini · Jinja2 · Docker | Generates three value hypotheses, a four-role buyer map, discovery and objection plans, and a measurable 2–4 week PoC structure |
+
+The HR Timesheet Tool remains available as a separate repository, but it is no longer featured here because document-to-payroll automation does not strengthen the central AI-infrastructure sales narrative.
 
 ---
 
@@ -46,13 +57,19 @@ A sanitized architecture blueprint for operating multiple machine-learning workl
 - PyTorch training, MLflow registry gates, ONNX packaging, EKS deployment, and NVIDIA Triton inference serving.
 - Evidently-based monitoring with separate warning, automated retraining, and halt-and-page responses for different drift classes.
 
+### Relevance to infrastructure sales
+
+- Explains why GPU utilization, batching, latency, throughput, feature freshness, and model lifecycle affect customer economics.
+- Provides the technical foundation needed to ask credible workload and architecture questions without positioning as the implementation engineer.
+- Includes measurable PoC criteria around throughput, p99 latency, GPU utilization, and cost per inference.
+- Supports conversations with both infrastructure teams and financial stakeholders.
+
 ### Key design decisions
 
 - **Shared GPU serving:** dynamic batching and multi-model concurrency replace a linear single-tenant CPU deployment pattern.
 - **Feature-store contract:** shared feature definitions reduce training-serving skew and support reuse across model families.
 - **Registry-gated promotion:** models move through evaluation and staged promotion before serving.
 - **Closed-loop operations:** monitored drift can trigger retraining while severe concept drift pauses automated pricing for human review.
-- **Falsifiable PoC criteria:** throughput, p99 latency, GPU utilization, and cost per inference are measurable acceptance criteria.
 
 **Repository:** [`mlops-hosp`](https://github.com/daetan999/mlops-hosp)
 
@@ -72,6 +89,13 @@ A sanitized blueprint of an enterprise Google Cloud data platform and the server
 - Weekly and monthly performance reporting with deterministic BigQuery calculations and model-generated narrative restricted to computed figures.
 
 [![AI newsletter workflow](docs/assets/gcp-platform-newsletter-pipeline.svg)](https://github.com/daetan999/gcp-data-platform-blueprint)
+
+### Relevance to infrastructure sales
+
+- Demonstrates familiarity with enterprise cloud estates rather than isolated application development.
+- Shows how managed compute, data warehousing, networking, identity, secrets, scheduling, and observability fit together.
+- Documents sandbox-to-UAT-to-production migration, rollback, failure handling, and cost-aware scale-to-zero services.
+- Provides evidence for discussions about governance, deployment risk, integration, and operating ownership.
 
 ### Key design decisions
 
@@ -112,6 +136,12 @@ All warehouse access passes through one tool that applies:
 
 [![FP&A agent request lifecycle](docs/assets/adk-agent-request-lifecycle.svg)](https://github.com/daetan999/adk-fpa-agent-blueprint)
 
+### Relevance to infrastructure sales
+
+- Demonstrates how an AI application depends on governed data access, model controls, identity, cost limits, and deployment architecture.
+- Provides a concrete workload for discovery conversations about enterprise AI adoption.
+- Shows the difference between a prototype, a production design, and a deployable operating model.
+
 ### Delivery status
 
 - **Current development implementation:** ADK API server and Next.js frontend with read-only BigQuery access.
@@ -121,39 +151,7 @@ All warehouse access passes through one tool that applies:
 
 ---
 
-## 4. HR Timesheet Tool
-
-A working public prototype for replacing paper and spreadsheet-based time capture with a structured review and export workflow. The extraction layer runs in mock mode; no production integrations or employee data are included.
-
-[![Timesheet workflow](docs/assets/timesheet-system-flow.svg)](https://github.com/daetan999/hr_timesheet_tool)
-
-### Workflow
-
-1. Create a submission period and upload PDF, image, HEIC, or spreadsheet files.
-2. Normalize documents and convert extracted fields into structured timesheet rows.
-3. Apply deterministic checks for dates, duplicate entries, codes, hours, and confidence thresholds.
-4. Route exceptions to an HR review queue with explicit reasons.
-5. Preserve reviewed records through idempotent updates and audit fields.
-6. Export approved entries into a payroll-ready Excel workbook.
-
-### Architecture
-
-- FastAPI backend with server-rendered Jinja2 interfaces
-- PyMuPDF and Pillow-based document preprocessing
-- Pluggable extraction service boundary
-- Relational schema for employees, sessions, entries, approval workflows, and reference codes
-- File-backed prototype designed for later promotion to a transactional SQL database
-- openpyxl export for downstream payroll processing
-
-| Relational data model | Exception review interface |
-|---|---|
-| [![Timesheet relational schema](docs/assets/timesheet-data-schema.svg)](https://github.com/daetan999/hr_timesheet_tool) | [![Timesheet review queue](docs/assets/timesheet-review.png)](https://github.com/daetan999/hr_timesheet_tool) |
-
-**Repository:** [`hr_timesheet_tool`](https://github.com/daetan999/hr_timesheet_tool)
-
----
-
-## 5. AI Infrastructure Account Intelligence
+## 4. AI Infrastructure Account Intelligence
 
 A runnable account-planning workbench for AI-infrastructure solution selling. It turns a company, solution motion, customer segment, and known context into a structured commercial and technical brief.
 
@@ -173,21 +171,13 @@ The rendered example shows an enterprise NVIDIA GPU-compute motion: three measur
 
 [![AI infrastructure account intelligence value path](docs/assets/account-intelligence-value-path.svg)](https://github.com/daetan999/Semis-Analysis-Web)
 
-### Application scope
+### Current application scope
 
 - Eleven companies across accelerated compute, semiconductors, AI networking, servers, specialized cloud, and data-center power and cooling.
 - Five solution motions: GPU compute, cloud AI platforms, AI networking, data-center infrastructure, and MLOps.
 - Structured output covering account signals, workload hypotheses, buyer roles, discovery questions, objections, and next actions.
 - Falsifiable PoC plans with technical baselines, business metrics, acceptance criteria, evidence, and decision ownership.
 - Optional Gemini enrichment restricted to the deterministic brief; the core workflow operates without an API key.
-
-### Key design decisions
-
-- **Offline deterministic core:** account briefs remain available without network access or model credentials.
-- **AI as enrichment, not source of truth:** Gemini cannot introduce external company claims, contracts, deployments, or financial outcomes.
-- **Decision-oriented output:** each analysis ends in measurable discovery and PoC actions rather than generic company commentary.
-- **Sanitized catalog:** company roles and sales scenarios are generalized and contain no customer or employer information.
-- **Small runtime surface:** FastAPI, Jinja2, Python, optional Gemini, Docker, and four offline tests.
 
 ### Delivery status
 
@@ -196,9 +186,495 @@ The rendered example shows an enterprise NVIDIA GPU-compute motion: three measur
 - Docker deployment definition
 - Architecture and reliability documentation
 - Four offline tests covering core generation and endpoint behavior
-- Legacy DCF, options, market-cache, backup, and diagnostic code removed
 
 **Repository:** [`Semis-Analysis-Web`](https://github.com/daetan999/Semis-Analysis-Web)
+
+---
+
+# Portfolio Build Roadmap
+
+The next four builds are intended to move the portfolio from **technical familiarity** into a complete AI-infrastructure commercial workflow:
+
+> Discover the opportunity → qualify the buying motion → size the requirement → configure a defensible solution → quantify the business case.
+
+These are not completed projects. The specifications below are instructions for the future build process.
+
+## Recommended build order
+
+| Priority | Planned product | Primary seller question answered | Relationship to current portfolio |
+|---|---|---|---|
+| 1 | **Enterprise AI Infrastructure TCO & ROI Workbench** | “Why should the customer fund this change?” | New flagship commercial-value project |
+| 2 | **AI Infrastructure Opportunity & Discovery Workbench** | “Is this a real, winnable infrastructure opportunity?” | Major expansion and eventual replacement of the current Account Intelligence application |
+| 3 | **Enterprise AI Capacity & Commercial Sizing Planner** | “What rough level of infrastructure and commercial scope should we validate?” | New sizing and qualification tool; not a substitute for an SE |
+| 4 | **Enterprise AI Solution Configurator** | “Which solution pattern should we take into a deeper technical workshop?” | New guided configuration and proposal-framing tool |
+
+---
+
+## Planned Project 1 — Enterprise AI Infrastructure TCO & ROI Workbench
+
+**Status:** Planned — not yet implemented  
+**Future repository name:** `ai-infra-tco-workbench`  
+**Portfolio role:** Primary flagship for AI-infrastructure BDR, AE, value-engineering, and commercial internship applications
+
+### Future build instruction
+
+Build a decision-support application that helps an infrastructure seller translate a customer workload and deployment option into an editable, defensible business case.
+
+Do **not** build a vendor marketing calculator that always concludes “buy GPUs.” The seller must be able to change every material assumption, compare scenarios honestly, and explain where the model is weak.
+
+### Intended user
+
+- AI-infrastructure BDR preparing an account hypothesis
+- Account Executive building an initial business case
+- Solutions Consultant or Value Engineer refining assumptions with the customer
+- Technical champion preparing internal approval material
+
+### Core workflow
+
+1. Select workload family:
+   - Model training
+   - Batch inference
+   - Real-time inference
+   - RAG / enterprise search
+   - Vision or media processing
+2. Define current state:
+   - CPU, GPU, cloud, colo, or on-prem environment
+   - Current utilization
+   - Request or token volume
+   - Latency and availability requirements
+   - Growth expectation
+   - Staffing and operational overhead
+3. Define comparison scenarios:
+   - CPU vs GPU
+   - On-demand vs reserved cloud
+   - Hyperscaler vs specialized GPU cloud
+   - Cloud vs owned infrastructure
+   - Current architecture vs optimized serving
+4. Generate a transparent financial model.
+5. Export an executive-ready business case and assumption sheet.
+
+### Required inputs
+
+- Workload type and model size
+- Training frequency or inference volume
+- Average and peak demand
+- Current instance or server configuration
+- Utilization assumption
+- Compute pricing
+- Storage and network costs
+- Power price and estimated power draw
+- Cooling or PUE assumption where relevant
+- Engineering and operating-hours assumption
+- Migration or implementation cost
+- Contract duration and growth rate
+
+### Required outputs
+
+- Three-year and five-year TCO
+- Cost per training run
+- Cost per million tokens or request
+- Cost per productive GPU hour
+- Break-even point
+- Estimated payback period
+- Scenario comparison table
+- Sensitivity analysis for utilization, price, growth, and energy
+- Assumption confidence rating
+- Executive summary written in business language
+- Downloadable CSV and PDF report
+
+### Commercial value the product must demonstrate
+
+- Converts technical architecture into an economic conversation.
+- Identifies which assumptions require customer validation.
+- Helps a seller create a value hypothesis before involving a Value Engineer.
+- Prevents unsupported ROI claims by showing calculation lineage.
+- Produces material a champion could reuse internally.
+
+### Technical implementation guidance
+
+- FastAPI backend with a typed calculation engine
+- React or a polished server-rendered frontend
+- Scenario state stored locally or in SQLite for the public prototype
+- Calculation logic separated from presentation
+- Unit tests for every financial formula
+- Seeded fictional examples for GPU inference, model training, and private AI
+- Optional LLM narrative only after deterministic calculations are complete
+- PDF generation from the structured result, not from free-form model output
+
+### Non-negotiable guardrails
+
+- Never hide assumptions.
+- Never use invented customer pricing as fact.
+- Never claim guaranteed ROI.
+- Clearly distinguish customer inputs, public defaults, and illustrative assumptions.
+- Show when the result is too sensitive or incomplete to support a recommendation.
+
+### Definition of done
+
+- Working web application
+- At least three end-to-end fictional scenarios
+- Transparent formulas and methodology documentation
+- Automated test coverage for calculations
+- Rendered application example in the README
+- Exportable executive report
+- One worked example connecting technical improvements to P&L impact
+
+---
+
+## Planned Project 2 — AI Infrastructure Opportunity & Discovery Workbench
+
+**Status:** Planned expansion — build on, then supersede, the existing Account Intelligence repository  
+**Future repository direction:** Rename or evolve `Semis-Analysis-Web` into `ai-infra-opportunity-intelligence` after the replacement is complete  
+**Portfolio role:** Flagship BDR workflow for account selection, qualification, multithreading, and next-action discipline
+
+### Future build instruction
+
+Do not create a second shallow discovery app. Expand the existing Account Intelligence project into a full opportunity workflow that records evidence, separates hypotheses from verified facts, and scores whether a deal should advance, reshape, or be disqualified.
+
+The current repository already generates account hypotheses, stakeholder roles, discovery questions, objections, and PoC criteria. Preserve those strengths, but replace the static one-shot report with an iterative qualification workspace.
+
+### Intended user
+
+- AI-infrastructure BDR or SDR
+- Account Executive
+- Partner development representative
+- Early-stage Solutions Consultant supporting discovery
+
+### Core workflow
+
+1. Create or select an account.
+2. Record public buying signals and the source of each signal.
+3. Build a workload hypothesis.
+4. Map the buying group.
+5. Record discovery answers and evidence.
+6. Score opportunity quality.
+7. Identify missing stakeholders and unanswered risks.
+8. Recommend the next meeting, technical workshop, PoC, nurture path, or disqualification.
+
+### Required inputs
+
+- Company and industry
+- Geography and account segment
+- Existing cloud, data-center, and accelerator environment where known
+- AI workload and maturity
+- Public signals:
+  - Hiring
+  - Funding or budget announcements
+  - Data-center expansion
+  - AI product launches
+  - Cloud or infrastructure partnerships
+  - Leadership changes
+- Known pain and urgency
+- Existing vendor or competitor
+- Stakeholders contacted
+- Procurement path and decision date
+- Discovery notes with fact / hypothesis labels
+
+### Required outputs
+
+- Account signal timeline
+- Workload and pain hypotheses
+- Qualification score with explainable component scores
+- Economic buyer, technical buyer, champion, user, procurement, and blocker map
+- Missing-contact and single-threading warnings
+- Discovery question plan by persona
+- Competition and status-quo map
+- Value hypothesis
+- Deal risks
+- Recommended next meeting agenda
+- PoC readiness decision
+- Advance / reshape / nurture / disqualify recommendation
+
+### Qualification model
+
+Implement an explainable framework influenced by MEDDPICC without copying it mechanically. Score:
+
+- Measurable pain
+- Business impact
+- Technical fit
+- Urgency
+- Executive sponsorship
+- Champion strength
+- Buying-process clarity
+- Procurement friction
+- Competitive position
+- Access to technical evidence
+
+The score must show why it changed and which missing evidence would materially improve confidence.
+
+### Commercial value the product must demonstrate
+
+- Forces evidence-based qualification instead of activity-based optimism.
+- Identifies single-threaded deals early.
+- Helps a BDR hand over a structured opportunity rather than a meeting with no context.
+- Improves meeting preparation and stakeholder-specific discovery.
+- Encourages explicit disqualification of weak deals.
+
+### Technical implementation guidance
+
+- Preserve FastAPI and the deterministic-generation approach from the current application.
+- Add a persistent account and opportunity data model.
+- Add source URLs, timestamps, and fact / inference labels.
+- Add an event timeline and editable stakeholder map.
+- Add deterministic scoring before any model-generated narrative.
+- Use Gemini only to organize supplied facts, suggest questions, or challenge weak assumptions.
+- Add exportable account brief and handoff report.
+- Include synthetic accounts rather than scraped claims presented as current truth.
+
+### Non-negotiable guardrails
+
+- Never imply that public signals prove buying intent.
+- Never fabricate contacts, budgets, contracts, or deployments.
+- Clearly distinguish verified information, user-provided information, and generated hypotheses.
+- The opportunity score must be explainable and editable.
+- High activity must not equal high opportunity quality.
+
+### Definition of done
+
+- Existing Account Intelligence functionality preserved or improved
+- Persistent account workspace
+- Evidence-labelled discovery records
+- Explainable qualification model
+- Buying-group coverage visualization
+- Advance / reshape / disqualify logic
+- Exportable BDR-to-AE handoff report
+- Offline tests and rendered workflow example
+- Old repository name changed only after the new product is complete and stable
+
+---
+
+## Planned Project 3 — Enterprise AI Capacity & Commercial Sizing Planner
+
+**Status:** Planned — not yet implemented  
+**Future repository name:** `ai-infra-capacity-planner`  
+**Portfolio role:** Demonstrates enough technical fluency to frame opportunity size and ask better questions before formal SE sizing
+
+### Future build instruction
+
+Build a first-pass sizing and discovery tool for sellers. It must estimate a **range**, expose assumptions, and generate validation questions. It must not pretend to replace benchmark testing, a Solutions Engineer, or a vendor sizing engagement.
+
+### Intended user
+
+- BDR qualifying whether the workload is meaningful
+- AE preparing an initial deal-size hypothesis
+- Solutions Consultant preparing for a sizing workshop
+- Customer champion gathering initial requirements
+
+### Supported workload modes
+
+- LLM training
+- LLM inference
+- RAG inference
+- Vision inference
+- Batch analytics or HPC
+
+### Required inputs
+
+- Model family and parameter size
+- Precision or quantization assumption
+- Context length
+- Average input and output tokens
+- Requests per second or tokens per day
+- Concurrency
+- Peak-to-average ratio
+- Latency target
+- Availability target
+- Training dataset size and target completion window where relevant
+- Storage volume and growth
+- Data-ingress and egress assumptions
+- Region or deployment pattern
+- Target utilization range
+
+### Required outputs
+
+- Indicative accelerator range
+- CPU and memory range
+- Storage-capacity and throughput range
+- Network bandwidth and fabric considerations
+- Rack and power range where applicable
+- Monthly compute-cost range
+- Expected utilization range
+- Primary bottleneck hypothesis
+- Confidence score based on input completeness
+- Assumptions requiring benchmark validation
+- Recommended next technical questions
+- Suggested PoC workload and measurement plan
+
+### Commercial value the product must demonstrate
+
+- Helps sellers identify whether an opportunity is small, strategic, or materially under-specified.
+- Prevents premature pricing based on one headline metric.
+- Gives the SE a cleaner requirements handoff.
+- Identifies missing workload details before a customer workshop.
+- Creates a commercial range without representing it as a final quote or bill of materials.
+
+### Technical implementation guidance
+
+- Deterministic sizing formulas with documented sources and assumptions
+- Pluggable accelerator profiles rather than vendor claims embedded throughout the code
+- Scenario ranges rather than false precision
+- Sensitivity controls for utilization, quantization, batching, latency, and growth
+- Clear distinction between theoretical throughput and derated production throughput
+- Unit and property-based tests for calculation boundaries
+- Rendered examples for one training and two inference scenarios
+
+### Non-negotiable guardrails
+
+- No definitive hardware recommendation without benchmark evidence.
+- No single-number output where a range is more honest.
+- Do not use live vendor pricing without timestamp and source.
+- Mark all defaults as illustrative.
+- Always generate questions for the missing variables with the greatest sizing impact.
+
+### Definition of done
+
+- Three workload modes functional at minimum
+- Range-based sizing model
+- Input completeness and confidence system
+- Scenario comparison
+- Technical handoff report
+- Automated tests
+- Documented calculation methodology
+- Rendered UI and worked examples
+
+---
+
+## Planned Project 4 — Enterprise AI Solution Configurator
+
+**Status:** Planned — not yet implemented  
+**Future repository name:** `ai-infra-solution-configurator`  
+**Portfolio role:** Demonstrates solution framing and customer communication without claiming authority to replace an architect
+
+### Future build instruction
+
+Build a guided configurator that turns customer requirements into a recommended **solution pattern**, discovery gaps, implementation considerations, and workshop agenda.
+
+Do not produce a fake final architecture or vendor bill of materials from five dropdowns. The product should narrow the solution space and prepare a deeper technical engagement.
+
+### Intended user
+
+- AI-infrastructure BDR preparing an informed handoff
+- AE framing a solution workshop
+- Solutions Consultant comparing deployment patterns
+- Customer champion documenting requirements
+
+### Required inputs
+
+- Workload family
+- Data sensitivity and residency
+- Existing cloud and on-prem estate
+- Preferred operating model
+- Scale and growth expectation
+- Latency and availability requirement
+- Networking and storage constraints
+- Security and compliance requirements
+- Skills and support model
+- Budget model: CapEx, OpEx, or hybrid
+- Deployment deadline
+- Vendor preferences or restrictions
+
+### Solution patterns to support
+
+- Public-cloud managed AI
+- Specialized GPU cloud
+- On-prem private AI
+- Colocation / hosted private cluster
+- Hybrid cloud
+- Multi-cloud inference
+
+### Required outputs
+
+- Recommended primary solution pattern
+- One alternative pattern and trade-off comparison
+- High-level component map:
+  - Compute
+  - Scheduler or orchestration
+  - Networking
+  - Storage
+  - Model serving
+  - Observability
+  - Security and identity
+  - Data connectivity
+- Architecture diagram in SVG
+- Key design assumptions
+- Integration dependencies
+- Migration considerations
+- Delivery and operating risks
+- Required specialist roles
+- Questions for the next technical workshop
+- Inputs that must flow into capacity planning and TCO analysis
+
+### Commercial value the product must demonstrate
+
+- Converts vague customer requirements into a structured technical workshop.
+- Helps the seller communicate trade-offs instead of leading with a product list.
+- Identifies blockers involving security, data, facilities, integration, and operating ownership.
+- Creates a clean bridge into the Capacity Planner and TCO Workbench.
+- Produces proposal-ready visuals without representing them as approved production architecture.
+
+### Technical implementation guidance
+
+- Rule-based recommendation engine before any LLM explanation
+- Versioned solution-pattern catalog
+- Diagram-as-code output with editable components
+- Trade-off matrix across cost, control, speed, portability, and operating burden
+- Exportable SVG and structured solution brief
+- Integrate with saved scenarios from the future Capacity Planner and TCO Workbench
+- Add tests for conflicting requirements and invalid combinations
+
+### Non-negotiable guardrails
+
+- Label every architecture as conceptual and subject to specialist validation.
+- Never invent compatibility, certification, or SLA claims.
+- Show trade-offs and alternative options.
+- Do not collapse security, networking, storage, and facilities into generic boxes.
+- The configurator must generate follow-up questions when the inputs do not support a defensible recommendation.
+
+### Definition of done
+
+- At least five solution patterns implemented
+- Deterministic recommendation and trade-off logic
+- Professional editable SVG output
+- Exportable solution brief
+- Integration contract for TCO and capacity inputs
+- Automated tests for recommendation rules
+- Rendered examples across cloud, private AI, and hybrid scenarios
+
+---
+
+## Future Portfolio Integration
+
+The four planned products should eventually operate as one connected commercial workflow:
+
+```mermaid
+flowchart LR
+    A[Opportunity & Discovery Workbench] --> B[Capacity & Commercial Sizing Planner]
+    B --> C[Enterprise AI Solution Configurator]
+    C --> D[TCO & ROI Workbench]
+    D --> E[Executive Business Case]
+    E --> F{Decision}
+    F -->|Advance| G[Technical workshop / PoC]
+    F -->|Reshape| A
+    F -->|Disqualify| H[Close or nurture]
+```
+
+### Shared data model to plan for
+
+Future projects should use compatible scenario fields so that data can move between them:
+
+- Account and opportunity ID
+- Workload definition
+- Current-state environment
+- Volume and growth
+- Service-level targets
+- Stakeholders and decision process
+- Capacity assumptions
+- Solution pattern
+- Cost assumptions
+- PoC criteria
+- Evidence and confidence labels
+
+Do not force integration during the first MVP. Each application must work independently first. Standardize the data contract only after the individual calculation and workflow logic is reliable.
 
 ---
 
@@ -220,7 +696,8 @@ These documents use fictional or sanitized assumptions and show the evaluation p
 - Public code focuses on interfaces, controls, configuration, and deployment patterns.
 - Synthetic examples replace production data and identifiers.
 - Redacted proprietary components are marked as stubs rather than represented as complete implementations.
-- Each project distinguishes implemented, illustrative, modeled, and proposed components.
+- Each project distinguishes implemented, illustrative, modeled, planned, and proposed components.
+- A planned project must not be promoted into the current flagship table until it has working code, tests, documentation, and a rendered example.
 
 ---
 
