@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Enterprise AI infrastructure portfolio system map</title>
+  <desc id="desc">Three technical foundation blueprints feed a four-stage commercial workflow from opportunity discovery through capacity sizing, solution configuration, and TCO and ROI analysis, ending in a qualified decision.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07111f"/><stop offset="1" stop-color="#0d1b2d"/>
+    </linearGradient>
+    <linearGradient id="result" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#123b46"/><stop offset="1" stop-color="#173f35"/>
+    </linearGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#58c4b8"/>
+    </marker>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#02070d" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+  <rect width="1600" height="900" rx="28" fill="url(#bg)"/>
+  <path d="M0 112 H1600" stroke="#24364a"/>
+  <text x="64" y="56" fill="#f5f8fb" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="28" font-weight="700">Enterprise AI Infrastructure Portfolio</text>
+  <text x="64" y="88" fill="#91a4b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="17">Technical understanding → commercial qualification → infrastructure decision</text>
+  <text x="64" y="148" fill="#58c4b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="15" font-weight="700" letter-spacing="2.4">LAYER A · TECHNICAL FOUNDATION</text>
+  <g filter="url(#shadow)">
+    <rect x="64" y="172" width="450" height="178" rx="18" fill="#111f31" stroke="#31506b"/>
+    <rect x="575" y="172" width="450" height="178" rx="18" fill="#111f31" stroke="#31506b"/>
+    <rect x="1086" y="172" width="450" height="178" rx="18" fill="#111f31" stroke="#31506b"/>
+  </g>
+  <rect x="64" y="172" width="7" height="178" rx="4" fill="#5b8def"/>
+  <text x="92" y="212" fill="#8fb4ff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="14" font-weight="700" letter-spacing="1.6">INFRASTRUCTURE</text>
+  <text x="92" y="249" fill="#f4f7fa" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="23" font-weight="700">Enterprise MLOps Platform</text>
+  <text x="92" y="282" fill="#b3c0ce" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="16">GPU serving · model lifecycle · drift</text>
+  <text x="92" y="311" fill="#b3c0ce" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="16">workload behavior · serving economics</text>
+  <rect x="575" y="172" width="7" height="178" rx="4" fill="#53a7d8"/>
+  <text x="603" y="212" fill="#7bc8f4" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="14" font-weight="700" letter-spacing="1.6">GOVERNED CLOUD</text>
+  <text x="603" y="249" fill="#f4f7fa" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="23" font-weight="700">GCP Data &amp; Intelligence</text>
+  <text x="603" y="282" fill="#b3c0ce" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="16">BigQuery · serverless services · IAM</text>
+  <text x="603" y="311" fill="#b3c0ce" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="16">migration · reliability · operations</text>
+  <rect x="1086" y="172" width="7" height="178" rx="4" fill="#9a7ce0"/>
+  <text x="1114" y="212" fill="#bca5f5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="14" font-weight="700" letter-spacing="1.6">AI APPLICATION</text>
+  <text x="1114" y="249" fill="#f4f7fa" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="23" font-weight="700">Agentic FP&amp;A Analytics</text>
+  <text x="1114" y="282" fill="#b3c0ce" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="16">governed data · query controls · KPIs</text>
+  <text x="1114" y="311" fill="#b3c0ce" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="16">model boundary · application risk</text>
+  <path d="M289 350 V389 H800" fill="none" stroke="#3c6d78" stroke-width="2"/>
+  <path d="M800 350 V404" fill="none" stroke="#3c6d78" stroke-width="2"/>
+  <path d="M1311 350 V389 H800" fill="none" stroke="#3c6d78" stroke-width="2"/>
+  <path d="M800 404 V448" fill="none" stroke="#58c4b8" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="824" y="422" fill="#7dd8cf" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="14">credible technical discovery</text>
+  <text x="64" y="464" fill="#58c4b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="15" font-weight="700" letter-spacing="2.4">LAYER B · COMMERCIAL OPPORTUNITY WORKFLOW</text>
+  <g filter="url(#shadow)">
+    <rect x="64" y="490" width="334" height="176" rx="18" fill="#132535" stroke="#2e6570"/>
+    <rect x="443" y="490" width="334" height="176" rx="18" fill="#132535" stroke="#2e6570"/>
+    <rect x="822" y="490" width="334" height="176" rx="18" fill="#132535" stroke="#2e6570"/>
+    <rect x="1201" y="490" width="334" height="176" rx="18" fill="#132535" stroke="#2e6570"/>
+  </g>
+  <circle cx="96" cy="524" r="17" fill="#1e6d72"/><text x="96" y="530" text-anchor="middle" fill="#fff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="16" font-weight="700">1</text>
+  <text x="124" y="529" fill="#74ddd1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="14" font-weight="700" letter-spacing="1.2">DISCOVER &amp; QUALIFY</text>
+  <text x="88" y="568" fill="#f4f7fa" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="21" font-weight="700">Opportunity Workbench</text>
+  <text x="88" y="600" fill="#b6c4d1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="15">signals · stakeholders · evidence</text>
+  <text x="88" y="628" fill="#b6c4d1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="15">score · risk · PoC readiness</text>
+  <circle cx="475" cy="524" r="17" fill="#1e6d72"/><text x="475" y="530" text-anchor="middle" fill="#fff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="16" font-weight="700">2</text>
+  <text x="503" y="529" fill="#74ddd1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="14" font-weight="700" letter-spacing="1.2">SIZE THE RANGE</text>
+  <text x="467" y="568" fill="#f4f7fa" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="21" font-weight="700">Capacity Planner</text>
+  <text x="467" y="600" fill="#b6c4d1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="15">compute · memory · storage · network</text>
+  <text x="467" y="628" fill="#b6c4d1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="15">confidence · sensitivity · PoC</text>
+  <circle cx="854" cy="524" r="17" fill="#1e6d72"/><text x="854" y="530" text-anchor="middle" fill="#fff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="16" font-weight="700">3</text>
+  <text x="882" y="529" fill="#74ddd1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="14" font-weight="700" letter-spacing="1.2">CONFIGURE</text>
+  <text x="846" y="568" fill="#f4f7fa" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="21" font-weight="700">Solution Configurator</text>
+  <text x="846" y="600" fill="#b6c4d1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="15">requirements · rules · alternatives</text>
+  <text x="846" y="628" fill="#b6c4d1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="15">risks · validation · architecture</text>
+  <circle cx="1233" cy="524" r="17" fill="#1e6d72"/><text x="1233" y="530" text-anchor="middle" fill="#fff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="16" font-weight="700">4</text>
+  <text x="1261" y="529" fill="#74ddd1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="14" font-weight="700" letter-spacing="1.2">QUANTIFY VALUE</text>
+  <text x="1225" y="568" fill="#f4f7fa" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="21" font-weight="700">TCO &amp; ROI Workbench</text>
+  <text x="1225" y="600" fill="#b6c4d1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="15">TCO · unit economics · payback</text>
+  <text x="1225" y="628" fill="#b6c4d1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="15">sensitivity · lineage · report</text>
+  <path d="M398 578 H435" stroke="#58c4b8" stroke-width="3" marker-end="url(#arrow)"/>
+  <path d="M777 578 H814" stroke="#58c4b8" stroke-width="3" marker-end="url(#arrow)"/>
+  <path d="M1156 578 H1193" stroke="#58c4b8" stroke-width="3" marker-end="url(#arrow)"/>
+  <path d="M1368 666 V710 H800 V736" fill="none" stroke="#58c4b8" stroke-width="3" marker-end="url(#arrow)"/>
+  <rect x="374" y="744" width="852" height="112" rx="22" fill="url(#result)" stroke="#4fb3a8" filter="url(#shadow)"/>
+  <text x="800" y="790" text-anchor="middle" fill="#fff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="25" font-weight="700">Qualified Enterprise AI Infrastructure Decision</text>
+  <text x="800" y="825" text-anchor="middle" fill="#aee8df" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="17">advance · reshape · nurture · disqualify</text>
+</svg>

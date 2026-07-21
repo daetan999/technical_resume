@@ -6,6 +6,8 @@
 > illustrations; the method is the real one.** This is what a first-call-to-business-case
 > looks like when a sales engineer runs it.
 
+For an implemented deterministic calculator, sensitivity model, lineage view, and executive export, see the [Enterprise AI Infrastructure TCO & ROI Workbench](https://github.com/daetan999/ai-infra-tco-workbench) and its [fictional sample report](https://github.com/daetan999/ai-infra-tco-workbench/blob/product-build/docs/examples/fictional-cpu-to-gpu-business-case.pdf).
+
 ---
 
 ## The prospect (discovery snapshot)
@@ -91,3 +93,7 @@ procurement.
 *Every figure above is an illustrative, portfolio-level construction for a fictional
 prospect — no client data. The mechanism (utilization → GPU count → annual spend, with
 p99 held) is the transferable part.*
+
+---
+
+[Back to the Enterprise AI Infrastructure Portfolio](../README.md)

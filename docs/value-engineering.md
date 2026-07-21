@@ -10,6 +10,8 @@ This is the artifact most engineering portfolios are missing and most sales
 portfolios can't back up. I can do both halves: architect the system **and** build
 the economic case that funds it.
 
+The implemented workflow is split across the [Opportunity & Discovery Workbench](https://github.com/daetan999/ai-infra-opportunity-workbench), [Capacity Planner](https://github.com/daetan999/ai-infra-capacity-planner), [Solution Configurator](https://github.com/daetan999/ai-infra-solution-configurator), and [TCO & ROI Workbench](https://github.com/daetan999/ai-infra-tco-workbench). Each uses fictional demonstrations and exposes the assumptions that still require customer validation.
+
 ---
 
 ## The core move: the FinOps win and the SLA win are the same move
@@ -128,3 +130,7 @@ sanitized architectural blueprints. Client identifiers, internal codenames, data
 endpoints, and credentials are removed or mocked throughout. The **mechanism** —
 how a latency or utilization metric becomes a P&L line — is what's real and portable,
 and it's the part that matters in a sales-engineering conversation.
+
+---
+
+[Back to the Enterprise AI Infrastructure Portfolio](../README.md)
