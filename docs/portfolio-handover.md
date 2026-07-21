@@ -162,6 +162,7 @@ The technical-foundation repositories use sanitized contracts and synthetic fixt
 - [Enterprise MLOps Platform PR #1](https://github.com/daetan999/mlops-hosp/pull/1)
 - [GCP Data & Intelligence Platform PR #1](https://github.com/daetan999/gcp-data-platform-blueprint/pull/1)
 - [Agentic FP&A Analytics PR #1](https://github.com/daetan999/adk-fpa-agent-blueprint/pull/1)
+- [Portfolio landing page PR #1](https://github.com/daetan999/technical_resume/pull/1)
 
 ## Remaining Limitations
 
