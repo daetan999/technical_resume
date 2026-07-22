@@ -1,136 +1,104 @@
-# Value Engineering — From GPU Metrics to the P&L
+# Value Engineering for AI Infrastructure
 
-> An AI-infrastructure deal does not close on features. It closes on a **TCO model a
-> CFO believes** and a **PoC success criterion an engineering lead trusts**. This
-> document is the repeatable motion I use to turn a technical win into a signed
-> business case — the same motion behind the sanitized platform blueprints in this
-> portfolio, and the ~$700K of B2B revenue on my résumé.
+AI infrastructure value engineering connects a technical change to a reviewable business hypothesis. It does not begin with a savings claim. It begins with a workload, a baseline, an operating constraint, and evidence that can be tested.
 
-This is the artifact most engineering portfolios are missing and most sales
-portfolios can't back up. I can do both halves: architect the system **and** build
-the economic case that funds it.
+This method supports collaboration among customer stakeholders, Account Executives, Solutions Engineers, infrastructure teams, finance, and procurement. Formal benchmark, architecture, pricing, security, and finance reviews remain approval gates.
 
-The implemented workflow is split across the [Opportunity & Discovery Workbench](https://github.com/daetan999/ai-infra-opportunity-workbench), [Capacity Planner](https://github.com/daetan999/ai-infra-capacity-planner), [Solution Configurator](https://github.com/daetan999/ai-infra-solution-configurator), and [TCO & ROI Workbench](https://github.com/daetan999/ai-infra-tco-workbench). Each uses fictional demonstrations and exposes the assumptions that still require customer validation.
+## 1. Define the Decision
 
----
+Start with the decision the customer must make, not the product to be positioned.
 
-## The core move: the FinOps win and the SLA win are the same move
+Examples:
 
-![GPU FinOps serving economics — consolidating a single-tenant CPU fleet onto a shared, dynamically batched GPU cluster cuts hosting cost 58% while holding a sub-150ms p99 SLA](assets/gpu-finops-tco.svg)
+- Should a real-time inference workload move from dedicated instances to a shared serving pattern?
+- Should a private RAG service run in one cloud, a hybrid environment, or owned infrastructure?
+- Is the current platform constraint compute, memory, storage, network, data quality, or operating process?
+- What evidence is required before a pilot can progress to production review?
 
-The most persuasive infra business case is the one where the cost argument and the
-performance argument point the same direction. Consolidating 100+ single-tenant CPU
-pods (idle ~95% of the time) onto a shared, dynamically batched GPU cluster does
-exactly that:
+A useful decision statement names the workload, current constraint, candidate change, required reviewers, and decision date.
 
-- **Utilization** climbs from ~5% to 80%+ because dynamic batching packs bursty,
-  low-QPS requests into dense GPU work.
-- **Unit cost per inference falls** because one cluster now serves what a linear CPU
-  fleet used to — **−58% hosting spend, ≈ −$240K/year**.
-- **Throughput headroom rises** at the same time — **10× volume spikes absorbed**,
-  **p99 held < 150 ms**.
+## 2. Establish the Baseline
 
-That is the whole pitch in one diagram: *you are not trading cost for latency — you
-are buying both with the same architectural decision.*
+The baseline must be measurable and time-bounded. Capture both infrastructure and operating inputs.
 
----
+| Area | Baseline evidence |
+|---|---|
+| Demand | average and peak requests, tokens, jobs, or training runs; growth pattern; seasonality |
+| Service level | latency distribution, throughput, availability, recovery objectives, failure cost |
+| Compute | instance or accelerator type, count, utilization, precision, batching, concurrency |
+| Data | governed dataset size, growth, retrieval pattern, freshness, residency, retention |
+| Network and storage | bandwidth, east-west traffic, replication, IOPS, data movement, egress |
+| Operations | engineering hours, release frequency, incident load, manual controls, support model |
+| Commercial | contract term, price source and date, energy or facility assumptions, cost allocation |
 
-## The five economic transmission paths
+Record the owner, source, date, and confidence for each material input. An unknown should remain visible rather than being replaced by a precise-looking estimate.
 
-Enterprise ML programs fail when technical metrics never reach a financial statement.
-Every model KPI in the platform blueprint is wired to a specific P&L line — this is
-the table I put in front of a CFO:
+## 3. Build the Technical Hypothesis
 
-| # | Technical signal | Economic mechanism | P&L outcome |
-|---|---|---|---|
-| 1 | Forecast error (MAPE) **12.5% → 4.5%** | Prices the last ~20% of inventory correctly — captures surge margin, avoids empty-room loss | **+4.2% RevPAR → +$4.8M** annualized profit |
-| 2 | LSTM meter-anomaly detection | Flags overnight leaks in 30 min; shifts HVAC load off peak tariffs | **−14% utility waste → −$1.8M** OpEx |
-| 3 | Weibull MTTF early-warning | Swaps a **$500 bearing** off-peak instead of a **$120K** seized compressor | **−42% catastrophic downtime → −$1.5M** deferred CapEx |
-| 4 | Triton shared-GPU + batching | Replaces a linear CPU fleet with one dense cluster | **−58% cloud hosting → −$240K/yr** |
-| 5 | Fine-tuned BERT ticket routing | Cuts MTTR **35 → 8 min**; protects guest lifetime value | **+3% repeat bookings** |
+Translate the baseline into a proposed change and a mechanism.
 
-Each row is a sentence a non-technical buyer can repeat to *their* boss. That is the
-test a value hypothesis has to pass.
+| Technical signal | Possible mechanism | Business hypothesis |
+|---|---|---|
+| Low accelerator utilization | batching, pooling, scheduling, or workload consolidation | lower unit cost or deferred capacity purchase |
+| Latency at peak | serving topology, model optimization, memory fit, or network changes | protected service level and fewer failed transactions |
+| Long environment lead time | reusable platform controls and automation | faster deployment and lower operating effort |
+| High data movement | placement, caching, or retrieval redesign | lower egress cost and more predictable performance |
+| Frequent manual incidents | observability, drift controls, rollback, or policy automation | lower support load and operational risk |
 
----
+These are hypotheses, not results. Each must identify what could disprove it.
 
-## The value-based selling motion
+## 4. Size a Range, Then Design the Validation
 
-How I run a technical deal, start to finish:
+Early sizing should produce a range with sensitivity, not a single authoritative number. Show which inputs drive the result and what the next technical review must validate.
 
-1. **Discover the economic buyer's metric.** Not "what's your stack" — *"what number
-   on your P&L are you measured on this year, and what's blocking it?"* RevPAR, cloud
-   spend, downtime, cycle time. Everything downstream anchors here.
-2. **Form a value hypothesis.** One quantified sentence: *"If we cut inference cost
-   58%, that's ≈$240K/yr back, and the freed GPU headroom lets you 10× traffic
-   without re-architecting."* Wrong-but-specific beats vague-but-safe — it gives the
-   customer something to correct, which is how you learn their real numbers.
-3. **Scope a PoC around a falsifiable success criterion.** Not "try it out" — *"p99
-   under 150 ms at 10× current QPS on a single T4 pool, measured over 72 hours."* If
-   it can't fail, it can't sell.
-4. **Build the TCO model with the customer's inputs.** Their instance types, their
-   utilization, their growth curve. The model is co-authored, so the number is theirs
-   to defend internally, not mine to argue.
-5. **Translate to the P&L and hand over the one-liner.** The champion needs a
-   sentence for the CFO, not a benchmark chart. See the transmission table above.
-6. **Design for the expansion.** The first workload is a wedge; the architecture
-   (shared cluster, feature store, drift-triggered retraining) is what makes the
-   second and third workloads land-and-expand instead of net-new sells.
+A falsifiable validation plan includes:
 
----
+- the customer's representative workload or trace;
+- the baseline and proposed configurations;
+- measurement method and observation window;
+- pass and fail thresholds for throughput, latency, quality, reliability, and unit cost;
+- security, data-governance, and operational constraints;
+- owners for the benchmark, architecture review, and commercial inputs.
 
-## Discovery → quantification: the question bank
+If the test cannot fail, it cannot support a defensible decision.
 
-The questions that turn a demo into a business case, grouped by value lever:
+## 5. Build the Financial Model
 
-**GPU / compute economics**
-- What's your current GPU (or CPU) utilization at steady state vs. peak?
-- How many models/tenants run on dedicated vs. shared infrastructure today?
-- What does an idle-capacity hour cost you, and how bursty is your traffic?
+Use the same scenario version for the technical and financial views. Keep formulas, rounding, price sources, time horizon, and evidence confidence visible.
 
-**Performance / SLA**
-- What's your p99 latency target, and what breaks downstream when you miss it?
-- What's the revenue or churn cost of a timeout on the critical path?
+Core outputs may include:
 
-**Reliability / operations**
-- How many engineer-hours/month go to manual model maintenance and firefighting?
-- What's your time-to-market for a new model or a new tenant today?
+- three- or five-year total cost of ownership;
+- cost per 1,000 requests, token, job, model, or customer workload;
+- capacity headroom and the cost of growth;
+- implementation and migration cost;
+- operating-effort change;
+- net value, ROI, payback, and break-even;
+- sensitivity to demand, utilization, pricing, labor, and implementation cost.
 
-**Data / freshness**
-- How stale is the data feeding your live decisions, and what does staleness cost?
+Never treat avoided cost, productivity capacity, and realized cash savings as interchangeable. State where value appears, who owns the assumption, and what must occur for it to be realized.
 
-Each answer maps to a row in the TCO model. No answer, no quantified case — so I ask
-before I pitch.
+## 6. Make Confidence Part of the Output
 
----
+The business case should weaken when its evidence weakens. A simple confidence model can distinguish:
 
-## The TCO model skeleton
+- **Observed:** measured from an approved source over a relevant period.
+- **Contracted:** supported by a current quote, agreement, or policy.
+- **Estimated:** agreed by a named stakeholder but not yet measured.
+- **Illustrative:** inserted only to show model behavior.
 
-The reusable levers I quantify for an inference-serving business case:
+Sensitivity explains how a result changes. Confidence explains how much trust to place in the inputs. A credible decision needs both.
 
-| Lever | Before (baseline) | After (proposed) | Where the money moves |
-|---|---|---|---|
-| Compute footprint | 1 instance / tenant, idle ~95% | Shared batched cluster | Fewer instances, higher density |
-| Utilization | ~5% | 80%+ | Same spend buys far more inference |
-| Unit cost / inference | high (idle-dominated) | low (amortized) | Direct hosting-line reduction |
-| Scaling cost curve | linear with tenants | sub-linear (headroom) | Deferred capacity CapEx |
-| Ops load | manual, reactive | drift-triggered automation | −85% maintenance hours |
-| SLA risk | timeouts → lost revenue | p99 < 150 ms held | Protected top-line |
+## Review Handoff
 
-The output is a single annualized number with the mechanism attached — because
-*"−$240K/year because utilization went 5%→80% via batching"* survives scrutiny, and
-*"we'll save money"* does not.
+| Review | Question | Required output |
+|---|---|---|
+| Account and discovery | Is the problem real, material, and sponsored? | evidence, stakeholders, risks, next action |
+| Solutions engineering | Is the workload understood well enough to test? | sizing range, bottleneck hypothesis, validation plan |
+| Architecture and security | Does the proposed pattern satisfy technical and control requirements? | alternatives, risks, required gates |
+| Finance and procurement | Are cost, value, term, and sensitivity defensible? | assumptions, sources, model lineage, decision range |
+| Executive sponsor | What decision is requested, and what remains uncertain? | concise recommendation with conditions |
 
----
+The outcome may be to advance, reshape, nurture, or disqualify. Value engineering improves the quality of that decision; it does not guarantee a sale.
 
-## A note on the figures
-
-Every number here is an **aggregated, portfolio-level, illustrative** outcome from
-sanitized architectural blueprints. Client identifiers, internal codenames, datasets,
-endpoints, and credentials are removed or mocked throughout. The **mechanism** —
-how a latency or utilization metric becomes a P&L line — is what's real and portable,
-and it's the part that matters in a sales-engineering conversation.
-
----
-
-[Back to the Enterprise AI Infrastructure Portfolio](../README.md)
+[Open the deterministic TCO workbench](https://github.com/daetan999/ai-infra-tco-workbench) · [Back to the portfolio](../README.md)

@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1280" role="img" aria-labelledby="title desc">
+  <title id="title">Commercial and technical decision handoff</title>
+  <desc id="desc">A vertical workflow shows technical foundations feeding discovery, capacity planning, solution framing, and value engineering, with a review gate before a qualified decision.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07111f"/>
+      <stop offset="1" stop-color="#10243a"/>
+    </linearGradient>
+    <linearGradient id="decision" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#133d47"/>
+      <stop offset="1" stop-color="#173f35"/>
+    </linearGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#62d2c6"/>
+    </marker>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="7" stdDeviation="9" flood-color="#02070d" flood-opacity="0.42"/>
+    </filter>
+    <style>
+      .text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif; }
+      .title { fill: #f6f9fc; font-size: 34px; font-weight: 750; }
+      .subtitle { fill: #9fb1c3; font-size: 20px; }
+      .eyebrow { fill: #72ddd2; font-size: 16px; font-weight: 750; letter-spacing: 1.6px; }
+      .card-title { fill: #f6f9fc; font-size: 26px; font-weight: 700; }
+      .body { fill: #c6d1dc; font-size: 20px; }
+      .handoff { fill: #8fa3b7; font-size: 19px; }
+      .chip { fill: #dce8f5; font-size: 17px; font-weight: 650; }
+    </style>
+  </defs>
+
+  <rect width="900" height="1280" rx="30" fill="url(#background)"/>
+  <text class="text title" x="54" y="68">From customer question to qualified decision</text>
+  <text class="text subtitle" x="54" y="103">Each stage creates evidence for the next team, review, or decision.</text>
+
+  <g filter="url(#shadow)">
+    <rect x="48" y="139" width="804" height="152" rx="22" fill="#101f31" stroke="#31506b"/>
+  </g>
+  <text class="text eyebrow" x="78" y="173">TECHNICAL FOUNDATION</text>
+  <text class="text card-title" x="78" y="210">Know what must be discovered</text>
+  <rect x="78" y="231" width="208" height="34" rx="17" fill="#223b59"/>
+  <rect x="302" y="231" width="230" height="34" rx="17" fill="#1d4655"/>
+  <rect x="548" y="231" width="267" height="34" rx="17" fill="#3e355f"/>
+  <text class="text chip" x="182" y="254" text-anchor="middle">MLOps &amp; GPU serving</text>
+  <text class="text chip" x="417" y="254" text-anchor="middle">Governed cloud &amp; data</text>
+  <text class="text chip" x="682" y="254" text-anchor="middle">Controlled enterprise AI</text>
+
+  <path d="M450 291 V332" stroke="#62d2c6" stroke-width="4" marker-end="url(#arrow)"/>
+
+  <g filter="url(#shadow)">
+    <rect x="48" y="342" width="804" height="154" rx="22" fill="#122737" stroke="#34716f"/>
+    <rect x="48" y="529" width="804" height="154" rx="22" fill="#122737" stroke="#34716f"/>
+    <rect x="48" y="716" width="804" height="154" rx="22" fill="#122737" stroke="#34716f"/>
+    <rect x="48" y="903" width="804" height="154" rx="22" fill="#122737" stroke="#34716f"/>
+  </g>
+
+  <circle cx="91" cy="383" r="22" fill="#17645f"/>
+  <text class="text card-title" x="91" y="391" text-anchor="middle">1</text>
+  <text class="text eyebrow" x="128" y="374">DISCOVER &amp; QUALIFY</text>
+  <text class="text card-title" x="128" y="407">Is there an evidenced problem worth solving?</text>
+  <text class="text body" x="78" y="444">Pain · business impact · stakeholders · urgency · technical unknowns</text>
+  <text class="text handoff" x="78" y="475">Handoff: workload hypothesis, evidence gaps, risks, next action</text>
+
+  <path d="M450 496 V519" stroke="#62d2c6" stroke-width="4" marker-end="url(#arrow)"/>
+
+  <circle cx="91" cy="570" r="22" fill="#17645f"/>
+  <text class="text card-title" x="91" y="578" text-anchor="middle">2</text>
+  <text class="text eyebrow" x="128" y="561">ESTIMATE CAPACITY</text>
+  <text class="text card-title" x="128" y="594">What range should a benchmark validate?</text>
+  <text class="text body" x="78" y="631">Compute · memory · storage · network · growth · sensitivity</text>
+  <text class="text handoff" x="78" y="662">Handoff: indicative range, assumptions, bottleneck, PoC measurements</text>
+
+  <path d="M450 683 V706" stroke="#62d2c6" stroke-width="4" marker-end="url(#arrow)"/>
+
+  <circle cx="91" cy="757" r="22" fill="#17645f"/>
+  <text class="text card-title" x="91" y="765" text-anchor="middle">3</text>
+  <text class="text eyebrow" x="128" y="748">FRAME THE SOLUTION</text>
+  <text class="text card-title" x="128" y="781">Which pattern fits, and what could invalidate it?</text>
+  <text class="text body" x="78" y="818">Requirements · rationale · alternatives · risks · validation gates</text>
+  <text class="text handoff" x="78" y="849">Handoff: architecture hypothesis for SE, security, and benchmark review</text>
+
+  <path d="M450 870 V893" stroke="#62d2c6" stroke-width="4" marker-end="url(#arrow)"/>
+
+  <circle cx="91" cy="944" r="22" fill="#17645f"/>
+  <text class="text card-title" x="91" y="952" text-anchor="middle">4</text>
+  <text class="text eyebrow" x="128" y="935">QUANTIFY VALUE</text>
+  <text class="text card-title" x="128" y="968">Does the case survive sensitivity and scrutiny?</text>
+  <text class="text body" x="78" y="1005">TCO · unit economics · payback · ROI · confidence · lineage</text>
+  <text class="text handoff" x="78" y="1036">Handoff: reviewable model for finance, procurement, and sponsorship</text>
+
+  <path d="M450 1057 V1098" stroke="#62d2c6" stroke-width="4" marker-end="url(#arrow)"/>
+
+  <g filter="url(#shadow)">
+    <rect x="120" y="1108" width="660" height="116" rx="24" fill="url(#decision)" stroke="#58b9ae"/>
+  </g>
+  <text class="text card-title" x="450" y="1154" text-anchor="middle">Qualified decision, with the boundary visible</text>
+  <text class="text body" x="450" y="1191" text-anchor="middle">advance · reshape · nurture · disqualify</text>
+
+  <text class="text handoff" x="450" y="1253" text-anchor="middle">Formal architecture, security, benchmark, pricing, legal, and finance gates remain.</text>
+</svg>

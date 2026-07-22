@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1260" role="img" aria-labelledby="title desc">
+  <title id="title">Portfolio evidence matrix</title>
+  <desc id="desc">Seven cards distinguish runnable prototypes from reference and control blueprints, with the evidence and boundary for each project.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07111f"/>
+      <stop offset="1" stop-color="#10243a"/>
+    </linearGradient>
+    <linearGradient id="featured" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#132d3f"/>
+      <stop offset="1" stop-color="#102739"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="7" stdDeviation="9" flood-color="#02070d" flood-opacity="0.42"/>
+    </filter>
+    <style>
+      .text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif; }
+      .title { fill: #f6f9fc; font-size: 34px; font-weight: 750; }
+      .subtitle { fill: #9fb1c3; font-size: 20px; }
+      .name { fill: #f6f9fc; font-size: 25px; font-weight: 700; }
+      .label { fill: #72ddd2; font-size: 16px; font-weight: 750; letter-spacing: 1.4px; }
+      .body { fill: #c5d0dc; font-size: 19px; }
+      .boundary { fill: #8fa3b7; font-size: 18px; }
+      .pill { fill: #dffaf6; font-size: 14px; font-weight: 750; letter-spacing: 0.7px; }
+      .blueprint-pill { fill: #dce8ff; font-size: 14px; font-weight: 750; letter-spacing: 0.7px; }
+    </style>
+  </defs>
+
+  <rect width="900" height="1260" rx="30" fill="url(#background)"/>
+  <text class="text title" x="54" y="68">What is implemented, and what is not</text>
+  <text class="text subtitle" x="54" y="103">Evidence is useful only when its implementation boundary is clear.</text>
+
+  <g filter="url(#shadow)">
+    <rect x="48" y="139" width="804" height="136" rx="20" fill="url(#featured)" stroke="#3c827f"/>
+    <rect x="48" y="291" width="804" height="136" rx="20" fill="#101f31" stroke="#31506b"/>
+    <rect x="48" y="443" width="804" height="136" rx="20" fill="url(#featured)" stroke="#3c827f"/>
+    <rect x="48" y="595" width="804" height="136" rx="20" fill="url(#featured)" stroke="#3c827f"/>
+    <rect x="48" y="747" width="804" height="136" rx="20" fill="#101f31" stroke="#31506b"/>
+    <rect x="48" y="899" width="804" height="136" rx="20" fill="#101f31" stroke="#31506b"/>
+    <rect x="48" y="1051" width="804" height="136" rx="20" fill="#101f31" stroke="#31506b"/>
+  </g>
+
+  <rect x="48" y="139" width="8" height="136" rx="4" fill="#55c9be"/>
+  <text class="text label" x="78" y="171">FEATURED EVIDENCE</text>
+  <text class="text name" x="78" y="203">Opportunity &amp; Discovery Workbench</text>
+  <rect x="596" y="158" width="222" height="29" rx="14" fill="#17645f"/>
+  <text class="text pill" x="707" y="178" text-anchor="middle">RUNNABLE PROTOTYPE</text>
+  <text class="text body" x="78" y="231">Deterministic qualification, provenance, stakeholders, PoC readiness</text>
+  <text class="text boundary" x="78" y="257">Boundary: fictional accounts; not a production CRM or revenue claim</text>
+
+  <rect x="48" y="291" width="8" height="136" rx="4" fill="#6e9cf4"/>
+  <text class="text label" x="78" y="323">TECHNICAL FOUNDATION</text>
+  <text class="text name" x="78" y="355">Enterprise MLOps Platform</text>
+  <rect x="568" y="310" width="250" height="29" rx="14" fill="#274c78"/>
+  <text class="text blueprint-pill" x="693" y="330" text-anchor="middle">REFERENCE BLUEPRINT</text>
+  <text class="text body" x="78" y="383">Lifecycle contracts, GPU serving architecture, falsifiable PoC plan</text>
+  <text class="text boundary" x="78" y="409">Boundary: sanitized; no published end-to-end deployment</text>
+
+  <rect x="48" y="443" width="8" height="136" rx="4" fill="#55c9be"/>
+  <text class="text label" x="78" y="475">FEATURED EVIDENCE</text>
+  <text class="text name" x="78" y="507">Capacity &amp; Commercial Sizing Planner</text>
+  <rect x="596" y="462" width="222" height="29" rx="14" fill="#17645f"/>
+  <text class="text pill" x="707" y="482" text-anchor="middle">RUNNABLE PROTOTYPE</text>
+  <text class="text body" x="78" y="535">Editable ranges, sensitivity, missing inputs, validation questions</text>
+  <text class="text boundary" x="78" y="561">Boundary: indicative sizing; not a benchmark, quote, or final BoM</text>
+
+  <rect x="48" y="595" width="8" height="136" rx="4" fill="#55c9be"/>
+  <text class="text label" x="78" y="627">FEATURED EVIDENCE</text>
+  <text class="text name" x="78" y="659">TCO &amp; ROI Workbench</text>
+  <rect x="596" y="614" width="222" height="29" rx="14" fill="#17645f"/>
+  <text class="text pill" x="707" y="634" text-anchor="middle">RUNNABLE PROTOTYPE</text>
+  <text class="text body" x="78" y="687">TCO, unit economics, sensitivity, confidence, calculation lineage</text>
+  <text class="text boundary" x="78" y="713">Boundary: illustrative inputs; no live pricing or guaranteed ROI</text>
+
+  <rect x="48" y="747" width="8" height="136" rx="4" fill="#52a7d8"/>
+  <text class="text label" x="78" y="779">SUPPORTING DEPTH</text>
+  <text class="text name" x="78" y="811">GCP Data &amp; Intelligence Platform</text>
+  <rect x="568" y="766" width="250" height="29" rx="14" fill="#274c78"/>
+  <text class="text blueprint-pill" x="693" y="786" text-anchor="middle">REFERENCE BLUEPRINT</text>
+  <text class="text body" x="78" y="839">Governed data, service boundaries, failure policy, reversible promotion</text>
+  <text class="text boundary" x="78" y="865">Boundary: no cloud resources or private provider integrations</text>
+
+  <rect x="48" y="899" width="8" height="136" rx="4" fill="#9b7ce4"/>
+  <text class="text label" x="78" y="931">SUPPORTING DEPTH</text>
+  <text class="text name" x="78" y="963">Agentic FP&amp;A Analytics</text>
+  <rect x="586" y="918" width="232" height="29" rx="14" fill="#4a3b76"/>
+  <text class="text blueprint-pill" x="702" y="938" text-anchor="middle">CONTROL BLUEPRINT</text>
+  <text class="text body" x="78" y="991">Approved data and KPI contracts, query-cost and model controls</text>
+  <text class="text boundary" x="78" y="1017">Boundary: guarded execution and complete frontend are omitted</text>
+
+  <rect x="48" y="1051" width="8" height="136" rx="4" fill="#55c9be"/>
+  <text class="text label" x="78" y="1083">SUPPORTING DEPTH</text>
+  <text class="text name" x="78" y="1115">Enterprise AI Solution Configurator</text>
+  <rect x="596" y="1070" width="222" height="29" rx="14" fill="#17645f"/>
+  <text class="text pill" x="707" y="1090" text-anchor="middle">RUNNABLE PROTOTYPE</text>
+  <text class="text body" x="78" y="1143">Versioned rules, alternatives, risks, gates, architecture diagrams</text>
+  <text class="text boundary" x="78" y="1169">Boundary: solution hypothesis; not architecture approval or a BoM</text>
+
+  <text class="text boundary" x="450" y="1226" text-anchor="middle">Four featured proof points · Three supporting technical foundations</text>
+</svg>
