@@ -1,18 +1,18 @@
-# Dae Tan | AI Infrastructure Sales Portfolio
+# Dae Tan | AI Infrastructure Solutions Portfolio
 
-[![Target](https://img.shields.io/badge/Target-BDR%20%C2%B7%20Account%20Executive%20%C2%B7%20Solutions%20Sales-111827)](#sales-workflow)
+[![Career Target](https://img.shields.io/badge/Career%20Target-BDR%20%C2%B7%20Account%20Executive%20%C2%B7%20Solutions%20Sales-111827)](#customer-decision-workflow)
 [![Coverage](https://img.shields.io/badge/Coverage-Discovery%20%C2%B7%20Sizing%20%C2%B7%20Value%20Engineering%20%C2%B7%20AI%20Infrastructure-2563EB)](#featured-evidence)
 [![License](https://img.shields.io/badge/License-MIT-6B7280)](LICENSE)
 
-Technical-commercial evidence supporting AI infrastructure business development, account executive, and solutions-sales roles.
+Technical and technical-commercial project portfolio supporting future AI infrastructure business development, account executive, and solutions-sales roles.
 
-The repositories model the work around a complex infrastructure sale: account research, customer discovery, workload qualification, AE-to-SE handoff, solution framing, and business-case development. Professional experience and revenue outcomes remain on the one-page resume; this portfolio supplies the technical context and decision artifacts behind credible customer conversations.
+The repositories are technical projects organised around the customer decision process for a complex infrastructure sale: account research, discovery, workload qualification, AE-to-SE handoff, solution framing, and business-case development. Professional experience and revenue outcomes remain on the one-page resume; this portfolio supplies technical context and reviewable decision artifacts.
 
 [LinkedIn](https://www.linkedin.com/in/dae-tan-1a2b3c) · [Worked Private-RAG Case](docs/tco-worked-example.md) · [Value Engineering Method](docs/value-engineering.md) · [Resume Project Mapping](docs/resume-project-mapping.md)
 
-## Sales Workflow
+## Customer Decision Workflow
 
-| Stage | Seller question | Primary artifact | Output passed forward |
+| Stage | Customer or account-team question | Primary artifact | Output passed forward |
 |---|---|---|---|
 | Account discovery | Is there a specific, evidenced opportunity worth pursuing? | [Opportunity & Discovery Workbench](https://github.com/daetan999/ai-infra-opportunity-workbench) | Workload hypothesis, stakeholder map, risks, qualification, and next action |
 | Technical qualification | What infrastructure range and bottleneck should be validated with an SE? | [Capacity & Commercial Sizing Planner](https://github.com/daetan999/ai-infra-capacity-planner) | Indicative range, missing inputs, sensitivity, and validation plan |
@@ -32,7 +32,7 @@ The repositories model the work around a complex infrastructure sale: account re
 
 A qualification workspace that converts account signals, workload hypotheses, stakeholder access, and discovery evidence into a transparent next-action recommendation.
 
-**Sales evidence**
+**Customer-decision evidence**
 
 - Separates sourced account signals from seller interpretation and confidence.
 - Maps economic buyers, technical authorities, champions, procurement stakeholders, and single-threading gaps.
@@ -58,7 +58,7 @@ A qualification workspace that converts account signals, workload hypotheses, st
 
 A local-first planner that converts workload assumptions into editable infrastructure and commercial ranges without presenting false bill-of-materials precision.
 
-**Sales evidence**
+**Customer-decision evidence**
 
 - Supports LLM training, LLM inference, RAG, vision inference, and batch AI/HPC workloads.
 - Produces low/base/high ranges for accelerators, CPU, memory, storage, network, racks, power, utilization, and monthly compute cost.
@@ -85,7 +85,7 @@ A local-first planner that converts workload assumptions into editable infrastru
 
 A deterministic workspace for comparing AI infrastructure operating models with visible assumptions, calculation lineage, sensitivity, and executive reporting.
 
-**Sales evidence**
+**Customer-decision evidence**
 
 - Compares current and proposed operating models across three- and five-year TCO.
 - Calculates normalized unit economics, savings, net value, ROI, payback, and break-even status.
@@ -112,7 +112,7 @@ A deterministic workspace for comparing AI infrastructure operating models with 
 
 A sanitized reference blueprint for understanding how data, feature management, model lifecycle, GPU serving, monitoring, and reliability interact across enterprise ML workloads.
 
-**Technical context for sales conversations**
+**Technical context for customer conversations**
 
 - Kafka and Airflow ingestion into shared Feast feature definitions, with Redis online access and Snowflake point-in-time training data.
 - PyTorch training, MLflow registry gates, ONNX packaging, Kubernetes deployment, and NVIDIA Triton serving.
@@ -154,7 +154,7 @@ The portfolio is designed to be reviewed as one customer decision rather than a 
 
 ## Review Paths
 
-**Thirty-second review:** scan the Sales Workflow table and the Opportunity, Capacity, and TCO visuals.
+**Thirty-second review:** scan the Customer Decision Workflow table and the Opportunity, Capacity, and TCO visuals.
 
 **Five-minute recruiter review:** inspect the Opportunity qualification model, Capacity assumptions and validation questions, TCO comparison, and MLOps architecture.
 
