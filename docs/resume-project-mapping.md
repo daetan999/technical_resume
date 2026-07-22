@@ -6,7 +6,7 @@ The paper resume should establish commercial performance, chronology, role scope
 
 ## Target Positioning
 
-**AI infrastructure sales professional with proven B2B revenue performance and enough technical fluency to qualify complex opportunities, engage business and technical stakeholders, collaborate with Solutions Engineers, and build defensible business cases.**
+**Technical-commercial AI infrastructure and cloud practitioner with proven B2B sales execution, financial-analysis experience, and enough technical fluency to qualify complex opportunities, collaborate with Solutions Engineers, and build defensible business cases.**
 
 The target signal is not software engineer or production architect. The technical repositories demonstrate the customer-facing reasoning around an infrastructure sale without replacing formal engineering, benchmark, security, pricing, or architecture approval.
 
@@ -24,7 +24,7 @@ Use three projects on the one-page resume.
 
 **Resume wording:**
 
-> Built a deterministic value-engineering platform comparing cloud, on-premises, and shared-serving options across 3- and 5-year TCO, unit economics, sensitivity, payback, and ROI; generated executive-ready reports with traceable assumptions.
+> Built a deterministic value-engineering platform comparing cloud, on-premises, and shared-serving options across 3- and 5-year TCO, unit economics, sensitivity, payback, and modeled ROI; generated evidence-gated executive reports with traceable assumptions.
 
 **Commercial signal:** value engineering, financial modelling, executive communication, procurement support, decision confidence.
 

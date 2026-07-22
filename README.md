@@ -4,9 +4,9 @@
 [![Coverage](https://img.shields.io/badge/Coverage-Discovery%20%C2%B7%20Sizing%20%C2%B7%20Value%20Engineering%20%C2%B7%20AI%20Infrastructure-2563EB)](#featured-evidence)
 [![License](https://img.shields.io/badge/License-MIT-6B7280)](LICENSE)
 
-Technical and technical-commercial project portfolio supporting future AI infrastructure business development, account executive, and solutions-sales roles.
+Technical-commercial portfolio for AI infrastructure business-development, account, and technical-sales roles. These projects show how I research and qualify opportunities, translate workload assumptions into first-pass validation ranges, and build evidence-backed infrastructure investment cases.
 
-The repositories are technical projects organised around the customer decision process for a complex infrastructure sale: account research, discovery, workload qualification, AE-to-SE handoff, solution framing, and business-case development. Professional experience and revenue outcomes remain on the one-page resume; this portfolio supplies technical context and reviewable decision artifacts.
+Start with the Opportunity, Capacity, and TCO workbenches below. The Enterprise MLOps Platform provides the technical context needed to ask better discovery questions and collaborate with Solutions Engineers.
 
 [LinkedIn](https://www.linkedin.com/in/dae-tan-1a2b3c) · [Worked Private-RAG Case](docs/tco-worked-example.md) · [Value Engineering Method](docs/value-engineering.md) · [Resume Project Mapping](docs/resume-project-mapping.md)
 
@@ -35,10 +35,9 @@ A qualification workspace that converts account signals, workload hypotheses, st
 **Customer-decision evidence**
 
 - Separates sourced account signals from seller interpretation and confidence.
-- Maps economic buyers, technical authorities, champions, procurement stakeholders, and single-threading gaps.
-- Scores pain, urgency, workload fit, buying group, decision process, competition, and evidence quality.
-- Converts qualified opportunities into bounded PoC handoffs with acceptance criteria, owners, dates, rollback conditions, and a decision gate.
-- Recommends whether to advance, reshape, nurture, or disqualify rather than forcing every opportunity forward.
+- Scores pain, urgency, workload fit, buying-group access, decision process, competition, and evidence quality.
+- Maps decision stakeholders and exposes single-threading or authority gaps.
+- Produces advance, reshape, nurture, or disqualify recommendations and bounded PoC handoffs.
 
 **Implementation evidence:** FastAPI, SQLAlchemy, SQLite, server-rendered UI, JSON/Markdown exports, 76 tests, 96%+ branch coverage, CI, and a clean container workflow.
 
@@ -60,12 +59,10 @@ A local-first planner that converts workload assumptions into editable infrastru
 
 **Customer-decision evidence**
 
-- Supports LLM training, LLM inference, RAG, vision inference, and batch AI/HPC workloads.
-- Produces low/base/high ranges for accelerators, CPU, memory, storage, network, racks, power, utilization, and monthly compute cost.
-- Exposes likely bottlenecks across compute, memory, storage, network, latency, and completion window.
-- Shows sensitivity to batching, quantization, demand growth, target utilization, and latency expectations.
-- Converts missing inputs into follow-up discovery questions, confidence deductions, and a proposed validation plan.
-- Produces a reproducible starting point for deeper sizing with Solutions Engineers rather than replacing formal benchmarking.
+- Produces low/base/high infrastructure and cost ranges across five AI workload modes.
+- Exposes compute, memory, storage, network, latency, and completion-window bottlenecks.
+- Shows sensitivity to batching, quantization, growth, utilization, and latency assumptions.
+- Converts missing inputs into confidence deductions, discovery questions, and an SE validation plan.
 
 **Implementation evidence:** FastAPI, Pydantic, SQLite, YAML profiles, comparison and export workflows, 65 tests, 92%+ branch coverage, CI, and container validation.
 
@@ -87,12 +84,10 @@ A deterministic workspace for comparing AI infrastructure operating models with 
 
 **Customer-decision evidence**
 
-- Compares current and proposed operating models across three- and five-year TCO.
-- Calculates normalized unit economics, savings, net value, ROI, payback, and break-even status.
-- Tests downside sensitivity across utilization, compute price, demand growth, and energy price.
-- Records evidence references, confidence labels, coverage scoring, and formula-level lineage.
-- Preserves immutable scenario versions so previously reviewed analyses are not silently recalculated.
-- Exports JSON, CSV, and an executive PDF business case for technical, finance, procurement, and leadership review.
+- Compares operating models across three- and five-year TCO, unit economics, payback, and modeled ROI.
+- Tests sensitivity across utilization, compute price, demand growth, and energy price.
+- Gates executive recommendations by evidence confidence and preserves formula-level lineage.
+- Exports immutable JSON, CSV, and executive PDF records for technical and commercial review.
 
 **Implementation evidence:** FastAPI, a Decimal-based financial engine, SQLite, ReportLab, Python and browser test suites, branch-coverage enforcement, dependency audits, CI, and container checks.
 
@@ -114,11 +109,10 @@ A sanitized reference blueprint for understanding how data, feature management, 
 
 **Technical context for customer conversations**
 
-- Kafka and Airflow ingestion into shared Feast feature definitions, with Redis online access and Snowflake point-in-time training data.
-- PyTorch training, MLflow registry gates, ONNX packaging, Kubernetes deployment, and NVIDIA Triton serving.
-- Dynamic batching, multi-model concurrency, staged rollout, horizontal scaling, and drift-response controls.
-- Representative workloads across forecasting, pricing, anomaly detection, predictive maintenance, clustering, feasibility, and NLP routing.
-- A falsifiable GPU-serving PoC plan covering utilization, throughput, p99 latency, fleet size, reliability, and cost per inference.
+- Connects Kafka, Airflow, Feast, Redis, Snowflake, PyTorch, MLflow, Kubernetes, and NVIDIA Triton.
+- Documents batching, multi-model concurrency, staged rollout, scaling, and drift-response controls.
+- Covers representative forecasting, pricing, anomaly, maintenance, feasibility, and NLP workloads.
+- Defines a falsifiable GPU-serving PoC across utilization, throughput, latency, reliability, and unit cost.
 
 **Public boundary:** Representative contracts, configuration shapes, model skeletons, diagrams, and controls are published. Proprietary data, integrations, images, clusters, and production endpoints are excluded.
 
@@ -143,6 +137,13 @@ The portfolio is designed to be reviewed as one customer decision rather than a 
 - [Portfolio Case Contract](docs/portfolio-case-contract.md) keeps workload assumptions and stage ownership consistent across the workbenches.
 - [Value Engineering Method](docs/value-engineering.md) connects infrastructure signals to cost, risk, capacity, and business-value hypotheses.
 - [TCO Sample Report](https://github.com/daetan999/ai-infra-tco-workbench/blob/main/docs/examples/fictional-northstar-private-rag-business-case.pdf) shows the executive reporting output.
+
+## Decisions I Can Defend in an Interview
+
+- **Qualification can stop a deal.** Missing authority, weak evidence, or unresolved risk can reshape, nurture, or disqualify an opportunity. The trade-off is slower stage progression in exchange for higher forecast and PoC discipline. New customer evidence can change the recommendation.
+- **Sizing returns ranges.** Early discovery rarely supports a final bill of materials. The planner preserves uncertainty and creates validation questions instead. Representative benchmarks and an SE-reviewed topology can replace the illustrative range.
+- **Financial results remain deterministic.** Formula lineage and immutable versions make each business case reviewable. This limits narrative flexibility but prevents generated copy from changing the economics. Approved inputs or a revised scenario version can change the result.
+- **The MLOps repository is a blueprint.** It publishes architecture, controls, and testable acceptance criteria while excluding proprietary data and integrations. The public artifact sacrifices deployability to preserve confidentiality; authorized implementation evidence would change that boundary.
 
 ## Evidence Standard
 
