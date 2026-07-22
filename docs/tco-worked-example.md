@@ -2,7 +2,7 @@
 
 This fictional example shows how one workload can move from discovery to capacity validation and a financial review. It demonstrates the method and handoffs; it does not present achieved customer results.
 
-For the implemented deterministic calculator, sensitivity model, lineage view, and executive export, see the [Enterprise AI Infrastructure TCO & ROI Workbench](https://github.com/daetan999/ai-infra-tco-workbench) and its [fictional sample report](https://github.com/daetan999/ai-infra-tco-workbench/blob/main/docs/examples/fictional-cpu-to-gpu-business-case.pdf).
+For the implemented deterministic calculator, sensitivity model, lineage view, and executive export, see the [Enterprise AI Infrastructure TCO & ROI Workbench](https://github.com/daetan999/ai-infra-tco-workbench) and its [fictional sample report](https://github.com/daetan999/ai-infra-tco-workbench/blob/main/docs/examples/fictional-northstar-private-rag-business-case.pdf).
 
 ## Scenario
 

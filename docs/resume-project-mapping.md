@@ -56,7 +56,7 @@ Only add revenue, quota, deal-size, efficiency, or delivery metrics after verify
 
 - Modeled LLM training, inference, RAG, vision, and batch/HPC workloads with configurable illustrative accelerator profiles rather than embedded vendor claims.
 - Produced compute, memory, storage, network, power, utilization, and cost ranges with visible sensitivity to batching, precision, growth, and latency.
-- Added confidence, missing-input warnings, scenario comparison, and validation requirements, supported by 64 tests and 92%+ branch coverage in the audited build.
+- Added confidence, missing-input warnings, scenario comparison, and validation requirements, supported by 65 tests and 92%+ branch coverage in the audited build.
 
 **Skill signal:** workload qualification, GPU sizing, capacity planning, sensitivity analysis, benchmarking scope, PoC design, Python.
 
@@ -106,7 +106,7 @@ Only add revenue, quota, deal-size, efficiency, or delivery metrics after verify
 
 - Engineered a guided requirements workflow spanning compute, orchestration, serving, network, storage, data, security, identity, observability, resilience, and deployment pattern.
 - Made recommendations traceable to requirements, versioned rules, rationale, alternatives, risks, and validation gates.
-- Generated inert SVG architectures and solution briefs for fictional scenarios, supported by 79 tests, 91%+ branch coverage, and two browser journeys in the audited build.
+- Generated inert SVG architectures and solution briefs for fictional scenarios, supported by 80 tests, 91%+ branch coverage, and two browser journeys in the audited build.
 
 **Best for:** solutions engineering, technical sales, requirement mapping, architecture workshops, and trade-off communication roles.
 

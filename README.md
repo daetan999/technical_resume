@@ -44,7 +44,7 @@ These four projects tell the clearest default story for an AI infrastructure sol
 
 **What it proves:** I can convert workload inputs into an editable first-pass range while keeping assumptions, sensitivity, missing evidence, and validation needs visible.
 
-**Evidence:** Training, inference, RAG, vision, and batch/HPC modes; configurable accelerator profiles; compute, memory, storage, network, power, and commercial ranges; comparison and export. The audited build included 64 tests and 92%+ branch coverage.
+**Evidence:** Training, inference, RAG, vision, and batch/HPC modes; configurable accelerator profiles; compute, memory, storage, network, power, and commercial ranges; comparison and export. The audited build included 65 tests and 92%+ branch coverage.
 
 **Boundary:** Indicative planning ranges, not vendor benchmarks, a quote, or a final bill of materials.
 
@@ -64,7 +64,7 @@ Three additional repositories extend the primary narrative.
 
 - [GCP Data & Intelligence Platform](https://github.com/daetan999/gcp-data-platform-blueprint): governed BigQuery data, serverless boundaries, failure policies, and reversible environment promotion.
 - [Agentic FP&A Analytics](https://github.com/daetan999/adk-fpa-agent-blueprint): approved data and KPI contracts, query-cost controls, source resolution, and explicit model responsibility.
-- [Enterprise AI Solution Configurator](https://github.com/daetan999/ai-infra-solution-configurator): guided requirements, versioned rules, alternatives, risks, validation gates, and deterministic architecture diagrams.
+- [Enterprise AI Solution Configurator](https://github.com/daetan999/ai-infra-solution-configurator): guided requirements, versioned rules, alternatives, risks, validation gates, and deterministic architecture diagrams, supported by 80 tests in the audited build.
 
 ## From Discovery to a Defensible Decision
 
@@ -85,6 +85,7 @@ At each stage, the next action may be to advance, reshape, nurture, or disqualif
 
 - [Value Engineering Method](docs/value-engineering.md) maps technical signals to cost, risk, capacity, and business-value hypotheses.
 - [TCO Worked Example](docs/tco-worked-example.md) follows one fictional private-RAG scenario from discovery inputs to a falsifiable validation plan.
+- [Portfolio Case Contract](docs/portfolio-case-contract.md) keeps the Northstar workload and stage ownership consistent across the commercial workbenches.
 - [Resume Project Mapping](docs/resume-project-mapping.md) provides accurate project descriptions and role-specific four-project selections.
 
 <details>
