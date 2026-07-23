@@ -1,4 +1,4 @@
-# Dae Tan | AI Infrastructure Solutions Portfolio
+# Dae Tan | Technical Portfolio
 
 [![Career Target](https://img.shields.io/badge/Career%20Target-BDR%20%C2%B7%20Account%20Executive%20%C2%B7%20Solutions%20Sales-111827)](#customer-decision-workflow)
 [![Coverage](https://img.shields.io/badge/Coverage-Discovery%20%C2%B7%20Sizing%20%C2%B7%20Value%20Engineering%20%C2%B7%20AI%20Infrastructure-2563EB)](#featured-evidence)
