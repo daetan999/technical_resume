@@ -7,7 +7,7 @@ Technical-commercial portfolio for AI infrastructure business-development, accou
 
 Start with the Opportunity, Capacity, and TCO workbenches below. The Enterprise MLOps Platform provides the technical context needed to ask better discovery questions and collaborate with Solutions Engineers.
 
-[LinkedIn](https://www.linkedin.com/in/dae-tan-1a2b3c) · [Worked Private-RAG Case](docs/tco-worked-example.md) · [Value Engineering Method](docs/value-engineering.md) · [Resume Project Mapping](docs/resume-project-mapping.md)
+[LinkedIn](https://www.linkedin.com/in/dae-tan-1a2b3c) · [Featured Evidence](#featured-evidence) · [Product Design Signatures](#product-design-signatures) · [Worked Private-RAG Case](docs/tco-worked-example.md) · [Value Engineering Method](docs/value-engineering.md) · [Resume Project Mapping](docs/resume-project-mapping.md)
 
 ## Customer Decision Workflow
 
@@ -30,6 +30,8 @@ Start with the Opportunity, Capacity, and TCO workbenches below. The Enterprise 
 </a>
 
 A qualification workspace that converts account signals, workload hypotheses, stakeholder access, and discovery evidence into a transparent next-action recommendation.
+
+**Product experience:** A warm, field-journal workspace using olive, clay, and ivory to keep evidence, uncertainty, and human judgment at the center of the work.
 
 **Customer-decision evidence**
 
@@ -56,6 +58,8 @@ A qualification workspace that converts account signals, workload hypotheses, st
 
 A local-first planner that converts workload assumptions into editable infrastructure and commercial ranges without presenting false bill-of-materials precision.
 
+**Product experience:** An industrial planning desk in graphite, safety orange, and brass that makes the calculation surface feel measured rather than promotional.
+
 **Customer-decision evidence**
 
 - Produces low/base/high infrastructure and cost ranges across five AI workload modes.
@@ -80,6 +84,8 @@ A local-first planner that converts workload assumptions into editable infrastru
 </a>
 
 A deterministic workspace for comparing AI infrastructure operating models with visible assumptions, calculation lineage, sensitivity, and executive reporting.
+
+**Product experience:** A financial-broadsheet treatment in parchment, forest, and oxblood that gives assumptions and decision records the weight of a reviewable ledger.
 
 **Customer-decision evidence**
 
@@ -117,6 +123,17 @@ A sanitized reference blueprint for understanding how data, feature management, 
 
 **Repository:** [`mlops-hosp`](https://github.com/daetan999/mlops-hosp)
 
+## Product Design Signatures
+
+The runnable products deliberately avoid a shared AI-dashboard skin. Each uses a visual language chosen for the kind of decision it supports.
+
+| Product | Design signature | Purpose |
+|---|---|---|
+| Opportunity & Discovery Workbench | Warm editorial field journal — olive, clay, ivory; expressive serif headings | Keeps evidence, stakeholder context, and uncertainty human and legible. |
+| Capacity & Commercial Sizing Planner | Industrial calculation desk — graphite, safety orange, brass; condensed display type and mono data | Emphasizes ranges, constraints, and operational measurement. |
+| TCO & ROI Workbench | Financial broadsheet — parchment, forest, oxblood; editorial serif and mono figures | Makes assumptions, lineage, and value claims read like an auditable decision record. |
+| Enterprise AI Solution Configurator | Architectural blueprint — navy, paper-blue, ochre; structured serif and humanist sans | Separates guided requirements, rules, and architecture hypotheses without decorative AI chrome. |
+
 ## Supporting Enterprise Artifacts
 
 These repositories add useful context but are not part of the default three-project paper-resume selection.
@@ -124,7 +141,7 @@ These repositories add useful context but are not part of the default three-proj
 | Project | Supporting role |
 |---|---|
 | [GCP Data & Intelligence Platform](https://github.com/daetan999/gcp-data-platform-blueprint) | Governed BigQuery data, Cloud Run operations, model boundaries, failure policies, recipient controls, and reversible environment promotion. |
-| [Enterprise AI Solution Configurator](https://github.com/daetan999/ai-infra-solution-configurator) | Guided requirements capture, versioned architecture rules, alternatives, risks, validation gates, and controlled diagram generation for solution workshops. |
+| [Enterprise AI Solution Configurator](https://github.com/daetan999/ai-infra-solution-configurator) | Guided requirements capture, versioned architecture rules, alternatives, risks, validation gates, and controlled diagram generation in a navy, paper-blue, and ochre blueprint workspace. |
 
 The [Agentic FP&A Analytics blueprint](https://github.com/daetan999/adk-fpa-agent-blueprint) is intentionally not featured. Its governance concepts remain useful, but the public repository does not implement the complete guarded execution, authentication, deployment, and evaluation path.
 
