@@ -1,181 +1,136 @@
 # Dae Tan | Technical Portfolio
 
-[![Coverage](https://img.shields.io/badge/Coverage-Discovery%20%C2%B7%20Sizing%20%C2%B7%20Value%20Engineering%20%C2%B7%20AI%20Infrastructure-2563EB)](#featured-evidence)
-[![License](https://img.shields.io/badge/License-MIT-6B7280)](LICENSE)
+Technical-commercial portfolio for AI infrastructure sales, account, and solutions roles. The four runnable workbenches below follow one decision from account evidence through workload sizing, solution framing, and financial review.
 
-Technical-commercial portfolio for AI infrastructure business-development, account, and technical-sales roles. These projects show how I research and qualify opportunities, translate workload assumptions into first-pass validation ranges, and build evidence-backed infrastructure investment cases.
+[LinkedIn](https://www.linkedin.com/in/dae-tan-1a2b3c) · [Worked Private-RAG case](docs/tco-worked-example.md) · [Value-engineering method](docs/value-engineering.md) · [Resume project mapping](docs/resume-project-mapping.md)
 
-Start with the Opportunity, Capacity, and TCO workbenches below. The Enterprise MLOps Platform provides the technical context needed to ask better discovery questions and collaborate with Solutions Engineers.
+## Review the portfolio as one decision
 
-[LinkedIn](https://www.linkedin.com/in/dae-tan-1a2b3c) · [Featured Evidence](#featured-evidence) · [Product Design Signatures](#product-design-signatures) · [Worked Private-RAG Case](docs/tco-worked-example.md) · [Value Engineering Method](docs/value-engineering.md) · [Resume Project Mapping](docs/resume-project-mapping.md)
-
-## Customer Decision Workflow
-
-| Stage | Customer or account-team question | Primary artifact | Output passed forward |
+| Stage | Question | Product | Reviewable output |
 |---|---|---|---|
-| Account discovery | Is there a specific, evidenced opportunity worth pursuing? | [Opportunity & Discovery Workbench](https://github.com/daetan999/ai-infra-opportunity-workbench) | Workload hypothesis, stakeholder map, risks, qualification, and next action |
-| Technical qualification | What infrastructure range and bottleneck should be validated with an SE? | [Capacity & Commercial Sizing Planner](https://github.com/daetan999/ai-infra-capacity-planner) | Indicative range, missing inputs, sensitivity, and validation plan |
-| Value engineering | Is the proposed change financially defensible? | [TCO & ROI Workbench](https://github.com/daetan999/ai-infra-tco-workbench) | TCO, unit economics, sensitivity, payback, ROI, and executive report |
-| Technical context | Which workload, serving, governance, and reliability constraints matter? | [Enterprise MLOps Platform](https://github.com/daetan999/mlops-hosp) | Architecture context and discovery questions for technical specialists |
-| Decision handoff | What should the customer and account team do next? | [Worked Private-RAG Case](docs/tco-worked-example.md) | Advance, reshape, nurture, or disqualify with explicit evidence gaps |
+| Discover | Is there a specific, evidenced opportunity worth pursuing? | [Opportunity Workbench](https://github.com/daetan999/ai-infra-opportunity-workbench) | Workload hypothesis, stakeholder map, evidence gaps, and next action |
+| Size | What infrastructure range and bottleneck require validation? | [Capacity Planner](https://github.com/daetan999/ai-infra-capacity-planner) | Low/base/high range, sensitivities, and an AE-to-SE validation plan |
+| Configure | Which architecture hypothesis best fits the stated requirements? | [Solution Configurator](https://github.com/daetan999/ai-infra-solution-configurator) | Recommendation, alternatives, risks, diagram, and validation gates |
+| Justify | Is the proposed change financially defensible? | [TCO Workbench](https://github.com/daetan999/ai-infra-tco-workbench) | TCO, unit economics, sensitivity, payback, ROI, and executive report |
 
-## Featured Evidence
+The products share evidence and decision discipline, not a common dashboard skin. Each interface uses a visual system chosen for its work.
+
+## Featured products
 
 ### 1. Opportunity & Discovery Workbench
 
-**Account research, technical discovery, and qualification**
+**Account research, qualification, and bounded PoC handoff**
 
 <a href="https://github.com/daetan999/ai-infra-opportunity-workbench">
-  <img src="https://raw.githubusercontent.com/daetan999/ai-infra-opportunity-workbench/main/docs/assets/opportunity-dashboard.png" alt="AI infrastructure opportunity dashboard" width="1200">
+  <img src="docs/assets/opportunity-account-workspace.png" alt="Olive and ivory Opportunity Workbench showing a fictional account's workload hypothesis, evidence, and qualification scorecard" width="1200">
 </a>
 
-A qualification workspace that converts account signals, workload hypotheses, stakeholder access, and discovery evidence into a transparent next-action recommendation.
+*A field-research journal for distinguishing sourced signals from seller interpretation.*
 
-**Product experience:** A warm, field-journal workspace using olive, clay, and ivory to keep evidence, uncertainty, and human judgment at the center of the work.
+The workbench turns account signals, workload hypotheses, stakeholder access, and discovery notes into a transparent advance, reshape, nurture, or disqualify recommendation.
 
-**Customer-decision evidence**
+- **Decision contribution:** exposes weak evidence, single-threading, missing authority, and unresolved risk before solution resources are committed.
+- **Engineering contribution:** implemented deterministic qualification, persistence, workflow APIs, a server-rendered interface, and JSON/Markdown exports.
+- **Boundary:** fictional accounts and decision-support logic; not a production CRM, revenue forecast, or claim of customer outcomes.
+- **Visual identity:** olive, clay, and ivory with Fraunces, Alegreya Sans, and Azeret Mono.
 
-- Separates sourced account signals from seller interpretation and confidence.
-- Scores pain, urgency, workload fit, buying-group access, decision process, competition, and evidence quality.
-- Maps decision stakeholders and exposes single-threading or authority gaps.
-- Produces advance, reshape, nurture, or disqualify recommendations and bounded PoC handoffs.
-
-**Implementation evidence:** FastAPI, SQLAlchemy, SQLite, server-rendered UI, JSON/Markdown exports, 76 tests, 96%+ branch coverage, CI, and a clean container workflow.
-
-**Public boundary:** Fictional accounts and decision-support logic; not a production CRM, revenue forecast, or claim of closed-won results.
-
-**Repository:** [`ai-infra-opportunity-workbench`](https://github.com/daetan999/ai-infra-opportunity-workbench)
+[`Open the Opportunity Workbench repository`](https://github.com/daetan999/ai-infra-opportunity-workbench)
 
 ---
 
 ### 2. Capacity & Commercial Sizing Planner
 
-**AE-to-SE workload qualification and first-pass sizing**
+**First-pass workload sizing for an AE-to-SE conversation**
 
 <a href="https://github.com/daetan999/ai-infra-capacity-planner">
-  <img src="https://raw.githubusercontent.com/daetan999/ai-infra-capacity-planner/main/docs/assets/capacity-planner-workspace.png" alt="AI infrastructure capacity planning workspace" width="1200">
+  <img src="docs/assets/capacity-planner-workspace.png" alt="Graphite Capacity Planner showing representative workload inputs, calculated infrastructure ranges, bottlenecks, and confidence" width="1200">
 </a>
 
-A local-first planner that converts workload assumptions into editable infrastructure and commercial ranges without presenting false bill-of-materials precision.
+*An industrial planning desk that treats early sizing as measured work, not false precision.*
 
-**Product experience:** An industrial planning desk in graphite, safety orange, and brass that makes the calculation surface feel measured rather than promotional.
+The planner converts workload assumptions into editable infrastructure and commercial ranges across training, fine-tuning, batch inference, real-time inference, and RAG.
 
-**Customer-decision evidence**
+- **Decision contribution:** identifies the binding compute, memory, storage, network, latency, or completion-window constraint and turns missing inputs into validation questions.
+- **Engineering contribution:** built a deterministic sizing engine, YAML accelerator profiles, scenario persistence, comparison, sensitivity, and export workflows.
+- **Boundary:** indicative planning ranges; not a benchmark, supplier quote, topology validation, or final bill of materials.
+- **Visual identity:** graphite, safety orange, and brass with Barlow Semi Condensed and Azeret Mono.
 
-- Produces low/base/high infrastructure and cost ranges across five AI workload modes.
-- Exposes compute, memory, storage, network, latency, and completion-window bottlenecks.
-- Shows sensitivity to batching, quantization, growth, utilization, and latency assumptions.
-- Converts missing inputs into confidence deductions, discovery questions, and an SE validation plan.
-
-**Implementation evidence:** FastAPI, Pydantic, SQLite, YAML profiles, comparison and export workflows, 65 tests, 92%+ branch coverage, CI, and container validation.
-
-**Public boundary:** Indicative planning ranges; not a benchmark, supplier quote, topology validation, or final bill of materials.
-
-**Repository:** [`ai-infra-capacity-planner`](https://github.com/daetan999/ai-infra-capacity-planner)
+[`Open the Capacity Planner repository`](https://github.com/daetan999/ai-infra-capacity-planner)
 
 ---
 
-### 3. TCO & ROI Workbench
+### 3. Enterprise AI Solution Configurator
 
-**Value engineering and executive business-case development**
+**Requirements-led architecture recommendation and validation planning**
+
+<a href="https://github.com/daetan999/ai-infra-solution-configurator">
+  <img src="docs/assets/solution-configurator-architecture.png" alt="Blueprint-style Solution Configurator showing a fictional enterprise AI architecture, recommendation rationale, risks, and validation gates" width="1200">
+</a>
+
+*An architectural blueprint workspace that keeps requirements, rules, and assumptions visible beside the proposed design.*
+
+The configurator turns structured requirements into an explainable solution hypothesis, viable alternatives, risk notes, validation gates, and a controlled architecture diagram.
+
+- **Decision contribution:** makes rule matches, exclusions, trade-offs, and unresolved requirements reviewable before an architecture is treated as approved.
+- **Engineering contribution:** implemented versioned recommendation rules, deterministic diagram generation, scenario persistence, exports, and browser-tested decision flows.
+- **Boundary:** an initial solution hypothesis; not a final architecture, security approval, benchmark, quote, or bill of materials.
+- **Visual identity:** blueprint navy, paper blue, and ochre with Bitter, Fira Sans, and IBM Plex Mono.
+
+[`Open the Solution Configurator repository`](https://github.com/daetan999/ai-infra-solution-configurator)
+
+---
+
+### 4. TCO & ROI Workbench
+
+**Value engineering and executive business-case review**
 
 <a href="https://github.com/daetan999/ai-infra-tco-workbench">
-  <img src="https://raw.githubusercontent.com/daetan999/ai-infra-tco-workbench/main/docs/assets/tco-comparison.png" alt="AI infrastructure TCO comparison workspace" width="1000">
+  <img src="docs/assets/tco-comparison.png" alt="Parchment TCO Workbench comparing fictional infrastructure operating models with cost, payback, ROI, and confidence measures" width="1200">
 </a>
 
-A deterministic workspace for comparing AI infrastructure operating models with visible assumptions, calculation lineage, sensitivity, and executive reporting.
+*A financial broadsheet that presents assumptions and calculation lineage as an auditable decision record.*
 
-**Product experience:** A financial-broadsheet treatment in parchment, forest, and oxblood that gives assumptions and decision records the weight of a reviewable ledger.
+The workbench compares operating models across three- and five-year TCO, unit economics, payback, modeled ROI, and sensitivity while preserving the inputs behind every result.
 
-**Customer-decision evidence**
+- **Decision contribution:** tests whether a recommendation remains defensible as utilization, compute price, growth, and energy assumptions change.
+- **Engineering contribution:** built a Decimal-based financial engine, immutable scenario versions, evidence gating, sensitivity analysis, and JSON/CSV/PDF exports.
+- **Boundary:** fictional or user-entered assumptions; not live pricing, financial advice, supplier terms, or guaranteed ROI.
+- **Visual identity:** parchment, forest green, and oxblood with Newsreader and DM Mono.
 
-- Compares operating models across three- and five-year TCO, unit economics, payback, and modeled ROI.
-- Tests sensitivity across utilization, compute price, demand growth, and energy price.
-- Gates executive recommendations by evidence confidence and preserves formula-level lineage.
-- Exports immutable JSON, CSV, and executive PDF records for technical and commercial review.
+[`Open the TCO Workbench repository`](https://github.com/daetan999/ai-infra-tco-workbench)
 
-**Implementation evidence:** FastAPI, a Decimal-based financial engine, SQLite, ReportLab, Python and browser test suites, branch-coverage enforcement, dependency audits, CI, and container checks.
+## Supporting technical foundations
 
-**Public boundary:** Fictional or user-entered assumptions; not live pricing, financial advice, supplier terms, or guaranteed ROI.
+The workbenches demonstrate decision support around an infrastructure sale. These architecture repositories provide additional implementation context without being presented as public production deployments.
 
-**Repository:** [`ai-infra-tco-workbench`](https://github.com/daetan999/ai-infra-tco-workbench)
-
----
-
-### 4. Enterprise MLOps Platform
-
-**Technical foundation for credible infrastructure discovery**
-
-<a href="https://github.com/daetan999/mlops-hosp">
-  <img src="https://raw.githubusercontent.com/daetan999/mlops-hosp/main/docs/assets/platform-architecture.svg" alt="Enterprise MLOps platform architecture" width="1200">
-</a>
-
-A sanitized reference blueprint for understanding how data, feature management, model lifecycle, GPU serving, monitoring, and reliability interact across enterprise ML workloads.
-
-**Technical context for customer conversations**
-
-- Connects Kafka, Airflow, Feast, Redis, Snowflake, PyTorch, MLflow, Kubernetes, and NVIDIA Triton.
-- Documents batching, multi-model concurrency, staged rollout, scaling, and drift-response controls.
-- Covers representative forecasting, pricing, anomaly, maintenance, feasibility, and NLP workloads.
-- Defines a falsifiable GPU-serving PoC across utilization, throughput, latency, reliability, and unit cost.
-
-**Public boundary:** Representative contracts, configuration shapes, model skeletons, diagrams, and controls are published. Proprietary data, integrations, images, clusters, and production endpoints are excluded.
-
-**Repository:** [`mlops-hosp`](https://github.com/daetan999/mlops-hosp)
-
-## Product Design Signatures
-
-The runnable products deliberately avoid a shared AI-dashboard skin. Each uses a visual language chosen for the kind of decision it supports.
-
-| Product | Design signature | Purpose |
+| Project | Evidence it adds | Public boundary |
 |---|---|---|
-| Opportunity & Discovery Workbench | Warm editorial field journal — olive, clay, ivory; expressive serif headings | Keeps evidence, stakeholder context, and uncertainty human and legible. |
-| Capacity & Commercial Sizing Planner | Industrial calculation desk — graphite, safety orange, brass; condensed display type and mono data | Emphasizes ranges, constraints, and operational measurement. |
-| TCO & ROI Workbench | Financial broadsheet — parchment, forest, oxblood; editorial serif and mono figures | Makes assumptions, lineage, and value claims read like an auditable decision record. |
-| Enterprise AI Solution Configurator | Architectural blueprint — navy, paper-blue, ochre; structured serif and humanist sans | Separates guided requirements, rules, and architecture hypotheses without decorative AI chrome. |
+| [Enterprise MLOps Platform](https://github.com/daetan999/mlops-hosp) | Data, feature, model-lifecycle, GPU-serving, monitoring, rollout, and reliability context | Sanitized reference blueprint; proprietary data, integrations, images, clusters, and endpoints are excluded |
+| [GCP Data & Intelligence Platform](https://github.com/daetan999/gcp-data-platform-blueprint) | Governed BigQuery data, Cloud Run operations, model boundaries, failure policies, and reversible environment promotion | Architecture blueprint rather than a complete deployable environment |
 
-## Supporting Enterprise Artifacts
+The [Agentic FP&A Analytics blueprint](https://github.com/daetan999/adk-fpa-agent-blueprint) is intentionally not featured: its governance concepts are useful, but the public repository does not implement the complete guarded execution, authentication, deployment, and evaluation path.
 
-These repositories add useful context but are not part of the default three-project paper-resume selection.
+## Shared engineering approach
 
-| Project | Supporting role |
-|---|---|
-| [GCP Data & Intelligence Platform](https://github.com/daetan999/gcp-data-platform-blueprint) | Governed BigQuery data, Cloud Run operations, model boundaries, failure policies, recipient controls, and reversible environment promotion. |
-| [Enterprise AI Solution Configurator](https://github.com/daetan999/ai-infra-solution-configurator) | Guided requirements capture, versioned architecture rules, alternatives, risks, validation gates, and controlled diagram generation in a navy, paper-blue, and ochre blueprint workspace. |
+- Deterministic scoring, sizing, rule, and financial engines keep generated narrative from silently changing a decision.
+- Fictional, synthetic, sanitized, or user-entered data is labelled and kept separate from professional-experience claims.
+- Each runnable prototype documents setup, API boundaries, architecture, tests, exports, and known limitations in its own repository.
+- Outputs remain hypotheses until the appropriate customer evidence, benchmarks, security review, supplier pricing, and technical approval replace illustrative assumptions.
 
-The [Agentic FP&A Analytics blueprint](https://github.com/daetan999/adk-fpa-agent-blueprint) is intentionally not featured. Its governance concepts remain useful, but the public repository does not implement the complete guarded execution, authentication, deployment, and evaluation path.
+## Interview review paths
 
-## End-to-End Case Material
+**Thirty seconds:** scan the decision table and the four screenshots.
 
-The portfolio is designed to be reviewed as one customer decision rather than a collection of disconnected applications.
+**Five minutes:** inspect Opportunity evidence quality, Capacity bottlenecks, Configurator rule explanations, and TCO sensitivity.
 
-- [Worked Private-RAG Case](docs/tco-worked-example.md) follows a fictional regulated workload from discovery through sizing, architecture, validation, and financial review.
-- [Portfolio Case Contract](docs/portfolio-case-contract.md) keeps workload assumptions and stage ownership consistent across the workbenches.
-- [Value Engineering Method](docs/value-engineering.md) connects infrastructure signals to cost, risk, capacity, and business-value hypotheses.
-- [TCO Sample Report](https://github.com/daetan999/ai-infra-tco-workbench/blob/main/docs/examples/fictional-northstar-private-rag-business-case.pdf) shows the executive reporting output.
+**Technical-commercial interview:** follow the [fictional Private-RAG case](docs/tco-worked-example.md) across discovery, sizing, architecture, and financial review; then inspect the deterministic engine in each repository.
 
-## Decisions I Can Defend in an Interview
+## Accuracy standard
 
-- **Qualification can stop a deal.** Missing authority, weak evidence, or unresolved risk can reshape, nurture, or disqualify an opportunity. The trade-off is slower stage progression in exchange for higher forecast and PoC discipline. New customer evidence can change the recommendation.
-- **Sizing returns ranges.** Early discovery rarely supports a final bill of materials. The planner preserves uncertainty and creates validation questions instead. Representative benchmarks and an SE-reviewed topology can replace the illustrative range.
-- **Financial results remain deterministic.** Formula lineage and immutable versions make each business case reviewable. This limits narrative flexibility but prevents generated copy from changing the economics. Approved inputs or a revised scenario version can change the result.
-- **The MLOps repository is a blueprint.** It publishes architecture, controls, and testable acceptance criteria while excluding proprietary data and integrations. The public artifact sacrifices deployability to preserve confidentiality; authorized implementation evidence would change that boundary.
-
-## Evidence Standard
-
-- All bundled accounts, organizations, workloads, prices, stakeholders, and outcomes are synthetic, fictional, sanitized, aggregated, or clearly labelled illustrative.
-- Runnable workbenches use deterministic scoring, sizing, rules, or financial engines; generated narrative cannot silently change the result.
-- Blueprint repositories distinguish published architecture and contracts from omitted proprietary integrations and environments.
 - No repository claims a live customer deployment, current vendor pricing, guaranteed performance, final architecture approval, or guaranteed ROI.
-- Tests, screenshots, diagrams, exports, limitations, and run instructions are documented in the individual repositories.
-
-## Review Paths
-
-**Thirty-second review:** scan the Customer Decision Workflow table and the Opportunity, Capacity, and TCO visuals.
-
-**Five-minute recruiter review:** inspect the Opportunity qualification model, Capacity assumptions and validation questions, TCO comparison, and MLOps architecture.
-
-**Technical-commercial interview review:** trace the fictional Private-RAG case from discovery to AE-to-SE handoff and executive business case, then inspect the deterministic scoring, sizing, and financial engines.
+- Scenario values are portfolio evidence, not professional revenue, quota, or savings results.
+- “Prototype,” “blueprint,” “benchmark,” “quote,” and “production deployment” are not used interchangeably.
+- The [resume project mapping](docs/resume-project-mapping.md) keeps the one-page resume concise while this repository holds the complete technical evidence set.
 
 ## License
 

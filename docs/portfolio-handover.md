@@ -1,6 +1,6 @@
 # Portfolio Maintainer Notes
 
-Status reviewed on 2026-07-22. The portfolio consists of three technical-foundation blueprints, four runnable commercial decision-support prototypes, and this landing repository.
+Status reviewed on 2026-07-23. The portfolio consists of three technical-foundation blueprints, four runnable commercial decision-support prototypes, and this landing repository.
 
 ## Repository Map
 
@@ -17,14 +17,14 @@ Status reviewed on 2026-07-22. The portfolio consists of three technical-foundat
 
 ## Narrative Order
 
-The default candidate story uses four projects:
+The landing-page story follows four runnable decision tools:
 
 1. Opportunity Workbench for discovery and qualification.
-2. MLOps Platform for technical infrastructure depth.
-3. Capacity Planner for first-pass workload and commercial sizing.
+2. Capacity Planner for first-pass workload and commercial sizing.
+3. Solution Configurator for requirements-led architecture hypotheses.
 4. TCO Workbench for transparent value engineering.
 
-GCP Data, Agentic FP&A, and the Solution Configurator provide supporting evidence for cloud, governance, enterprise AI controls, and architecture workshops.
+MLOps and GCP Data provide supporting technical depth across serving, platform operations, cloud, and governance. Agentic FP&A remains unfeatured until its public execution and evaluation path is materially implemented.
 
 ## Public Boundaries
 
