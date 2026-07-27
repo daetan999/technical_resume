@@ -1,5 +1,12 @@
 # Dae Tan | Technical Portfolio
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-6B7A45?style=flat-square&labelColor=1F2328)](LICENSE)
+[![Focus: AI infrastructure sales and solutions](https://img.shields.io/badge/Focus-AI%20infrastructure%20sales%20%26%20solutions-1F3A5F?style=flat-square&labelColor=1F2328)](#review-the-portfolio-as-one-decision)
+[![Runnable workbenches: 4](https://img.shields.io/badge/Runnable%20workbenches-4-C2410C?style=flat-square&labelColor=1F2328)](#featured-products)
+[![Supporting blueprints: 2](https://img.shields.io/badge/Supporting%20blueprints-2-B08423?style=flat-square&labelColor=1F2328)](#supporting-technical-foundations)
+[![Data: fictional and synthetic](https://img.shields.io/badge/Data-fictional%20%26%20synthetic-6B2737?style=flat-square&labelColor=1F2328)](#accuracy-standard)
+[![Last updated](https://img.shields.io/github/last-commit/daetan999/technical_resume?style=flat-square&label=Updated&labelColor=1F2328&color=3D4249)](https://github.com/daetan999/technical_resume/commits/main)
+
 Technical-commercial portfolio for AI infrastructure sales, account, and solutions roles. The four runnable workbenches below follow one decision from account evidence through workload sizing, solution framing, and financial review.
 
 [LinkedIn](https://www.linkedin.com/in/dae-tan-1a2b3c) · [Worked Private-RAG case](docs/tco-worked-example.md) · [Value-engineering method](docs/value-engineering.md) · [Resume project mapping](docs/resume-project-mapping.md)
