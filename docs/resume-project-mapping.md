@@ -2,7 +2,7 @@
 
 Use this guide to keep the one-page resume and technical portfolio complementary.
 
-The paper resume should establish commercial performance, chronology, role scope, and verified business outcomes. The GitHub portfolio should supply evidence of technical discovery, AE-to-SE handoff quality, commercial sizing, and value engineering.
+The paper resume should establish commercial performance, chronology, role scope, and verified business outcomes. The GitHub portfolio expands the technical discovery, AE-to-SE handoff, commercial sizing, value-engineering, and enterprise-delivery work behind the concise resume.
 
 ## Target Positioning
 
@@ -58,19 +58,19 @@ Use three projects on the one-page resume.
 
 These projects should remain available through GitHub but should not consume space on the default one-page sales resume.
 
-### Enterprise MLOps Platform
+### Enterprise MLOps & GPU Serving
 
 **Repository:** [daetan999/mlops-hosp](https://github.com/daetan999/mlops-hosp)
 
-Use this project during interviews to demonstrate technical context across data pipelines, feature management, model lifecycle, Kubernetes, NVIDIA Triton, GPU-serving validation, monitoring, and reliability.
+This repository accompanies the portfolio's professional MLOps case study and covers data pipelines, feature management, model lifecycle, Kubernetes, NVIDIA Triton, GPU-serving validation, monitoring, and reliability.
 
-Describe it as a **sanitized reference blueprint**, not a public production deployment or source of achieved performance results.
+Describe the repository as a **sanitized reference blueprint**. Present platform outcomes separately as collaborative professional results rather than outcomes produced by the public code.
 
 ### GCP Data & Intelligence Platform
 
 **Repository:** [daetan999/gcp-data-platform-blueprint](https://github.com/daetan999/gcp-data-platform-blueprint)
 
-Use this project for conversations about enterprise cloud operations, BigQuery, Cloud Run, model boundaries, failure handling, governance, and reversible environment promotion.
+This repository accompanies the professional GCP automation case study and covers BigQuery, Cloud Run, model boundaries, failure handling, governance, and reversible environment promotion.
 
 ### Enterprise AI Solution Configurator
 
@@ -82,7 +82,13 @@ Use this project for architecture workshops, requirements capture, solution alte
 
 **Repository:** [daetan999/adk-fpa-agent-blueprint](https://github.com/daetan999/adk-fpa-agent-blueprint)
 
-Do not feature this project until the guarded execution, authentication, deployment, and evaluation path is materially implemented.
+Feature this as a professional application build within the enterprise-delivery section, not as a separate independent portfolio product. The public repository contains the sanitized architecture, control contracts, reconstructed interface, and partial application boundaries; it does not reproduce the production implementation.
+
+### HR Timesheet & Approval Tool
+
+**Repository:** [daetan999/hr_timesheet_tool](https://github.com/daetan999/hr_timesheet_tool)
+
+Keep this as a compact additional build. It broadens the portfolio into document processing, deterministic validation, exception review, approval controls, and payroll-ready export without displacing the AI-infrastructure workbenches.
 
 ## Role-Specific Selection
 
