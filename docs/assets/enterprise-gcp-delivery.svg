@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="690" viewBox="0 0 1200 690" role="img" aria-labelledby="title desc">
+  <title id="title">Production intelligence automation on Google Cloud</title>
+  <desc id="desc">Sanitized architecture showing scheduled triggers, Cloud Run execution, source ingestion, Gemini curation, deterministic controls, BigQuery audience management, SendGrid delivery, and measured outcomes.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F7F9FC"/>
+      <stop offset="1" stop-color="#EEF2F7"/>
+    </linearGradient>
+    <linearGradient id="hero" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#171C26"/>
+      <stop offset="1" stop-color="#2A3342"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="7" flood-color="#172033" flood-opacity=".13"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#687386"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="690" rx="22" fill="url(#bg)"/>
+  <rect x="0" y="0" width="1200" height="126" rx="22" fill="url(#hero)"/>
+  <rect x="0" y="104" width="1200" height="22" fill="url(#hero)"/>
+  <rect x="40" y="29" width="5" height="64" rx="2.5" fill="#C8102E"/>
+  <text x="64" y="51" font-family="Arial, sans-serif" font-size="14" font-weight="700" letter-spacing="2.1" fill="#F3A8B5">ENTERPRISE DELIVERY EXPERIENCE</text>
+  <text x="64" y="83" font-family="Arial, sans-serif" font-size="31" font-weight="700" fill="#FFFFFF">Production Intelligence Automation on GCP</text>
+  <text x="64" y="106" font-family="Arial, sans-serif" font-size="14" fill="#C8D0DC">Scheduled workloads • guarded model use • deterministic controls • reversible operations</text>
+  <rect x="939" y="31" width="220" height="66" rx="12" fill="#FFFFFF" fill-opacity=".08" stroke="#FFFFFF" stroke-opacity=".22"/>
+  <text x="959" y="54" font-family="Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="1.3" fill="#F3A8B5">PUBLIC BOUNDARY</text>
+  <text x="959" y="75" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF">Sanitized reconstruction</text>
+  <text x="959" y="91" font-family="Arial, sans-serif" font-size="11" fill="#C8D0DC">Synthetic data • no internal assets</text>
+
+  <text x="40" y="160" font-family="Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="1.6" fill="#697386">CONTROLLED OPERATING PATH</text>
+
+  <g filter="url(#shadow)">
+    <rect x="40" y="181" width="1120" height="329" rx="18" fill="#FFFFFF"/>
+  </g>
+
+  <rect x="58" y="201" width="190" height="281" rx="14" fill="#F3F5F8" stroke="#C8D0DA"/>
+  <text x="78" y="228" font-family="Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="1.2" fill="#4B5565">TRIGGER + RUNTIME</text>
+  <rect x="78" y="250" width="150" height="66" rx="11" fill="#E9EDF3" stroke="#7D8796"/>
+  <text x="153" y="274" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#273140">Cloud Scheduler</text>
+  <text x="153" y="294" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#647083">Authenticated cadence</text>
+  <rect x="78" y="348" width="150" height="94" rx="11" fill="#EEF0FF" stroke="#5C5CE2"/>
+  <text x="153" y="374" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#34349B">Cloud Run</text>
+  <text x="153" y="395" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#5B6073">Isolated workload</text>
+  <text x="153" y="412" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#5B6073">Runtime-loaded assets</text>
+  <text x="153" y="429" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#5B6073">Scale to zero</text>
+  <path d="M153 316 V342" fill="none" stroke="#687386" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <rect x="268" y="201" width="438" height="281" rx="14" fill="#F3FBF6" stroke="#9AC9AA"/>
+  <text x="288" y="228" font-family="Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="1.2" fill="#287A46">CONTENT + REPORT PIPELINES</text>
+  <rect x="288" y="250" width="120" height="66" rx="11" fill="#E8F7EE" stroke="#35A25E"/>
+  <text x="348" y="274" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#176B37">Sources</text>
+  <text x="348" y="294" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#437054">RSS • warehouse</text>
+  <rect x="432" y="250" width="120" height="66" rx="11" fill="#E8F7EE" stroke="#35A25E"/>
+  <text x="492" y="274" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#176B37">Resilience</text>
+  <text x="492" y="294" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#437054">Retry • classify</text>
+  <rect x="576" y="250" width="110" height="66" rx="11" fill="#E8F7EE" stroke="#35A25E"/>
+  <text x="631" y="274" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#176B37">Gemini</text>
+  <text x="631" y="294" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#437054">Curate • narrate</text>
+  <path d="M408 283 H426" fill="none" stroke="#4A8B63" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M552 283 H570" fill="none" stroke="#4A8B63" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="288" y="348" width="398" height="94" rx="12" fill="#FFFFFF" stroke="#35A25E" stroke-dasharray="5 4"/>
+  <text x="308" y="374" font-family="Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="1" fill="#287A46">DETERMINISTIC CONTROL PLANE</text>
+  <text x="308" y="397" font-family="Arial, sans-serif" font-size="12" fill="#364553">KPI calculations • date validation • deduplication</text>
+  <text x="308" y="417" font-family="Arial, sans-serif" font-size="12" fill="#364553">readiness gates • accepted-delivery state • sent history</text>
+
+  <rect x="726" y="201" width="214" height="281" rx="14" fill="#F3F7FD" stroke="#AABEDB"/>
+  <text x="746" y="228" font-family="Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="1.2" fill="#2F65A7">AUDIENCE + STATE</text>
+  <rect x="746" y="250" width="174" height="88" rx="11" fill="#EAF2FD" stroke="#3B76BD"/>
+  <text x="833" y="276" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#214F86">BigQuery</text>
+  <text x="833" y="297" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#516A87">Recipients • modes</text>
+  <text x="833" y="314" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#516A87">properties • opt-outs</text>
+  <rect x="746" y="360" width="174" height="82" rx="11" fill="#F0F5FA" stroke="#71849C"/>
+  <text x="833" y="386" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#35475C">Cloud Storage</text>
+  <text x="833" y="407" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#607086">Versioned runtime assets</text>
+  <text x="833" y="424" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#607086">and delivery history</text>
+
+  <rect x="960" y="201" width="182" height="281" rx="14" fill="#FFF5F6" stroke="#E3A0AB"/>
+  <text x="980" y="228" font-family="Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="1.2" fill="#A8273D">DELIVERY</text>
+  <rect x="980" y="250" width="142" height="82" rx="11" fill="#FFECEF" stroke="#C8102E"/>
+  <text x="1051" y="276" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#98152B">SendGrid</text>
+  <text x="1051" y="297" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#7E4751">Per-recipient send</text>
+  <text x="1051" y="314" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#7E4751">HTTP 202 accepted</text>
+  <rect x="980" y="354" width="142" height="88" rx="11" fill="#FFFFFF" stroke="#C8102E" stroke-dasharray="5 4"/>
+  <text x="1051" y="380" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#98152B">State advances only</text>
+  <text x="1051" y="400" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#7E4751">after readiness +</text>
+  <text x="1051" y="417" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#7E4751">accepted delivery</text>
+
+  <path d="M228 395 H262" fill="none" stroke="#687386" stroke-width="2.3" marker-end="url(#arrow)"/>
+  <path d="M706 395 H720" fill="none" stroke="#687386" stroke-width="2.3" marker-end="url(#arrow)"/>
+  <path d="M940 292 H954" fill="none" stroke="#687386" stroke-width="2.3" marker-end="url(#arrow)"/>
+
+  <text x="40" y="548" font-family="Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="1.6" fill="#697386">DELIVERY SCOPE + OUTCOMES</text>
+  <g filter="url(#shadow)">
+    <rect x="40" y="568" width="264" height="88" rx="14" fill="#FFFFFF"/>
+    <rect x="322" y="568" width="264" height="88" rx="14" fill="#FFFFFF"/>
+    <rect x="604" y="568" width="264" height="88" rx="14" fill="#FFFFFF"/>
+    <rect x="886" y="568" width="274" height="88" rx="14" fill="#FFFFFF"/>
+  </g>
+  <rect x="40" y="568" width="6" height="88" rx="3" fill="#C8102E"/>
+  <rect x="322" y="568" width="6" height="88" rx="3" fill="#5C5CE2"/>
+  <rect x="604" y="568" width="6" height="88" rx="3" fill="#35A25E"/>
+  <rect x="886" y="568" width="6" height="88" rx="3" fill="#3B76BD"/>
+  <text x="65" y="603" font-family="Arial, sans-serif" font-size="27" font-weight="700" fill="#202938">7 + 2</text>
+  <text x="65" y="628" font-family="Arial, sans-serif" font-size="12" fill="#657083">newsletter + reporting paths</text>
+  <text x="347" y="603" font-family="Arial, sans-serif" font-size="27" font-weight="700" fill="#202938">60%</text>
+  <text x="347" y="628" font-family="Arial, sans-serif" font-size="12" fill="#657083">faster reporting turnaround</text>
+  <text x="629" y="603" font-family="Arial, sans-serif" font-size="27" font-weight="700" fill="#202938">100+</text>
+  <text x="629" y="628" font-family="Arial, sans-serif" font-size="12" fill="#657083">annual hours saved</text>
+  <text x="911" y="603" font-family="Arial, sans-serif" font-size="27" font-weight="700" fill="#202938">45+ / 80+</text>
+  <text x="911" y="628" font-family="Arial, sans-serif" font-size="12" fill="#657083">datasets / properties covered</text>
+</svg>
