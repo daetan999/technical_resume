@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Enterprise MLOps and GPU serving contribution map</title>
+  <desc id="desc">Sanitized MLOps architecture covering data pipelines, feature serving, training and registry, Triton on EKS, monitoring, measured platform outcomes, and contribution boundaries.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0E1520"/>
+      <stop offset="1" stop-color="#182536"/>
+    </linearGradient>
+    <linearGradient id="gpu" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#78B900"/>
+      <stop offset="1" stop-color="#4D8E00"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000000" flood-opacity=".28"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#718096"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="720" rx="22" fill="url(#bg)"/>
+  <rect x="40" y="30" width="5" height="65" rx="2.5" fill="#78B900"/>
+  <text x="64" y="52" font-family="Arial, sans-serif" font-size="14" font-weight="700" letter-spacing="2.1" fill="#A7D657">ENTERPRISE DELIVERY EXPERIENCE</text>
+  <text x="64" y="84" font-family="Arial, sans-serif" font-size="31" font-weight="700" fill="#FFFFFF">Enterprise MLOps &amp; GPU Serving</text>
+  <text x="64" y="108" font-family="Arial, sans-serif" font-size="14" fill="#AEB8C6">Collaborative contribution • data-to-inference path • measurable infrastructure economics</text>
+  <rect x="935" y="31" width="225" height="70" rx="12" fill="#FFFFFF" fill-opacity=".06" stroke="#A6B2C2" stroke-opacity=".35"/>
+  <text x="955" y="54" font-family="Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="1.2" fill="#A7D657">ATTRIBUTION</text>
+  <text x="955" y="75" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF">Team-level platform outcomes</text>
+  <text x="955" y="92" font-family="Arial, sans-serif" font-size="11" fill="#AEB8C6">My contribution is identified below</text>
+
+  <text x="40" y="150" font-family="Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="1.6" fill="#8E9AAC">DATA-TO-INFERENCE OPERATING PATH</text>
+  <g filter="url(#shadow)">
+    <rect x="40" y="170" width="1120" height="270" rx="18" fill="#F6F8FB"/>
+  </g>
+
+  <rect x="62" y="194" width="196" height="220" rx="14" fill="#ECF3FA" stroke="#9BB5CF"/>
+  <text x="82" y="221" font-family="Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="1.1" fill="#37658F">01 • DATA MOVEMENT</text>
+  <rect x="82" y="246" width="156" height="58" rx="10" fill="#FFFFFF" stroke="#5E87AD"/>
+  <text x="160" y="271" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#274F73">Kafka</text>
+  <text x="160" y="289" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#5A7187">event signals</text>
+  <rect x="82" y="324" width="156" height="58" rx="10" fill="#FFFFFF" stroke="#5E87AD"/>
+  <text x="160" y="349" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#274F73">Airflow</text>
+  <text x="160" y="367" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#5A7187">orchestration</text>
+
+  <rect x="278" y="194" width="220" height="220" rx="14" fill="#F1ECFA" stroke="#B2A0D2"/>
+  <text x="298" y="221" font-family="Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="1.1" fill="#624B91">02 • FEATURE PLATFORM</text>
+  <rect x="298" y="246" width="180" height="58" rx="10" fill="#FFFFFF" stroke="#8068AD"/>
+  <text x="388" y="271" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#4A337A">Feast</text>
+  <text x="388" y="289" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#6F6285">shared definitions</text>
+  <rect x="298" y="324" width="82" height="58" rx="10" fill="#FFFFFF" stroke="#8068AD"/>
+  <text x="339" y="350" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#4A337A">Redis</text>
+  <text x="339" y="367" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#6F6285">online</text>
+  <rect x="396" y="324" width="82" height="58" rx="10" fill="#FFFFFF" stroke="#8068AD"/>
+  <text x="437" y="350" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#4A337A">Snowflake</text>
+  <text x="437" y="367" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#6F6285">offline</text>
+
+  <rect x="518" y="194" width="196" height="220" rx="14" fill="#F9F1E7" stroke="#D7B48A"/>
+  <text x="538" y="221" font-family="Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="1.1" fill="#8A5727">03 • MODEL LIFECYCLE</text>
+  <rect x="538" y="246" width="156" height="58" rx="10" fill="#FFFFFF" stroke="#B2763F"/>
+  <text x="616" y="271" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#70441F">Training + tests</text>
+  <text x="616" y="289" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#7C6958">evaluated artifacts</text>
+  <rect x="538" y="324" width="156" height="58" rx="10" fill="#FFFFFF" stroke="#B2763F"/>
+  <text x="616" y="349" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#70441F">MLflow + ONNX</text>
+  <text x="616" y="367" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#7C6958">promotion gates</text>
+
+  <rect x="734" y="194" width="206" height="220" rx="14" fill="#EEF5E5" stroke="#9BB96A"/>
+  <text x="754" y="221" font-family="Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="1.1" fill="#4B6F1C">04 • GPU SERVING</text>
+  <rect x="754" y="246" width="166" height="136" rx="12" fill="url(#gpu)"/>
+  <text x="837" y="275" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF">NVIDIA Triton</text>
+  <text x="837" y="296" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#E9F7CE">on AWS EKS</text>
+  <line x1="776" y1="315" x2="898" y2="315" stroke="#FFFFFF" stroke-opacity=".35"/>
+  <text x="837" y="338" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#FFFFFF">dynamic batching</text>
+  <text x="837" y="356" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#FFFFFF">multi-model concurrency</text>
+
+  <rect x="960" y="194" width="178" height="220" rx="14" fill="#F8ECEE" stroke="#D6A1AA"/>
+  <text x="980" y="221" font-family="Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="1.1" fill="#944052">05 • ASSURANCE</text>
+  <rect x="980" y="246" width="138" height="58" rx="10" fill="#FFFFFF" stroke="#B65C6D"/>
+  <text x="1049" y="271" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#7B2F40">Monitoring</text>
+  <text x="1049" y="289" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#805F67">drift + service health</text>
+  <rect x="980" y="324" width="138" height="58" rx="10" fill="#FFFFFF" stroke="#B65C6D"/>
+  <text x="1049" y="348" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#7B2F40">Warn • retrain</text>
+  <text x="1049" y="367" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#805F67">halt + page</text>
+
+  <path d="M258 304 H272" fill="none" stroke="#718096" stroke-width="2.2" marker-end="url(#arrow)"/>
+  <path d="M498 304 H512" fill="none" stroke="#718096" stroke-width="2.2" marker-end="url(#arrow)"/>
+  <path d="M714 304 H728" fill="none" stroke="#718096" stroke-width="2.2" marker-end="url(#arrow)"/>
+  <path d="M940 304 H954" fill="none" stroke="#718096" stroke-width="2.2" marker-end="url(#arrow)"/>
+
+  <text x="40" y="478" font-family="Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="1.6" fill="#8E9AAC">MEASURED TEAM-LEVEL PLATFORM OUTCOMES</text>
+  <rect x="40" y="497" width="215" height="93" rx="14" fill="#222F40" stroke="#3C4A5D"/>
+  <rect x="271" y="497" width="215" height="93" rx="14" fill="#222F40" stroke="#5B761E"/>
+  <rect x="502" y="497" width="215" height="93" rx="14" fill="#222F40" stroke="#3C4A5D"/>
+  <rect x="733" y="497" width="215" height="93" rx="14" fill="#222F40" stroke="#3C4A5D"/>
+  <rect x="964" y="497" width="196" height="93" rx="14" fill="#222F40" stroke="#3C4A5D"/>
+  <text x="59" y="526" font-family="Arial, sans-serif" font-size="10" font-weight="700" letter-spacing="1" fill="#9BA8B9">FEATURE LATENCY</text>
+  <text x="59" y="560" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#FFFFFF">24h → ~4m</text>
+  <text x="290" y="526" font-family="Arial, sans-serif" font-size="10" font-weight="700" letter-spacing="1" fill="#A7D657">GPU UTILIZATION</text>
+  <text x="290" y="560" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#4D8E00">~5% → 80%+</text>
+  <text x="521" y="526" font-family="Arial, sans-serif" font-size="10" font-weight="700" letter-spacing="1" fill="#9BA8B9">HOSTING COST</text>
+  <text x="521" y="560" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#FFFFFF">-58%</text>
+  <text x="585" y="560" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#AEB8C6">~US$240K/yr</text>
+  <text x="752" y="526" font-family="Arial, sans-serif" font-size="10" font-weight="700" letter-spacing="1" fill="#9BA8B9">INFERENCE SCALE</text>
+  <text x="752" y="560" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#FFFFFF">10×</text>
+  <text x="801" y="560" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#AEB8C6">&lt;150ms p99</text>
+  <text x="983" y="526" font-family="Arial, sans-serif" font-size="10" font-weight="700" letter-spacing="1" fill="#9BA8B9">MODELS SERVED</text>
+  <text x="983" y="560" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#FFFFFF">100+</text>
+
+  <rect x="40" y="620" width="1120" height="64" rx="14" fill="#FFFFFF" fill-opacity=".07" stroke="#A6B2C2" stroke-opacity=".28"/>
+  <text x="60" y="645" font-family="Arial, sans-serif" font-size="10" font-weight="700" letter-spacing="1.2" fill="#A7D657">MY CONTRIBUTION</text>
+  <text x="60" y="668" font-family="Arial, sans-serif" font-size="13" fill="#FFFFFF">Pipeline components • feature-serving paths • Triton/EKS consolidation support • GPU optimization • performance validation • infrastructure-value analysis</text>
+</svg>
