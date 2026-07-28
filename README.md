@@ -13,6 +13,24 @@ The professional work covers systems I built or contributed to at Frasers Hospit
 
 [LinkedIn](https://www.linkedin.com/in/dae-tan-1a2b3c) · [Enterprise delivery](#selected-enterprise-delivery) · [AI infrastructure solutions](#featured-ai-infrastructure-solutions) · [Worked Private-RAG case](docs/tco-worked-example.md) · [Value-engineering method](docs/value-engineering.md)
 
+## Contents
+
+| # | Project | What it is | Repository |
+|---|---|---|---|
+| | **[Selected enterprise delivery](#selected-enterprise-delivery)** | Production work at Frasers Hospitality | |
+| 1 | [Production Intelligence Automation on GCP](#1-production-intelligence-automation-on-gcp) | Scheduled, governed cloud intelligence services | [gcp-data-platform-blueprint](https://github.com/daetan999/gcp-data-platform-blueprint) |
+| 2 | [Enterprise MLOps & GPU Serving](#2-enterprise-mlops--gpu-serving) | Shared platform for eight model families | [mlops-hosp](https://github.com/daetan999/mlops-hosp) |
+| 3 | [Governed FP&A Analytics Agent](#3-governed-fpa-analytics-agent) | Natural-language finance analysis over governed SQL | [adk-fpa-agent-blueprint](https://github.com/daetan999/adk-fpa-agent-blueprint) |
+| | **[AI infrastructure solutions](#featured-ai-infrastructure-solutions)** | Independently built, runnable workbenches | |
+| 4 | [Opportunity & Discovery Workbench](#1-opportunity--discovery-workbench) | Evidence-led opportunity qualification | [ai-infra-opportunity-workbench](https://github.com/daetan999/ai-infra-opportunity-workbench) |
+| 5 | [Capacity & Commercial Sizing Planner](#2-capacity--commercial-sizing-planner) | First-pass infrastructure and cost ranges | [ai-infra-capacity-planner](https://github.com/daetan999/ai-infra-capacity-planner) |
+| 6 | [Enterprise AI Solution Configurator](#3-enterprise-ai-solution-configurator) | Requirements to an explainable architecture | [ai-infra-solution-configurator](https://github.com/daetan999/ai-infra-solution-configurator) |
+| 7 | [TCO & ROI Workbench](#4-tco--roi-workbench) | Deterministic infrastructure economics | [ai-infra-tco-workbench](https://github.com/daetan999/ai-infra-tco-workbench) |
+| | **[Additional technical build](#additional-technical-build)** | | |
+| 8 | [HR Timesheet & Approval Tool](#hr-timesheet--approval-tool) | Document intake to payroll-ready export | [hr_timesheet_tool](https://github.com/daetan999/hr_timesheet_tool) |
+
+Also here: [shared engineering approach](#shared-engineering-approach) · [public artifact standard](#public-artifact-standard)
+
 ## Selected enterprise delivery
 
 Professional work completed within Frasers Hospitality's Digital Intelligence environment. Public diagrams and interfaces are sanitized reconstructions; production source code, company data, credentials, internal identifiers, prompts, endpoints, and screenshots are excluded.
