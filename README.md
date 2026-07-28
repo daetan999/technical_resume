@@ -1,11 +1,11 @@
 # Dae Tan | AI Infrastructure Solutions Portfolio
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-6B7A45?style=flat-square&labelColor=1F2328)](LICENSE)
-[![Focus: AI infrastructure sales and solutions](https://img.shields.io/badge/Focus-AI%20infrastructure%20sales%20%26%20solutions-1F3A5F?style=flat-square&labelColor=1F2328)](#featured-ai-infrastructure-solutions)
-[![Enterprise delivery: 3](https://img.shields.io/badge/Enterprise%20delivery-3-C8102E?style=flat-square&labelColor=1F2328)](#selected-enterprise-delivery)
-[![Runnable workbenches: 4](https://img.shields.io/badge/Runnable%20workbenches-4-C2410C?style=flat-square&labelColor=1F2328)](#featured-ai-infrastructure-solutions)
-[![Public artifacts: sanitized](https://img.shields.io/badge/Public%20artifacts-sanitized%20%26%20synthetic-6B2737?style=flat-square&labelColor=1F2328)](#public-artifact-standard)
-[![Last updated](https://img.shields.io/github/last-commit/daetan999/technical_resume?style=flat-square&label=Updated&labelColor=1F2328&color=3D4249)](https://github.com/daetan999/technical_resume/commits/main)
+[![Enterprise delivery: 3 systems](https://img.shields.io/badge/Enterprise%20delivery-3%20systems-17324D?style=flat-square&labelColor=111820)](#selected-enterprise-delivery)
+[![AI infrastructure: 4 workbenches](https://img.shields.io/badge/AI%20infrastructure-4%20workbenches-2F5973?style=flat-square&labelColor=111820)](#featured-ai-infrastructure-solutions)
+[![Supporting build: HR workflow](https://img.shields.io/badge/Supporting%20build-HR%20workflow-A96A2D?style=flat-square&labelColor=111820)](#additional-technical-build)
+[![Public artifacts: sanitized](https://img.shields.io/badge/Public%20artifacts-sanitized%20%26%20synthetic-6C3947?style=flat-square&labelColor=111820)](#public-artifact-standard)
+[![License: MIT](https://img.shields.io/badge/License-MIT-667454?style=flat-square&labelColor=111820)](LICENSE)
+[![Last updated](https://img.shields.io/github/last-commit/daetan999/technical_resume?style=flat-square&label=Updated&labelColor=111820&color=3D596B)](https://github.com/daetan999/technical_resume/commits/main)
 
 A technical-commercial portfolio spanning enterprise cloud and AI delivery, governed agentic analytics, MLOps and GPU serving, and independently built tools for the AI-infrastructure customer decision cycle.
 
@@ -58,6 +58,10 @@ I contributed to the data, feature, model-serving, GPU-optimization, and infrast
 ### 3. Governed FP&A Analytics Agent
 
 **Frasers Hospitality · direct application build**
+
+<a href="https://github.com/daetan999/adk-fpa-agent-blueprint">
+  <img src="https://raw.githubusercontent.com/daetan999/adk-fpa-agent-blueprint/main/docs/assets/fpa-analysis-workspace.svg" alt="Sanitized dark-navy FP&A analysis workspace showing an approved finance request, portfolio KPIs, variance analysis, and governed query controls" width="1200">
+</a>
 
 I built an ADK and BigQuery analysis workflow that turned natural-language finance and property-performance questions into governed, source-labelled results.
 
@@ -144,6 +148,10 @@ Built with a Decimal-based financial engine, immutable scenario versions, assump
 
 ### HR Timesheet & Approval Tool
 
+<a href="https://github.com/daetan999/hr_timesheet_tool">
+  <img src="https://raw.githubusercontent.com/daetan999/hr_timesheet_tool/main/docs/assets/screenshots/review.png" alt="Synthetic HR timesheet exception-review workspace showing the six-stage workflow, flagged records, review controls, and payroll export gate" width="1200">
+</a>
+
 A working FastAPI application for replacing paper and spreadsheet-based time capture with document intake, field normalization, deterministic validation, exception review, reference-data management, approval controls, and payroll-ready Excel export.
 
 The public prototype runs with synthetic employee data and mock extraction, while preserving idempotent records, audit fields, reviewed-data protection, and a documented promotion path to production persistence and identity controls.
@@ -158,14 +166,6 @@ The public prototype runs with synthetic employee data and mock extraction, whil
 - Assumptions, inputs, source labels, limitations, and validation requirements remain visible beside outputs.
 - Public repositories separate synthetic or sanitized material from professional outcomes and internal production assets.
 - Architecture and commercial recommendations remain hypotheses until replaced by customer data, benchmarks, security review, technical approval, and supplier pricing.
-
-## Suggested review paths
-
-**Thirty seconds:** scan the three enterprise builds, then the four-product decision table.
-
-**Five minutes:** review the GCP operating controls, MLOps contribution map, governed FP&A query boundary, Capacity bottlenecks, Configurator trade-offs, and TCO sensitivity.
-
-**Technical-commercial interview:** follow the [fictional Private-RAG case](docs/tco-worked-example.md) from discovery through sizing, architecture, and financial review; then compare that decision discipline with the professional [GCP](docs/enterprise-delivery/gcp-intelligence-automation.md), [MLOps](docs/enterprise-delivery/enterprise-mlops-gpu-serving.md), and [FP&A agent](https://github.com/daetan999/adk-fpa-agent-blueprint) work.
 
 ## Public artifact standard
 
