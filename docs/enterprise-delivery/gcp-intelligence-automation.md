@@ -88,11 +88,7 @@ Gemini curated and narrated; deterministic code owned calculations and state. Th
 
 Cloud Run runners loaded approved scripts and helpers from Cloud Storage. This simplified workload replication, but required strict version, helper, environment, and working-directory controls during promotion.
 
-## What this case proves
-
-This case is evidence that I can work beyond a prototype: translate business requirements into cloud services, define model boundaries, design failure policies, diagnose production incidents, manage configuration and audiences, and document a reversible operating path.
-
 ## Public evidence
 
 - [Sanitized GCP Data & Intelligence Platform blueprint](https://github.com/daetan999/gcp-data-platform-blueprint)
-- [Return to the technical portfolio](../../README.md)
+- [Return to the AI Infrastructure Solutions Portfolio](../../README.md)

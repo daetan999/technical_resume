@@ -91,11 +91,7 @@ Automatic retraining shortens response time, but severe drift, label failure, or
 
 Infrastructure savings can be measured from fleet and utilization data. Revenue, RevPAR, yield, and GOP require stronger attribution because model changes operate alongside pricing policy, demand, distribution, and commercial execution.
 
-## What this case proves
-
-This case is evidence that I can engage credibly with infrastructure and MLOps specialists, understand the technical path from data to GPU serving, challenge weak ROI logic, and translate benchmark evidence into a commercial discussion.
-
 ## Public evidence
 
 - [Sanitized Enterprise MLOps Platform blueprint](https://github.com/daetan999/mlops-hosp)
-- [Return to the technical portfolio](../../README.md)
+- [Return to the AI Infrastructure Solutions Portfolio](../../README.md)
