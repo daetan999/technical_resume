@@ -172,8 +172,7 @@ The public prototype runs with synthetic employee data and mock extraction, whil
 - Professional metrics are labelled as direct workflow outcomes or wider team-level platform outcomes.
 - Public repositories do not reproduce proprietary production code, data, credentials, endpoints, prompts, or internal interfaces.
 - Scenario values in independent projects are not presented as customer revenue, quota, or savings results.
-- Prototype, blueprint, benchmark, production contribution, and production deployment are not used interchangeably.
-- The [resume project mapping](docs/resume-project-mapping.md) keeps the paper resume concise while this repository holds the wider project set.
+- Prototype, blueprint, benchmark, production contribution, and production deployment are not used interchangeably. 
 
 ## License
 
