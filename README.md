@@ -1,48 +1,96 @@
-# Dae Tan | Technical Portfolio
+# Dae Tan | AI Infrastructure Solutions Portfolio
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-6B7A45?style=flat-square&labelColor=1F2328)](LICENSE)
-[![Focus: AI infrastructure sales and solutions](https://img.shields.io/badge/Focus-AI%20infrastructure%20sales%20%26%20solutions-1F3A5F?style=flat-square&labelColor=1F2328)](#review-the-portfolio-as-one-decision)
-[![Runnable workbenches: 4](https://img.shields.io/badge/Runnable%20workbenches-4-C2410C?style=flat-square&labelColor=1F2328)](#featured-products)
-[![Enterprise case studies: 2](https://img.shields.io/badge/Enterprise%20case%20studies-2-C8102E?style=flat-square&labelColor=1F2328)](#selected-enterprise-delivery-experience)
-[![Supporting blueprints: 2](https://img.shields.io/badge/Supporting%20blueprints-2-B08423?style=flat-square&labelColor=1F2328)](#supporting-technical-foundations)
-[![Public artifacts: sanitized](https://img.shields.io/badge/Public%20artifacts-sanitized%20%26%20synthetic-6B2737?style=flat-square&labelColor=1F2328)](#accuracy-standard)
+[![Focus: AI infrastructure sales and solutions](https://img.shields.io/badge/Focus-AI%20infrastructure%20sales%20%26%20solutions-1F3A5F?style=flat-square&labelColor=1F2328)](#featured-ai-infrastructure-solutions)
+[![Enterprise delivery: 3](https://img.shields.io/badge/Enterprise%20delivery-3-C8102E?style=flat-square&labelColor=1F2328)](#selected-enterprise-delivery)
+[![Runnable workbenches: 4](https://img.shields.io/badge/Runnable%20workbenches-4-C2410C?style=flat-square&labelColor=1F2328)](#featured-ai-infrastructure-solutions)
+[![Public artifacts: sanitized](https://img.shields.io/badge/Public%20artifacts-sanitized%20%26%20synthetic-6B2737?style=flat-square&labelColor=1F2328)](#public-artifact-standard)
 [![Last updated](https://img.shields.io/github/last-commit/daetan999/technical_resume?style=flat-square&label=Updated&labelColor=1F2328&color=3D4249)](https://github.com/daetan999/technical_resume/commits/main)
 
-Technical-commercial portfolio for AI infrastructure sales, account, and solutions roles. It combines four independently built workbenches with two sanitized enterprise-delivery case studies: evidence of how I discover, size, frame, justify, and help operate complex AI and cloud systems.
+A technical-commercial portfolio spanning enterprise cloud and AI delivery, governed agentic analytics, MLOps and GPU serving, and independently built tools for the AI-infrastructure customer decision cycle.
 
-[LinkedIn](https://www.linkedin.com/in/dae-tan-1a2b3c) · [Enterprise delivery](#selected-enterprise-delivery-experience) · [Worked Private-RAG case](docs/tco-worked-example.md) · [Value-engineering method](docs/value-engineering.md) · [Resume project mapping](docs/resume-project-mapping.md)
+The professional work covers systems I built or contributed to at Frasers Hospitality. The independent projects connect discovery, workload sizing, architecture framing, and financial justification into one reviewable workflow.
 
-## Review the portfolio as one decision
+[LinkedIn](https://www.linkedin.com/in/dae-tan-1a2b3c) · [Enterprise delivery](#selected-enterprise-delivery) · [AI infrastructure solutions](#featured-ai-infrastructure-solutions) · [Worked Private-RAG case](docs/tco-worked-example.md) · [Value-engineering method](docs/value-engineering.md)
 
-| Stage | Question | Product | Reviewable output |
+## Selected enterprise delivery
+
+Professional work completed within Frasers Hospitality's Digital Intelligence environment. Public diagrams and interfaces are sanitized reconstructions; production source code, company data, credentials, internal identifiers, prompts, endpoints, and screenshots are excluded.
+
+### 1. Production Intelligence Automation on GCP
+
+**Frasers Hospitality · Digital Intelligence · direct delivery and operation**
+
+<a href="docs/enterprise-delivery/gcp-intelligence-automation.md">
+  <img src="docs/assets/enterprise-gcp-delivery.svg" alt="Sanitized GCP intelligence architecture showing scheduled ingestion, controlled model use, BigQuery configuration, Cloud Run execution, and accepted delivery" width="1200">
+</a>
+
+I helped turn recurring intelligence gathering and performance reporting into independently scheduled, governed cloud services.
+
+- Built and refined seven newsletter workflows and two recurring reporting paths using Cloud Run, Cloud Scheduler, Cloud Storage, BigQuery, Vertex AI/Gemini, Secret Manager, and SendGrid.
+- Added deterministic KPI calculation, readiness gates, resilient feed handling, recipient and opt-out configuration, encrypted preference tokens, accepted-delivery checks, and sent-history protection.
+- Created reversible sandbox, UAT, and production procedures covering disabled-send validation, scheduler activation, environment configuration, migration, rollback, and day-two incident response.
+- Contributed to a 60% reduction in reporting turnaround and 100+ annual hours saved; the wider reporting environment covered 45+ datasets and 80+ properties.
+
+[`Read the GCP delivery case study`](docs/enterprise-delivery/gcp-intelligence-automation.md) · [`Open the sanitized GCP blueprint`](https://github.com/daetan999/gcp-data-platform-blueprint)
+
+---
+
+### 2. Enterprise MLOps & GPU Serving
+
+**Frasers Hospitality · collaborative platform contribution**
+
+<a href="docs/enterprise-delivery/enterprise-mlops-gpu-serving.md">
+  <img src="docs/assets/enterprise-mlops-delivery.svg" alt="Sanitized MLOps contribution map covering data pipelines, feature serving, model lifecycle, Triton on EKS, monitoring, and platform outcomes" width="1200">
+</a>
+
+I contributed to the data, feature, model-serving, GPU-optimization, and infrastructure-value work behind a shared enterprise MLOps platform.
+
+- Implemented and supported Kafka, Airflow, Feast, Redis, and Snowflake paths that reduced feature latency from 24 hours to approximately four minutes.
+- Supported consolidation of 100+ models onto NVIDIA Triton serving on AWS EKS, including GPU optimization and performance validation.
+- Connected utilization, throughput, p99 latency, feature freshness, and hosting cost to infrastructure and business decisions.
+- Team-level outcomes included GPU utilization rising from approximately 5% to more than 80%, a 58% hosting-cost reduction (about US$240K annually), and 10× inference demand below 150 ms p99.
+
+[`Read the MLOps delivery case study`](docs/enterprise-delivery/enterprise-mlops-gpu-serving.md) · [`Open the sanitized MLOps blueprint`](https://github.com/daetan999/mlops-hosp)
+
+---
+
+### 3. Governed FP&A Analytics Agent
+
+**Frasers Hospitality · direct application build**
+
+I built an ADK and BigQuery analysis workflow that turned natural-language finance and property-performance questions into governed, source-labelled results.
+
+- Covered P&L, budget variance, occupancy, ADR, RevPAR, and property-performance questions through Google ADK, Gemini on Vertex AI, BigQuery, and a Next.js request boundary.
+- Separated model planning and explanation from deterministic SQL calculation, with approved data objects, source-specific property resolution, byte caps, result limits, KPI-semantic rules, and data-quality checks.
+- Reduced common ad hoc extraction from hours to under two minutes while keeping raw KPI components and source context available for review.
+
+[`Open the governed FP&A agent blueprint and reconstructed interface`](https://github.com/daetan999/adk-fpa-agent-blueprint)
+
+## Featured AI infrastructure solutions
+
+Four independently built workbenches cover one connected customer decision cycle. Each product uses a distinct interface because discovery, engineering sizing, architecture review, and investment analysis are different forms of work.
+
+| Stage | Decision | Product | Output |
 |---|---|---|---|
-| Discover | Is there a specific, evidenced opportunity worth pursuing? | [Opportunity Workbench](https://github.com/daetan999/ai-infra-opportunity-workbench) | Workload hypothesis, stakeholder map, evidence gaps, and next action |
-| Size | What infrastructure range and bottleneck require validation? | [Capacity Planner](https://github.com/daetan999/ai-infra-capacity-planner) | Low/base/high range, sensitivities, and an AE-to-SE validation plan |
-| Configure | Which architecture hypothesis best fits the stated requirements? | [Solution Configurator](https://github.com/daetan999/ai-infra-solution-configurator) | Recommendation, alternatives, risks, diagram, and validation gates |
+| Discover | Is there a specific opportunity worth pursuing? | [Opportunity Workbench](https://github.com/daetan999/ai-infra-opportunity-workbench) | Workload hypothesis, stakeholder map, discovery gaps, and next action |
+| Size | What infrastructure range and bottleneck require validation? | [Capacity Planner](https://github.com/daetan999/ai-infra-capacity-planner) | Low/base/high range, sensitivities, bottlenecks, and AE-to-SE validation plan |
+| Configure | Which architecture hypothesis best fits the requirements? | [Solution Configurator](https://github.com/daetan999/ai-infra-solution-configurator) | Recommendation, alternatives, risks, architecture diagram, and validation gates |
 | Justify | Is the proposed change financially defensible? | [TCO Workbench](https://github.com/daetan999/ai-infra-tco-workbench) | TCO, unit economics, sensitivity, payback, ROI, and executive report |
-
-The products share evidence and decision discipline, not a common dashboard skin. Each interface uses a visual system chosen for its work.
-
-## Featured products
 
 ### 1. Opportunity & Discovery Workbench
 
 **Account research, qualification, and bounded PoC handoff**
 
 <a href="https://github.com/daetan999/ai-infra-opportunity-workbench">
-  <img src="docs/assets/opportunity-account-workspace.png" alt="Olive and ivory Opportunity Workbench showing a fictional account's workload hypothesis, evidence, and qualification scorecard" width="1200">
+  <img src="docs/assets/opportunity-account-workspace.png" alt="Olive and ivory Opportunity Workbench showing a fictional account's workload hypothesis, sources, and qualification scorecard" width="1200">
 </a>
 
-*A field-research journal for distinguishing sourced signals from seller interpretation.*
+A field-research workspace for separating sourced account signals from seller interpretation. It turns workload hypotheses, stakeholder access, discovery notes, and unresolved risk into an advance, reshape, nurture, or disqualify recommendation.
 
-The workbench turns account signals, workload hypotheses, stakeholder access, and discovery notes into a transparent advance, reshape, nurture, or disqualify recommendation.
+Built with deterministic qualification, persistence, workflow APIs, a server-rendered interface, and JSON/Markdown exports. Fictional accounts and decision-support logic only; it is not a production CRM or revenue forecast.
 
-- **Decision contribution:** exposes weak evidence, single-threading, missing authority, and unresolved risk before solution resources are committed.
-- **Engineering contribution:** implemented deterministic qualification, persistence, workflow APIs, a server-rendered interface, and JSON/Markdown exports.
-- **Boundary:** fictional accounts and decision-support logic; not a production CRM, revenue forecast, or claim of customer outcomes.
-- **Visual identity:** olive, clay, and ivory with Fraunces, Alegreya Sans, and Azeret Mono.
-
-[`Open the Opportunity Workbench repository`](https://github.com/daetan999/ai-infra-opportunity-workbench)
+[`Open the Opportunity Workbench`](https://github.com/daetan999/ai-infra-opportunity-workbench)
 
 ---
 
@@ -51,19 +99,14 @@ The workbench turns account signals, workload hypotheses, stakeholder access, an
 **First-pass workload sizing for an AE-to-SE conversation**
 
 <a href="https://github.com/daetan999/ai-infra-capacity-planner">
-  <img src="docs/assets/capacity-planner-workspace.png" alt="Graphite Capacity Planner showing representative workload inputs, calculated infrastructure ranges, bottlenecks, and confidence" width="1200">
+  <img src="docs/assets/capacity-planner-workspace.png" alt="Graphite Capacity Planner showing workload inputs, calculated infrastructure ranges, bottlenecks, and confidence" width="1200">
 </a>
 
-*An industrial planning desk that treats early sizing as measured work, not false precision.*
+An industrial planning desk that converts early workload assumptions into editable compute, memory, storage, network, power, and commercial ranges across training, fine-tuning, batch inference, real-time inference, and RAG.
 
-The planner converts workload assumptions into editable infrastructure and commercial ranges across training, fine-tuning, batch inference, real-time inference, and RAG.
+Built with a deterministic sizing engine, YAML accelerator profiles, scenario persistence, comparison, sensitivity, and exports. Outputs are indicative planning ranges—not benchmarks, supplier quotes, topology validation, or a final bill of materials.
 
-- **Decision contribution:** identifies the binding compute, memory, storage, network, latency, or completion-window constraint and turns missing inputs into validation questions.
-- **Engineering contribution:** built a deterministic sizing engine, YAML accelerator profiles, scenario persistence, comparison, sensitivity, and export workflows.
-- **Boundary:** indicative planning ranges; not a benchmark, supplier quote, topology validation, or final bill of materials.
-- **Visual identity:** graphite, safety orange, and brass with Barlow Semi Condensed and Azeret Mono.
-
-[`Open the Capacity Planner repository`](https://github.com/daetan999/ai-infra-capacity-planner)
+[`Open the Capacity Planner`](https://github.com/daetan999/ai-infra-capacity-planner)
 
 ---
 
@@ -72,19 +115,14 @@ The planner converts workload assumptions into editable infrastructure and comme
 **Requirements-led architecture recommendation and validation planning**
 
 <a href="https://github.com/daetan999/ai-infra-solution-configurator">
-  <img src="docs/assets/solution-configurator-architecture.png" alt="Blueprint-style Solution Configurator showing a fictional enterprise AI architecture, recommendation rationale, risks, and validation gates" width="1200">
+  <img src="docs/assets/solution-configurator-architecture.png" alt="Blueprint-style Solution Configurator showing a fictional enterprise AI architecture, rationale, risks, and validation gates" width="1200">
 </a>
 
-*An architectural blueprint workspace that keeps requirements, rules, and assumptions visible beside the proposed design.*
+A blueprint workspace that turns structured requirements into an explainable solution hypothesis, viable alternatives, risk notes, validation gates, and a controlled architecture diagram.
 
-The configurator turns structured requirements into an explainable solution hypothesis, viable alternatives, risk notes, validation gates, and a controlled architecture diagram.
+Built with versioned recommendation rules, deterministic diagram generation, scenario persistence, exports, and browser-tested decision flows. The result is an initial hypothesis—not a final architecture, security approval, benchmark, quote, or bill of materials.
 
-- **Decision contribution:** makes rule matches, exclusions, trade-offs, and unresolved requirements reviewable before an architecture is treated as approved.
-- **Engineering contribution:** implemented versioned recommendation rules, deterministic diagram generation, scenario persistence, exports, and browser-tested decision flows.
-- **Boundary:** an initial solution hypothesis; not a final architecture, security approval, benchmark, quote, or bill of materials.
-- **Visual identity:** blueprint navy, paper blue, and ochre with Bitter, Fira Sans, and IBM Plex Mono.
-
-[`Open the Solution Configurator repository`](https://github.com/daetan999/ai-infra-solution-configurator)
+[`Open the Solution Configurator`](https://github.com/daetan999/ai-infra-solution-configurator)
 
 ---
 
@@ -96,101 +134,46 @@ The configurator turns structured requirements into an explainable solution hypo
   <img src="docs/assets/tco-comparison.png" alt="Parchment TCO Workbench comparing fictional infrastructure operating models with cost, payback, ROI, and confidence measures" width="1200">
 </a>
 
-*A financial broadsheet that presents assumptions and calculation lineage as an auditable decision record.*
+A financial review desk for comparing infrastructure operating models across three- and five-year TCO, unit economics, payback, modeled ROI, and sensitivity while preserving the assumptions behind every result.
 
-The workbench compares operating models across three- and five-year TCO, unit economics, payback, modeled ROI, and sensitivity while preserving the inputs behind every result.
+Built with a Decimal-based financial engine, immutable scenario versions, assumption gating, sensitivity analysis, and JSON/CSV/PDF exports. Values are fictional or user-entered—not live pricing, supplier terms, financial advice, or guaranteed ROI.
 
-- **Decision contribution:** tests whether a recommendation remains defensible as utilization, compute price, growth, and energy assumptions change.
-- **Engineering contribution:** built a Decimal-based financial engine, immutable scenario versions, evidence gating, sensitivity analysis, and JSON/CSV/PDF exports.
-- **Boundary:** fictional or user-entered assumptions; not live pricing, financial advice, supplier terms, or guaranteed ROI.
-- **Visual identity:** parchment, forest green, and oxblood with Newsreader and DM Mono.
+[`Open the TCO Workbench`](https://github.com/daetan999/ai-infra-tco-workbench)
 
-[`Open the TCO Workbench repository`](https://github.com/daetan999/ai-infra-tco-workbench)
+## Additional technical build
 
-## Selected enterprise delivery experience
+### HR Timesheet & Approval Tool
 
-These case studies show how I contributed inside a real enterprise environment. They are deliberately separated from the independently built products above so professional delivery, portfolio reconstruction, and team-level outcomes are not conflated.
+A working FastAPI application for replacing paper and spreadsheet-based time capture with document intake, field normalization, deterministic validation, exception review, reference-data management, approval controls, and payroll-ready Excel export.
 
-> **Public boundary:** Every diagram and interface below is a sanitized reconstruction using synthetic data. Proprietary source code, datasets, prompts, credentials, recipients, internal identifiers, screenshots, and infrastructure details are excluded.
+The public prototype runs with synthetic employee data and mock extraction, while preserving idempotent records, audit fields, reviewed-data protection, and a documented promotion path to production persistence and identity controls.
 
-### 1. Production Intelligence Automation on GCP
+**Technology:** Python · FastAPI · Jinja2 · PyMuPDF · Pillow · openpyxl
 
-**Frasers Hospitality · Digital Intelligence · direct delivery and operation**
-
-<a href="docs/enterprise-delivery/gcp-intelligence-automation.md">
-  <img src="docs/assets/enterprise-gcp-delivery.svg" alt="Sanitized enterprise GCP intelligence architecture showing scheduled ingestion, guarded model use, BigQuery controls, Cloud Run execution, and accepted delivery" width="1200">
-</a>
-
-I helped turn recurring intelligence gathering and performance reporting into governed, scheduled cloud workflows rather than fragile manual processes.
-
-- **Delivered:** seven newsletter workflows and two recurring performance-reporting paths using Cloud Run, Cloud Scheduler, Cloud Storage, BigQuery, Vertex AI/Gemini, Secret Manager, and SendGrid.
-- **Engineered controls:** deterministic KPI calculation, content-readiness gates, resilient feed handling, recipient and opt-out configuration, encrypted preference tokens, accepted-delivery checks, and sent-history protection.
-- **Operated safely:** sandbox/UAT/production promotion, paused scheduler activation, disabled-send validation, environment-based configuration, rollback steps, and per-workload isolation.
-- **Outcome:** contributed to a 60% reduction in reporting turnaround and 100+ annual hours saved across recurring delivery; the wider reporting platform covered 45+ datasets and 80+ properties.
-
-[`Review the full GCP delivery case study`](docs/enterprise-delivery/gcp-intelligence-automation.md) · [`Inspect the sanitized GCP blueprint`](https://github.com/daetan999/gcp-data-platform-blueprint)
-
----
-
-### 2. Enterprise MLOps & GPU Serving
-
-**Frasers Hospitality · collaborative platform contribution**
-
-<a href="docs/enterprise-delivery/enterprise-mlops-gpu-serving.md">
-  <img src="docs/assets/enterprise-mlops-delivery.svg" alt="Sanitized enterprise MLOps contribution map showing data pipelines, feature serving, model lifecycle, Triton on EKS, monitoring, and measured platform outcomes" width="1200">
-</a>
-
-I contributed to the data, feature, model-serving, and infrastructure-value work behind a shared enterprise MLOps platform—not as the sole architect, but as part of the delivery team.
-
-- **Pipeline contribution:** implemented and supported Kafka, Airflow, Feast, Redis, and Snowflake paths that reduced feature latency from 24 hours to approximately four minutes.
-- **Serving contribution:** supported consolidation of 100+ models onto shared NVIDIA Triton serving on AWS EKS, including GPU optimization and performance validation.
-- **Technical-commercial contribution:** connected utilization, p99 latency, throughput, feature freshness, and hosting cost to operational and financial outcomes.
-- **Team-level platform outcomes:** GPU utilization increased from approximately 5% to more than 80%; hosting cost fell 58% (about US$240K annually); the platform supported 10× inference demand below 150 ms p99.
-
-[`Review the full MLOps delivery case study`](docs/enterprise-delivery/enterprise-mlops-gpu-serving.md) · [`Inspect the sanitized MLOps blueprint`](https://github.com/daetan999/mlops-hosp)
-
-### Evidence and responsibility boundary
-
-| Evidence category | My relationship | What the public portfolio proves |
-|---|---|---|
-| GCP intelligence workflows | Built, productionized, migrated, and operated selected workflows and controls | Cloud workload design, reliability thinking, model boundaries, and day-two operations |
-| Enterprise MLOps platform | Contributed to pipeline, serving, GPU optimization, and value-analysis work within a wider team | Technical fluency across feature freshness, model serving, GPU economics, and validation |
-| Four commercial workbenches | Independently designed and built | Discovery, sizing, solution framing, value engineering, and executive communication |
-| Public architecture repositories | Sanitized reconstructions derived from professional patterns | Reviewable architecture and control logic without exposing production assets |
-
-## Supporting technical foundations
-
-The workbenches demonstrate decision support around an infrastructure sale. These architecture repositories provide additional implementation context without being presented as public production deployments.
-
-| Project | Evidence it adds | Public boundary |
-|---|---|---|
-| [Enterprise MLOps Platform](https://github.com/daetan999/mlops-hosp) | Data, feature, model-lifecycle, GPU-serving, monitoring, rollout, and reliability context | Sanitized reference blueprint; proprietary data, integrations, images, clusters, and endpoints are excluded |
-| [GCP Data & Intelligence Platform](https://github.com/daetan999/gcp-data-platform-blueprint) | Governed BigQuery data, Cloud Run operations, model boundaries, failure policies, and reversible environment promotion | Architecture blueprint rather than a complete deployable environment |
-
-The [Agentic FP&A Analytics blueprint](https://github.com/daetan999/adk-fpa-agent-blueprint) is intentionally not featured: its governance concepts are useful, but the public repository does not implement the complete guarded execution, authentication, deployment, and evaluation path.
+[`Open the HR Timesheet Tool`](https://github.com/daetan999/hr_timesheet_tool)
 
 ## Shared engineering approach
 
-- Deterministic scoring, sizing, rule, financial, and KPI engines keep generated narrative from silently changing a decision.
-- Fictional, synthetic, sanitized, or user-entered data is labelled and kept separate from professional-experience claims.
-- Each runnable prototype documents setup, API boundaries, architecture, tests, exports, and known limitations in its own repository.
-- Outputs remain hypotheses until the appropriate customer evidence, benchmarks, security review, supplier pricing, and technical approval replace illustrative assumptions.
+- Models interpret language and produce narrative; deterministic code owns scoring, sizing, financial calculations, KPI logic, state, and delivery decisions.
+- Assumptions, inputs, source labels, limitations, and validation requirements remain visible beside outputs.
+- Public repositories separate synthetic or sanitized material from professional outcomes and internal production assets.
+- Architecture and commercial recommendations remain hypotheses until replaced by customer data, benchmarks, security review, technical approval, and supplier pricing.
 
-## Interview review paths
+## Suggested review paths
 
-**Thirty seconds:** scan the decision table, four product screenshots, and two enterprise-delivery visuals.
+**Thirty seconds:** scan the three enterprise builds, then the four-product decision table.
 
-**Five minutes:** inspect Opportunity evidence quality, Capacity bottlenecks, Configurator rule explanations, TCO sensitivity, and the responsibility boundary above.
+**Five minutes:** review the GCP operating controls, MLOps contribution map, governed FP&A query boundary, Capacity bottlenecks, Configurator trade-offs, and TCO sensitivity.
 
-**Technical-commercial interview:** follow the [fictional Private-RAG case](docs/tco-worked-example.md) across discovery, sizing, architecture, and financial review; then review how the [GCP](docs/enterprise-delivery/gcp-intelligence-automation.md) and [MLOps](docs/enterprise-delivery/enterprise-mlops-gpu-serving.md) case studies connect technical controls to operating outcomes.
+**Technical-commercial interview:** follow the [fictional Private-RAG case](docs/tco-worked-example.md) from discovery through sizing, architecture, and financial review; then compare that decision discipline with the professional [GCP](docs/enterprise-delivery/gcp-intelligence-automation.md), [MLOps](docs/enterprise-delivery/enterprise-mlops-gpu-serving.md), and [FP&A agent](https://github.com/daetan999/adk-fpa-agent-blueprint) work.
 
-## Accuracy standard
+## Public artifact standard
 
-- Professional metrics are presented as either direct workflow outcomes or team-level platform outcomes; the case studies state which.
-- No public repository claims to reproduce proprietary production code, data, endpoints, prompts, credentials, or interfaces.
-- Scenario values in the independent workbenches are portfolio evidence, not professional revenue, quota, or savings results.
-- “Prototype,” “blueprint,” “benchmark,” “quote,” “production contribution,” and “production deployment” are not used interchangeably.
-- The [resume project mapping](docs/resume-project-mapping.md) keeps the one-page resume concise while this repository holds the complete technical evidence set.
+- Professional metrics are labelled as direct workflow outcomes or wider team-level platform outcomes.
+- Public repositories do not reproduce proprietary production code, data, credentials, endpoints, prompts, or internal interfaces.
+- Scenario values in independent projects are not presented as customer revenue, quota, or savings results.
+- Prototype, blueprint, benchmark, production contribution, and production deployment are not used interchangeably.
+- The [resume project mapping](docs/resume-project-mapping.md) keeps the paper resume concise while this repository holds the wider project set.
 
 ## License
 
