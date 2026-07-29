@@ -2,44 +2,35 @@
 
 # Dae Tan
 
-### Technical Portfolio
+### AI Infrastructure Solutions Portfolio
 
 Enterprise cloud delivery&nbsp; ·&nbsp; Governed analytics&nbsp; ·&nbsp; MLOps &amp; GPU serving&nbsp; ·&nbsp; AI-infrastructure decision tooling
 
 [![Live walkthrough](https://img.shields.io/badge/live%20walkthrough-Northstar%20decision-17324D?style=flat-square&labelColor=111820)](https://daetan999.github.io/technical_resume/)
 [![Enterprise delivery](https://img.shields.io/badge/enterprise%20delivery-3%20systems-2F5973?style=flat-square&labelColor=111820)](#enterprise-delivery)
 [![Independent builds](https://img.shields.io/badge/independent%20builds-4%20workbenches-52606C?style=flat-square&labelColor=111820)](#independent-ai-infrastructure-workflow)
-[![Public artifacts](https://img.shields.io/badge/public%20artifacts-sanitized%20%26%20synthetic-6C3947?style=flat-square&labelColor=111820)](#portfolio-standards)
-[![License](https://img.shields.io/badge/license-MIT-667454?style=flat-square&labelColor=111820)](LICENSE)
-
-**[Enterprise Delivery](#enterprise-delivery)**&nbsp; ·&nbsp; **[AI Infrastructure Workflow](#independent-ai-infrastructure-workflow)**&nbsp; ·&nbsp; **[Upcoming Build](#upcoming-build)**&nbsp; ·&nbsp; **[Additional Build](#additional-build)**&nbsp; ·&nbsp; **[Portfolio Standards](#portfolio-standards)**
-
-<sub>
-  <a href="https://www.linkedin.com/in/dae-tan-1a2b3c">LinkedIn</a>
-  &nbsp;·&nbsp;
-  <a href="docs/tco-worked-example.md">Worked private-RAG case</a>
-  &nbsp;·&nbsp;
-  <a href="docs/value-engineering.md">Value-engineering method</a>
-</sub>
 
 </div>
 
+| [Enterprise Delivery](#enterprise-delivery) | [AI Infrastructure Workflow](#independent-ai-infrastructure-workflow) | [Additional Build](#additional-build) |
+|:---:|:---:|:---:|
+
+<p align="center">
+  <sub>
+    <a href="https://www.linkedin.com/in/dae-tan-1a2b3c">LinkedIn</a>
+    &nbsp;·&nbsp;
+    <a href="docs/tco-worked-example.md">Worked private-RAG case</a>
+    &nbsp;·&nbsp;
+    <a href="docs/value-engineering.md">Value-engineering method</a>
+  </sub>
+</p>
+
 ---
 
-I build production systems and the decision tooling that justifies them.
+I build production AI systems and technical-commercial tools for evaluating infrastructure decisions.
 
 - **Enterprise delivery** — three systems built or contributed to at Frasers Hospitality, spanning GCP intelligence automation, MLOps and GPU serving, and a governed FP&A analytics agent.
-- **Independent workflow** — four runnable workbenches that connect opportunity discovery, workload sizing, solution configuration, and financial justification into a single reviewable decision cycle.
-
-## Start here
-
-| Time | Start with | What it shows |
-|:--|:--|:--|
-| **2 min** | [Live Northstar decision walkthrough](https://daetan999.github.io/technical_resume/) | One fictional AI-infrastructure opportunity moving from discovery to a conditional executive decision |
-| **5 min** | [Technical evidence index](docs/technical-evidence-index.md) | Direct delivery, collaborative platform outcomes, independent builds, and the evidence boundary for each |
-| **10 min** | [Northstar AE-to-SE handoff](docs/evidence/northstar-ae-se-handoff.md) | Workload evidence, open questions, architecture hypothesis, PoC gates, and commercial validation requirements |
-
-> **Scenario note** — The live walkthrough and handoff use a fictional regulated-enterprise scenario. They demonstrate the decision method and the implemented portfolio workflow; they are not customer work, benchmarks, quotes, or production architecture approval.
+- **Independent workflow** — four runnable workbenches connecting opportunity discovery, workload sizing, solution configuration, and financial justification into one reviewable decision cycle.
 
 ## Enterprise delivery
 
@@ -75,7 +66,7 @@ Contributed to Kafka and Airflow pipelines, Feast/Redis/Snowflake feature paths,
 
 **Platform measures:** feature latency, GPU utilization, throughput, p99 latency, model density, and hosting cost were used to connect engineering decisions to operating and financial outcomes.
 
-**Team outcome:** feature latency fell from 24 hours to approximately four minutes; GPU utilization rose from approximately 5% to above 80%; hosting cost fell 58% (about US$240K annually); the platform supported 10× inference demand below 150 ms p99; and fine-tuned BERT work-order routing contributed to 77% lower MTTR and 3% higher repeat bookings.
+**Team outcome:** feature latency fell from 24 hours to approximately four minutes; GPU utilization rose from approximately 5% to above 80%; hosting cost fell 58% (about US$240K annually); and the platform supported 10× inference demand below 150 ms p99.
 
 [Read the MLOps delivery case study](docs/enterprise-delivery/enterprise-mlops-gpu-serving.md) · [Open the sanitized MLOps blueprint](https://github.com/daetan999/mlops-hosp)
 
@@ -169,14 +160,6 @@ A financial review desk for comparing infrastructure operating models across thr
 The Decimal-based engine, immutable scenario versions, evidence gating, sensitivity analysis, and JSON/CSV/PDF exports use fictional or user-entered values—not live pricing, supplier terms, financial advice, or guaranteed ROI.
 
 [Open the TCO & ROI Workbench](https://github.com/daetan999/ai-infra-tco-workbench)
-
-## Upcoming build
-
-### SignalForge AI · Build with Gemini · 5 August 2026
-
-[SignalForge AI](https://github.com/daetan999/SignalForge-AI) is a planned agentic discovery and opportunity workspace for B2B AI sales. It is intended to turn unstructured meeting notes and requirement documents into evidence-linked requirements, missing discovery questions, risks, initial solution direction, and an AE-to-SE handoff.
-
-The public repository is currently a pre-event foundation. SignalForge is not included in the completed-project counts or presented as delivered work. It will join the portfolio workflow after the Build with Gemini event, live-model validation, and public-artifact review.
 
 ## Additional build
 
