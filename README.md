@@ -10,10 +10,11 @@ Enterprise cloud delivery&nbsp; ·&nbsp; Governed analytics&nbsp; ·&nbsp; MLOps
 [![Enterprise delivery](https://img.shields.io/badge/enterprise%20delivery-3%20systems-2F5973?style=flat-square&labelColor=111820)](#enterprise-delivery)
 [![Independent builds](https://img.shields.io/badge/independent%20builds-4%20workbenches-52606C?style=flat-square&labelColor=111820)](#independent-ai-infrastructure-workflow)
 
-</div>
-
 | [Enterprise Delivery](#enterprise-delivery) | [AI Infrastructure Workflow](#independent-ai-infrastructure-workflow) | [Additional Build](#additional-build) |
 |:---:|:---:|:---:|
+
+</div>
+
 
 <p align="center">
   <sub>
