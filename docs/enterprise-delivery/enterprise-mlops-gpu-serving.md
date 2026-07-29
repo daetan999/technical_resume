@@ -42,7 +42,6 @@ I contributed to pipeline components, feature-serving paths, shared NVIDIA Trito
 | Inference demand | 10× at <150 ms p99 | Demonstrates scale without abandoning the agreed service-level target |
 | Forecast accuracy | 12.5% → 4.5% MAPE | Establishes the measured forecasting improvement behind downstream planning outcomes |
 | Revenue and margin | +4.2% RevPAR; +S$4.8M GOP | Aggregate platform outcomes; attribution depends on the wider operating model |
-| Yield capture | ~S$1.2M annually | Reported value associated with faster feature and pricing workflows |
 
 These were collaborative platform results. My portfolio claim is contribution to the systems and analysis behind them—not sole ownership of every component or outcome.
 

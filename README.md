@@ -150,6 +150,14 @@ The Decimal-based engine, immutable scenario versions, evidence gating, sensitiv
 
 [Open the TCO & ROI Workbench](https://github.com/daetan999/ai-infra-tco-workbench)
 
+## Upcoming build
+
+### SignalForge AI · Build with Gemini · 5 August 2026
+
+[SignalForge AI](https://github.com/daetan999/SignalForge-AI) is a planned agentic discovery and opportunity workspace for B2B AI sales. It is intended to turn unstructured meeting notes and requirement documents into evidence-linked requirements, missing discovery questions, risks, initial solution direction, and an AE-to-SE handoff.
+
+The public repository is currently a pre-event foundation. SignalForge is not included in the completed-project counts or presented as delivered work. It will join the portfolio workflow after the Build with Gemini event, live-model validation, and public-artifact review.
+
 ## Additional build
 
 ### HR Timesheet & Approval Tool
