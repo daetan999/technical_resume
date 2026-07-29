@@ -2,7 +2,7 @@
 
 # Dae Tan
 
-### AI Infrastructure Solutions Portfolio
+### TEchnical Portfolio
 
 Enterprise cloud delivery&nbsp; ·&nbsp; Governed analytics&nbsp; ·&nbsp; MLOps &amp; GPU serving&nbsp; ·&nbsp; AI-infrastructure decision tooling
 
