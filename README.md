@@ -1,4 +1,4 @@
-# Dae Tan | AI Infrastructure Solutions Portfolio
+# Dae Tan | Technical Portfolio
 
 [![Enterprise delivery](https://img.shields.io/badge/enterprise%20delivery-3%20systems-17324D?style=flat-square&labelColor=111820)](#enterprise-delivery)
 [![Independent solutions](https://img.shields.io/badge/independent%20solutions-4%20workbenches-2F5973?style=flat-square&labelColor=111820)](#independent-ai-infrastructure-workflow)
