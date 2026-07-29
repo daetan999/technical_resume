@@ -9,27 +9,18 @@ A technical-commercial portfolio spanning enterprise cloud delivery, governed an
 
 The enterprise work covers systems I built or contributed to at Frasers Hospitality. The independent workbenches connect opportunity discovery, workload sizing, solution configuration, and financial justification into one reviewable workflow.
 
-<div align="center">
+| [Enterprise Delivery](#enterprise-delivery) | [AI Infrastructure Solutions](#independent-ai-infrastructure-workflow) | [Additional Technical Build](#additional-build) |
+|:---:|:---:|:---:|
 
-<h3>Jump to</h3>
-
-<p>
-  <a href="#enterprise-delivery"><strong>Enterprise Delivery</strong></a>
-  &nbsp;&nbsp;•&nbsp;&nbsp;
-  <a href="#independent-ai-infrastructure-workflow"><strong>AI Infrastructure Solutions</strong></a>
-  &nbsp;&nbsp;•&nbsp;&nbsp;
-  <a href="#additional-build"><strong>Additional Technical Build</strong></a>
+<p align="center">
+  <sub>
+    <a href="https://www.linkedin.com/in/dae-tan-1a2b3c">LinkedIn</a>
+    &nbsp;·&nbsp;
+    <a href="docs/tco-worked-example.md">Worked Private-RAG case</a>
+    &nbsp;·&nbsp;
+    <a href="docs/value-engineering.md">Value-engineering method</a>
+  </sub>
 </p>
-
-<sub>
-  <a href="https://www.linkedin.com/in/dae-tan-1a2b3c">LinkedIn</a>
-  &nbsp;·&nbsp;
-  <a href="docs/tco-worked-example.md">Worked Private-RAG case</a>
-  &nbsp;·&nbsp;
-  <a href="docs/value-engineering.md">Value-engineering method</a>
-</sub>
-
-</div>
 
 ## Start here
 
