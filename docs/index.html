@@ -70,7 +70,7 @@
         <article><span>03</span><h2>Gates before approval</h2><p>Architecture, security, benchmark, pricing, and finance reviews remain human decisions.</p></article>
       </section>
 
-      <section id="walkthrough" class="walkthrough" aria-labelledby="walkthrough-title">
+      <section id="walkthrough" class="walkthrough" aria-labelledby="walkthrough-title" tabindex="-1">
         <div class="section-heading">
           <div>
             <p class="kicker">Interactive decision path</p>
@@ -90,19 +90,23 @@
 
         <article id="stage-panel" class="stage-panel" role="tabpanel" tabindex="0" aria-labelledby="stage-tab-0" aria-live="polite">
           <div class="stage-content">
-            <p id="stage-eyebrow" class="kicker"></p>
-            <h3 id="stage-title"></h3>
-            <p id="stage-summary" class="stage-summary"></p>
-            <div id="stage-evidence" class="evidence-list"></div>
-            <div class="stage-output">
-              <div><span class="label">Primary output</span><p id="stage-output"></p></div>
-              <div><span class="label">Next gate</span><p id="stage-gate"></p></div>
+            <p id="stage-eyebrow" class="kicker">Stage 1 · Opportunity discovery</p>
+            <h3 id="stage-title">Is the problem specific, material, and sponsored?</h3>
+            <p id="stage-summary" class="stage-summary">The discovery record separates the stated workload and control requirements from assumptions that still need customer evidence.</p>
+            <div id="stage-evidence" class="evidence-list">
+              <div class="evidence-item"><span class="evidence-status">Known</span><p>Private RAG over governed internal content with a stated peak and latency objective.</p></div>
+              <div class="evidence-item"><span class="evidence-status">Unknown</span><p>Token distribution, concurrency shape, quality threshold, retrieval design, baseline cost, and support model.</p></div>
+              <div class="evidence-item"><span class="evidence-status">Risk</span><p>Premature architecture or pricing precision would conceal the evidence gap rather than reduce it.</p></div>
             </div>
-            <a id="stage-link" class="text-link" href="#">Open implemented evidence <span aria-hidden="true">→</span></a>
+            <div class="stage-output">
+              <div><span class="label">Primary output</span><p id="stage-output">Workload hypothesis, stakeholder map, evidence gaps, and conditional next action.</p></div>
+              <div><span class="label">Next gate</span><p id="stage-gate">Named sponsor, representative workload owner, and agreement to a validation-planning workshop.</p></div>
+            </div>
+            <a id="stage-link" class="text-link" href="https://github.com/daetan999/ai-infra-opportunity-workbench">Open implemented evidence <span aria-hidden="true">→</span></a>
           </div>
           <figure class="stage-visual">
-            <img id="stage-image" src="assets/opportunity-account-workspace.png" alt="">
-            <figcaption id="stage-caption"></figcaption>
+            <img id="stage-image" src="assets/opportunity-account-workspace.png" alt="Fictional Opportunity Workbench account workspace">
+            <figcaption id="stage-caption">Synthetic opportunity workspace; sourced signals remain separate from interpretation.</figcaption>
           </figure>
         </article>
 
