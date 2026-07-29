@@ -11,6 +11,16 @@ The enterprise work covers systems I built or contributed to at Frasers Hospital
 
 [LinkedIn](https://www.linkedin.com/in/dae-tan-1a2b3c) · [Enterprise delivery](#enterprise-delivery) · [Independent solutions](#independent-ai-infrastructure-workflow) · [Worked Private-RAG case](docs/tco-worked-example.md) · [Value-engineering method](docs/value-engineering.md)
 
+## Start here
+
+| If you have... | Start with | What it demonstrates |
+|---|---|---|
+| 2 minutes | [Live Northstar decision walkthrough](https://daetan999.github.io/technical_resume/) | One fictional AI-infrastructure opportunity moving from discovery to a conditional executive decision |
+| 5 minutes | [Technical evidence index](docs/technical-evidence-index.md) | Direct delivery, collaborative platform outcomes, independent builds, and the evidence boundary for each |
+| 10 minutes | [Northstar AE-to-SE handoff](docs/evidence/northstar-ae-se-handoff.md) | Workload evidence, open questions, architecture hypothesis, PoC gates, and commercial validation requirements |
+
+The live walkthrough and handoff use a fictional regulated-enterprise scenario. They demonstrate the decision method and implemented portfolio workflow; they are not customer work, benchmarks, quotes, or production architecture approval.
+
 ## Enterprise delivery
 
 Selected work completed within Frasers Hospitality's Digital Intelligence environment. The public case studies and linked repositories are sanitized reconstructions; production code, company data, credentials, internal identifiers, prompts, endpoints, and screenshots are excluded.
@@ -139,6 +149,14 @@ A financial review desk for comparing infrastructure operating models across thr
 The Decimal-based engine, immutable scenario versions, evidence gating, sensitivity analysis, and JSON/CSV/PDF exports use fictional or user-entered values—not live pricing, supplier terms, financial advice, or guaranteed ROI.
 
 [Open the TCO & ROI Workbench](https://github.com/daetan999/ai-infra-tco-workbench)
+
+## Upcoming build
+
+### SignalForge AI · Build with Gemini · 5 August 2026
+
+[SignalForge AI](https://github.com/daetan999/SignalForge-AI) is a planned agentic discovery and opportunity workspace for B2B AI sales. It is intended to turn unstructured meeting notes and requirement documents into evidence-linked requirements, missing discovery questions, risks, initial solution direction, and an AE-to-SE handoff.
+
+The public repository is currently a pre-event foundation. SignalForge is not included in the completed-project counts or presented as delivered work. It will join the portfolio workflow after the Build with Gemini event, live-model validation, and public-artifact review.
 
 ## Additional build
 

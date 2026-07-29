@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A live, evidence-bounded AI infrastructure decision walkthrough from Dae Tan's technical portfolio.">
+    <meta name="theme-color" content="#101820">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="From customer signal to a defensible AI infrastructure decision">
+    <meta property="og:description" content="A live Northstar walkthrough from Dae Tan's Technical Portfolio.">
+    <meta property="og:url" content="https://daetan999.github.io/technical_resume/">
+    <meta property="og:image" content="https://daetan999.github.io/technical_resume/assets/og-northstar.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Dae Tan | Technical Portfolio">
+    <meta name="twitter:description" content="From customer signal to a defensible AI infrastructure decision.">
+    <meta name="twitter:image" content="https://daetan999.github.io/technical_resume/assets/og-northstar.png">
+    <link rel="icon" href="assets/og-northstar.png" type="image/png">
+    <title>Northstar Decision Walkthrough | Dae Tan Technical Portfolio</title>
+    <link rel="stylesheet" href="demo.css">
+    <script src="demo.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#walkthrough">Skip to walkthrough</a>
+
+    <header class="site-header">
+      <a class="brand" href="https://github.com/daetan999/technical_resume">
+        <span class="brand-mark" aria-hidden="true">DT</span>
+        <span>Dae Tan <span class="brand-muted">/ Technical Portfolio</span></span>
+      </a>
+      <nav aria-label="Portfolio links">
+        <a href="technical-evidence-index.html">Evidence index</a>
+        <a href="evidence/northstar-ae-se-handoff.html">AE-to-SE handoff</a>
+        <a class="nav-cta" href="https://github.com/daetan999/technical_resume">GitHub portfolio</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="page-title">
+        <div class="hero-copy">
+          <p class="kicker">Fictional enterprise scenario · Reviewable method · No customer data</p>
+          <h1 id="page-title">From customer signal to a defensible AI infrastructure decision.</h1>
+          <p class="hero-lede">Follow one private-RAG opportunity through discovery, first-pass sizing, architecture framing, financial review, and a conditional executive recommendation.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#walkthrough">Begin the walkthrough</a>
+            <a class="button secondary" href="technical-evidence-index.html">Review professional evidence</a>
+          </div>
+        </div>
+
+        <aside class="scenario-card" aria-label="Northstar scenario summary">
+          <div class="scenario-heading">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span>Northstar Mutual</span>
+            <span class="fictional-label">Fictional</span>
+          </div>
+          <dl class="scenario-grid">
+            <div><dt>Model class</dt><dd>70B</dd></div>
+            <div><dt>Peak demand</dt><dd>45 RPS</dd></div>
+            <div><dt>Latency target</dt><dd>900 ms</dd></div>
+            <div><dt>Governed data</dt><dd>18 TB</dd></div>
+            <div><dt>Annual growth</dt><dd>35%</dd></div>
+            <div><dt>Posture</dt><dd>Private / hybrid</dd></div>
+          </dl>
+          <p>These are illustrative inputs used to expose the evidence and validation required before a real recommendation.</p>
+        </aside>
+      </section>
+
+      <section class="principles" aria-label="Decision principles">
+        <article><span>01</span><h2>Evidence before precision</h2><p>Unknowns remain visible instead of becoming confident-looking estimates.</p></article>
+        <article><span>02</span><h2>Ranges before a bill of materials</h2><p>Early sizing exposes sensitivities and bottlenecks; it does not impersonate a benchmark.</p></article>
+        <article><span>03</span><h2>Gates before approval</h2><p>Architecture, security, benchmark, pricing, and finance reviews remain human decisions.</p></article>
+      </section>
+
+      <section id="walkthrough" class="walkthrough" aria-labelledby="walkthrough-title" tabindex="-1">
+        <div class="section-heading">
+          <div>
+            <p class="kicker">Interactive decision path</p>
+            <h2 id="walkthrough-title">Five stages. One evidence record.</h2>
+          </div>
+          <p>Use the stage controls or left and right arrow keys to move through the opportunity.</p>
+        </div>
+
+        <div class="stage-progress" aria-hidden="true"><span id="progress-fill"></span></div>
+        <div class="stage-tabs" role="tablist" aria-label="Northstar decision stages">
+          <button id="stage-tab-0" type="button" role="tab" data-stage="0" aria-controls="stage-panel" aria-selected="true">1 · Discover</button>
+          <button id="stage-tab-1" type="button" role="tab" data-stage="1" aria-controls="stage-panel" aria-selected="false">2 · Size</button>
+          <button id="stage-tab-2" type="button" role="tab" data-stage="2" aria-controls="stage-panel" aria-selected="false">3 · Configure</button>
+          <button id="stage-tab-3" type="button" role="tab" data-stage="3" aria-controls="stage-panel" aria-selected="false">4 · Justify</button>
+          <button id="stage-tab-4" type="button" role="tab" data-stage="4" aria-controls="stage-panel" aria-selected="false">5 · Decide</button>
+        </div>
+
+        <article id="stage-panel" class="stage-panel" role="tabpanel" tabindex="0" aria-labelledby="stage-tab-0" aria-live="polite">
+          <div class="stage-content">
+            <p id="stage-eyebrow" class="kicker">Stage 1 · Opportunity discovery</p>
+            <h3 id="stage-title">Is the problem specific, material, and sponsored?</h3>
+            <p id="stage-summary" class="stage-summary">The discovery record separates the stated workload and control requirements from assumptions that still need customer evidence.</p>
+            <div id="stage-evidence" class="evidence-list">
+              <div class="evidence-item"><span class="evidence-status">Known</span><p>Private RAG over governed internal content with a stated peak and latency objective.</p></div>
+              <div class="evidence-item"><span class="evidence-status">Unknown</span><p>Token distribution, concurrency shape, quality threshold, retrieval design, baseline cost, and support model.</p></div>
+              <div class="evidence-item"><span class="evidence-status">Risk</span><p>Premature architecture or pricing precision would conceal the evidence gap rather than reduce it.</p></div>
+            </div>
+            <div class="stage-output">
+              <div><span class="label">Primary output</span><p id="stage-output">Workload hypothesis, stakeholder map, evidence gaps, and conditional next action.</p></div>
+              <div><span class="label">Next gate</span><p id="stage-gate">Named sponsor, representative workload owner, and agreement to a validation-planning workshop.</p></div>
+            </div>
+            <a id="stage-link" class="text-link" href="https://github.com/daetan999/ai-infra-opportunity-workbench">Open implemented evidence <span aria-hidden="true">→</span></a>
+          </div>
+          <figure class="stage-visual">
+            <img id="stage-image" src="assets/opportunity-account-workspace.png" alt="Fictional Opportunity Workbench account workspace">
+            <figcaption id="stage-caption">Synthetic opportunity workspace; sourced signals remain separate from interpretation.</figcaption>
+          </figure>
+        </article>
+
+        <div class="stage-controls">
+          <button id="previous-stage" class="button secondary" type="button">Previous stage</button>
+          <p id="stage-count" aria-live="polite"></p>
+          <button id="next-stage" class="button primary" type="button">Next stage</button>
+        </div>
+      </section>
+
+      <section class="decision" aria-labelledby="decision-title">
+        <div>
+          <p class="kicker">Executive handoff</p>
+          <h2 id="decision-title">Advance conditionally—not confidently.</h2>
+          <p>The use case is specific enough to justify a controlled PoC, but final infrastructure and commercial decisions remain gated by representative workload data, benchmark results, security review, operating-model ownership, and current pricing.</p>
+        </div>
+        <div class="decision-actions">
+          <button id="copy-handoff" class="button primary" type="button">Copy handoff summary</button>
+          <a class="button secondary" href="evidence/northstar-ae-se-handoff.html">Read full handoff</a>
+          <p id="copy-status" role="status"></p>
+        </div>
+      </section>
+
+      <section class="proof" aria-labelledby="proof-title">
+        <div class="section-heading">
+          <div><p class="kicker">What this walkthrough proves</p><h2 id="proof-title">Technical depth connected to customer decisions.</h2></div>
+        </div>
+        <div class="proof-grid">
+          <article><h3>Discovery discipline</h3><p>Separate sourced facts, assumptions, missing evidence, stakeholders, and next actions.</p></article>
+          <article><h3>Infrastructure fluency</h3><p>Reason across model fit, throughput, latency, memory, storage, network, power, reliability, and operations.</p></article>
+          <article><h3>Architecture judgment</h3><p>Present a hypothesis with alternatives, risks, validation requirements, and approval boundaries.</p></article>
+          <article><h3>Value engineering</h3><p>Normalize operating states, preserve assumption lineage, stress the case, and distinguish modeled value from realized savings.</p></article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p><strong>Dae Tan | Technical Portfolio</strong></p>
+      <p>This live walkthrough uses synthetic data and does not represent a customer engagement, benchmark, quote, approved architecture, or financial advice.</p>
+      <p><a href="https://github.com/daetan999/technical_resume">Portfolio</a> · <a href="technical-evidence-index.html">Evidence index</a> · <a href="evidence/northstar-ae-se-handoff.html">Decision handoff</a></p>
+    </footer>
+
+    <noscript><p class="noscript">JavaScript is disabled. Read the <a href="evidence/northstar-ae-se-handoff.html">complete Northstar handoff</a> instead.</p></noscript>
+  </body>
+</html>

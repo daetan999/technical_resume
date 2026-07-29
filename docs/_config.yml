@@ -1,0 +1,7 @@
+title: Dae Tan | Technical Portfolio
+description: Technical evidence and AI infrastructure decision walkthroughs
+url: https://daetan999.github.io
+baseurl: /technical_resume
+markdown: kramdown
+exclude:
+  - README.md
