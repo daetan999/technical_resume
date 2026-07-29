@@ -103,7 +103,6 @@ Four runnable workbenches cover a connected customer decision cycle. Each uses a
 ### 1. Opportunity & Discovery Workbench
 
 **Account research, qualification, and bounded PoC handoff**
-
 <a href="https://github.com/daetan999/ai-infra-opportunity-workbench">
   <img src="docs/assets/opportunity-account-workspace.png" alt="Olive and ivory Opportunity Workbench showing a fictional account's workload hypothesis, sources, and qualification scorecard" width="1200">
 </a>
