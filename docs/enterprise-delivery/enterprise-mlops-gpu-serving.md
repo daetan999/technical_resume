@@ -40,11 +40,24 @@ I contributed to pipeline components, feature-serving paths, shared NVIDIA Trito
 | GPU utilization | ~5% → >80% | Higher productive density improves infrastructure economics |
 | Hosting cost | -58% (~US$240K/year) | Converts a technical optimization into an auditable run-rate impact |
 | Inference demand | 10× at <150 ms p99 | Demonstrates scale without abandoning the agreed service-level target |
-| Forecast accuracy | 8% MAPE | Establishes the technical measure behind downstream planning outcomes |
+| Forecast accuracy | 12.5% → 4.5% MAPE | Establishes the measured forecasting improvement behind downstream planning outcomes |
 | Revenue and margin | +4.2% RevPAR; +S$4.8M GOP | Aggregate platform outcomes; attribution depends on the wider operating model |
 | Yield capture | ~S$1.2M annually | Reported value associated with faster feature and pricing workflows |
 
 These were collaborative platform results. My portfolio claim is contribution to the systems and analysis behind them—not sole ownership of every component or outcome.
+
+## Applied ML systems and global portfolio outcomes
+
+The platform connected several model families to distinct operating decisions. The descriptions below are sanitized and intentionally omit proprietary code, data, thresholds, endpoints, and asset identifiers.
+
+| Decision system | Technical pattern | Global portfolio outcome | Claim boundary |
+|---|---|---:|---|
+| Demand forecasting and pricing | Temporal Fusion Transformer forecasting with bounded Deep Q-Network pricing actions | MAPE improved from 12.5% to 4.5%; +4.2% RevPAR; +S$4.8M annualized GOP | Collaborative platform result |
+| Resource anomaly detection | PyTorch LSTM autoencoder over 15-minute utility sequences | 14% resource-waste reduction; ~S$1.8M annualized operating savings | Collaborative platform result |
+| Predictive maintenance | Edge FFT feature engineering with Weibull survival analysis | 42% fewer catastrophic machinery failures; ~S$1.5M deferred CapEx | Collaborative platform result |
+| Work-order routing | Fine-tuned BERT classification for problem domain, urgency, and ticket dispatch | Automated classification and dispatch; no approved quantified outcome published | Technical capability only; no outcome claim |
+
+These measures describe global portfolio outcomes. They do not imply that one model or one contributor independently caused the full commercial result.
 
 ## GPU-serving validation framework
 

@@ -11,6 +11,16 @@ The enterprise work covers systems I built or contributed to at Frasers Hospital
 
 [LinkedIn](https://www.linkedin.com/in/dae-tan-1a2b3c) · [Enterprise delivery](#enterprise-delivery) · [Independent solutions](#independent-ai-infrastructure-workflow) · [Worked Private-RAG case](docs/tco-worked-example.md) · [Value-engineering method](docs/value-engineering.md)
 
+## Start here
+
+| If you have... | Start with | What it demonstrates |
+|---|---|---|
+| 2 minutes | [Live Northstar decision walkthrough](https://daetan999.github.io/technical_resume/) | One fictional AI-infrastructure opportunity moving from discovery to a conditional executive decision |
+| 5 minutes | [Technical evidence index](docs/technical-evidence-index.md) | Direct delivery, collaborative platform outcomes, independent builds, and the evidence boundary for each |
+| 10 minutes | [Northstar AE-to-SE handoff](docs/evidence/northstar-ae-se-handoff.md) | Workload evidence, open questions, architecture hypothesis, PoC gates, and commercial validation requirements |
+
+The live walkthrough and handoff use a fictional regulated-enterprise scenario. They demonstrate the decision method and implemented portfolio workflow; they are not customer work, benchmarks, quotes, or production architecture approval.
+
 ## Enterprise delivery
 
 Selected work completed within Frasers Hospitality's Digital Intelligence environment. The public case studies and linked repositories are sanitized reconstructions; production code, company data, credentials, internal identifiers, prompts, endpoints, and screenshots are excluded.

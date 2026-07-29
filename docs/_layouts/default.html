@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{ page.title | escape }} from Dae Tan's Technical Portfolio">
+    <meta name="theme-color" content="#111820">
+    <title>{{ page.title }} | Dae Tan Technical Portfolio</title>
+    <link rel="stylesheet" href="{{ '/evidence.css' | relative_url }}">
+  </head>
+  <body>
+    <a class="skip-link" href="#content">Skip to content</a>
+    <header>
+      <a class="brand" href="{{ '/' | relative_url }}">Dae Tan <span>/ Technical Portfolio</span></a>
+      <nav aria-label="Portfolio links">
+        <a href="{{ '/' | relative_url }}">Live walkthrough</a>
+        <a href="https://github.com/daetan999/technical_resume">GitHub portfolio</a>
+      </nav>
+    </header>
+    <main id="content">
+      <article>{{ content }}</article>
+    </main>
+    <footer>
+      <strong>Dae Tan | Technical Portfolio</strong>
+      <p>Public professional evidence is sanitized; fictional portfolio scenarios remain explicitly labelled.</p>
+    </footer>
+  </body>
+</html>
