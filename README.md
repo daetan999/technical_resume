@@ -1,36 +1,45 @@
-# Dae Tan | Technical Portfolio
+<div align="center">
 
-[![Enterprise delivery](https://img.shields.io/badge/enterprise%20delivery-3%20systems-17324D?style=flat-square&labelColor=111820)](#enterprise-delivery)
-[![Independent solutions](https://img.shields.io/badge/independent%20solutions-4%20workbenches-2F5973?style=flat-square&labelColor=111820)](#independent-ai-infrastructure-workflow)
+# Dae Tan
+
+### Technical Portfolio
+
+Enterprise cloud delivery&nbsp; ·&nbsp; Governed analytics&nbsp; ·&nbsp; MLOps &amp; GPU serving&nbsp; ·&nbsp; AI-infrastructure decision tooling
+
+[![Live walkthrough](https://img.shields.io/badge/live%20walkthrough-Northstar%20decision-17324D?style=flat-square&labelColor=111820)](https://daetan999.github.io/technical_resume/)
+[![Enterprise delivery](https://img.shields.io/badge/enterprise%20delivery-3%20systems-2F5973?style=flat-square&labelColor=111820)](#enterprise-delivery)
+[![Independent builds](https://img.shields.io/badge/independent%20builds-4%20workbenches-52606C?style=flat-square&labelColor=111820)](#independent-ai-infrastructure-workflow)
 [![Public artifacts](https://img.shields.io/badge/public%20artifacts-sanitized%20%26%20synthetic-6C3947?style=flat-square&labelColor=111820)](#portfolio-standards)
 [![License](https://img.shields.io/badge/license-MIT-667454?style=flat-square&labelColor=111820)](LICENSE)
 
-A technical-commercial portfolio spanning enterprise cloud delivery, governed analytics, MLOps and GPU serving, and independently built tools for AI-infrastructure customer decisions.
+**[Enterprise Delivery](#enterprise-delivery)**&nbsp; ·&nbsp; **[AI Infrastructure Workflow](#independent-ai-infrastructure-workflow)**&nbsp; ·&nbsp; **[Upcoming Build](#upcoming-build)**&nbsp; ·&nbsp; **[Additional Build](#additional-build)**&nbsp; ·&nbsp; **[Portfolio Standards](#portfolio-standards)**
 
-The enterprise work covers systems I built or contributed to at Frasers Hospitality. The independent workbenches connect opportunity discovery, workload sizing, solution configuration, and financial justification into one reviewable workflow.
+<sub>
+  <a href="https://www.linkedin.com/in/dae-tan-1a2b3c">LinkedIn</a>
+  &nbsp;·&nbsp;
+  <a href="docs/tco-worked-example.md">Worked private-RAG case</a>
+  &nbsp;·&nbsp;
+  <a href="docs/value-engineering.md">Value-engineering method</a>
+</sub>
 
-| [Enterprise Delivery](#enterprise-delivery) | [AI Infrastructure Solutions](#independent-ai-infrastructure-workflow) | [Additional Technical Build](#additional-build) |
-|:---:|:---:|:---:|
+</div>
 
-<p align="center">
-  <sub>
-    <a href="https://www.linkedin.com/in/dae-tan-1a2b3c">LinkedIn</a>
-    &nbsp;·&nbsp;
-    <a href="docs/tco-worked-example.md">Worked Private-RAG case</a>
-    &nbsp;·&nbsp;
-    <a href="docs/value-engineering.md">Value-engineering method</a>
-  </sub>
-</p>
+---
+
+I build production systems and the decision tooling that justifies them.
+
+- **Enterprise delivery** — three systems built or contributed to at Frasers Hospitality, spanning GCP intelligence automation, MLOps and GPU serving, and a governed FP&A analytics agent.
+- **Independent workflow** — four runnable workbenches that connect opportunity discovery, workload sizing, solution configuration, and financial justification into a single reviewable decision cycle.
 
 ## Start here
 
-| If you have... | Start with | What it demonstrates |
-|---|---|---|
-| 2 minutes | [Live Northstar decision walkthrough](https://daetan999.github.io/technical_resume/) | One fictional AI-infrastructure opportunity moving from discovery to a conditional executive decision |
-| 5 minutes | [Technical evidence index](docs/technical-evidence-index.md) | Direct delivery, collaborative platform outcomes, independent builds, and the evidence boundary for each |
-| 10 minutes | [Northstar AE-to-SE handoff](docs/evidence/northstar-ae-se-handoff.md) | Workload evidence, open questions, architecture hypothesis, PoC gates, and commercial validation requirements |
+| Time | Start with | What it shows |
+|:--|:--|:--|
+| **2 min** | [Live Northstar decision walkthrough](https://daetan999.github.io/technical_resume/) | One fictional AI-infrastructure opportunity moving from discovery to a conditional executive decision |
+| **5 min** | [Technical evidence index](docs/technical-evidence-index.md) | Direct delivery, collaborative platform outcomes, independent builds, and the evidence boundary for each |
+| **10 min** | [Northstar AE-to-SE handoff](docs/evidence/northstar-ae-se-handoff.md) | Workload evidence, open questions, architecture hypothesis, PoC gates, and commercial validation requirements |
 
-The live walkthrough and handoff use a fictional regulated-enterprise scenario. They demonstrate the decision method and implemented portfolio workflow; they are not customer work, benchmarks, quotes, or production architecture approval.
+> **Scenario note** — The live walkthrough and handoff use a fictional regulated-enterprise scenario. They demonstrate the decision method and the implemented portfolio workflow; they are not customer work, benchmarks, quotes, or production architecture approval.
 
 ## Enterprise delivery
 
