@@ -42,6 +42,7 @@ I contributed to pipeline components, feature-serving paths, shared NVIDIA Trito
 | Inference demand | 10× at <150 ms p99 | Demonstrates scale without abandoning the agreed service-level target |
 | Forecast accuracy | 12.5% → 4.5% MAPE | Establishes the measured forecasting improvement behind downstream planning outcomes |
 | Revenue and margin | +4.2% RevPAR; +S$4.8M GOP | Aggregate platform outcomes; attribution depends on the wider operating model |
+| Maintenance service recovery | -77% MTTR; +3% repeat bookings | Connects faster work-order routing and resolution to customer retention |
 
 These were collaborative platform results. My portfolio claim is contribution to the systems and analysis behind them—not sole ownership of every component or outcome.
 
@@ -52,9 +53,9 @@ The platform connected several model families to distinct operating decisions. T
 | Decision system | Technical pattern | Global portfolio outcome | Claim boundary |
 |---|---|---:|---|
 | Demand forecasting and pricing | Temporal Fusion Transformer forecasting with bounded Deep Q-Network pricing actions | MAPE improved from 12.5% to 4.5%; +4.2% RevPAR; +S$4.8M annualized GOP | Collaborative platform result |
-| Resource anomaly detection | PyTorch LSTM autoencoder over 15-minute utility sequences | 14% resource-waste reduction; ~S$1.8M annualized operating savings | Collaborative platform result |
-| Predictive maintenance | Edge FFT feature engineering with Weibull survival analysis | 42% fewer catastrophic machinery failures; ~S$1.5M deferred CapEx | Collaborative platform result |
-| Work-order routing | Fine-tuned BERT classification for problem domain, urgency, and ticket dispatch | Automated classification and dispatch; no approved quantified outcome published | Technical capability only; no outcome claim |
+| Utility anomaly detection | PyTorch LSTM autoencoder over 15-minute meter sequences | 14% utility reduction; ~S$1.8M OpEx savings | Collaborative platform result |
+| Predictive maintenance | Edge FFT feature engineering with Weibull survival analysis | 42% less catastrophic downtime; ~S$1.5M deferred CapEx | Collaborative platform result |
+| Work-order routing | Fine-tuned BERT classification for problem domain, urgency, and ticket dispatch | 77% lower MTTR; +3% repeat bookings | Collaborative platform result |
 
 These measures describe global portfolio outcomes. They do not imply that one model or one contributor independently caused the full commercial result.
 

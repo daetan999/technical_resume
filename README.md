@@ -55,7 +55,7 @@ Contributed to Kafka and Airflow pipelines, Feast/Redis/Snowflake feature paths,
 
 **Platform measures:** feature latency, GPU utilization, throughput, p99 latency, model density, and hosting cost were used to connect engineering decisions to operating and financial outcomes.
 
-**Team outcome:** feature latency fell from 24 hours to approximately four minutes; GPU utilization rose from approximately 5% to above 80%; hosting cost fell 58% (about US$240K annually); and the platform supported 10× inference demand below 150 ms p99.
+**Team outcome:** feature latency fell from 24 hours to approximately four minutes; GPU utilization rose from approximately 5% to above 80%; hosting cost fell 58% (about US$240K annually); the platform supported 10× inference demand below 150 ms p99; and fine-tuned BERT work-order routing contributed to 77% lower MTTR and 3% higher repeat bookings.
 
 [Read the MLOps delivery case study](docs/enterprise-delivery/enterprise-mlops-gpu-serving.md) · [Open the sanitized MLOps blueprint](https://github.com/daetan999/mlops-hosp)
 

@@ -40,8 +40,9 @@ This index is the fastest route through the portfolio for a recruiter, sales lea
 | Feature freshness | 24 hours to approximately four minutes | Supports more responsive operational and pricing decisions |
 | Forecast MAPE | 12.5% to 4.5% | Establishes the forecasting improvement behind downstream pricing decisions |
 | RevPAR and GOP | +4.2% RevPAR; +S$4.8M annualized GOP | Connects model and pricing performance to commercial results |
-| Resource efficiency | 14% reduction; approximately S$1.8M annualized savings | Connects anomaly detection and load shifting to operating cost |
-| Asset reliability | 42% fewer catastrophic failures; approximately S$1.5M deferred CapEx | Connects predictive maintenance to capital preservation |
+| Utility efficiency | 14% reduction; approximately S$1.8M OpEx savings | Connects LSTM meter-anomaly detection to operating cost |
+| Asset reliability | 42% less catastrophic downtime; approximately S$1.5M deferred CapEx | Connects FFT/Weibull early-warning analysis to capital preservation |
+| Maintenance service recovery | 77% lower MTTR; +3% repeat bookings | Connects BERT-assisted work-order routing to faster resolution and customer retention |
 | GPU utilization | Approximately 5% to above 80% | Establishes productive infrastructure density |
 | Serving scale | 10x demand below 150 ms p99 | Tests scale while protecting the service-level target |
 | Hosting cost | 58% reduction; approximately US$240K annually | Connects serving architecture to run-rate economics |
@@ -63,7 +64,7 @@ These are collaborative global portfolio outcomes. They are not represented as t
 | Demand forecasting and bounded pricing | Temporal Fusion Transformer plus Deep Q-Network | Quantified global portfolio outcome |
 | Utility anomalies and leaks | PyTorch LSTM autoencoder over 15-minute sequences | Quantified global portfolio outcome |
 | Mechanical failure risk | Edge FFT features plus Weibull survival analysis | Quantified global portfolio outcome |
-| Maintenance-ticket classification and dispatch | Fine-tuned BERT classification | Technical capability; no approved quantified outcome published |
+| Maintenance-ticket classification and dispatch | Fine-tuned BERT classification | Quantified global portfolio outcome: 77% lower MTTR and +3% repeat bookings |
 
 ## Independent customer-decision workflow
 
