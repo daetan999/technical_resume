@@ -8,7 +8,7 @@ Enterprise cloud delivery&nbsp; ·&nbsp; Governed analytics&nbsp; ·&nbsp; MLOps
 
 [![Live walkthrough](https://img.shields.io/badge/live%20walkthrough-Northstar%20decision-17324D?style=flat-square&labelColor=111820)](https://daetan999.github.io/technical_resume/)
 [![Enterprise delivery](https://img.shields.io/badge/enterprise%20delivery-3%20systems-2F5973?style=flat-square&labelColor=111820)](#enterprise-delivery)
-[![Independent builds](https://img.shields.io/badge/independent%20builds-4%20workbenches-52606C?style=flat-square&labelColor=111820)](#independent-ai-infrastructure-workflow)
+[![Independent builds](https://img.shields.io/badge/independent%20builds-5%20workbenches-52606C?style=flat-square&labelColor=111820)](#independent-ai-infrastructure-workflow)
 
 | [Enterprise Delivery](#enterprise-delivery) | [AI Infrastructure Workflow](#independent-ai-infrastructure-workflow) | [Additional Build](#additional-build) |
 |:---:|:---:|:---:|
@@ -31,7 +31,7 @@ Enterprise cloud delivery&nbsp; ·&nbsp; Governed analytics&nbsp; ·&nbsp; MLOps
 I build production AI systems and technical-commercial tools for evaluating infrastructure decisions.
 
 - **Enterprise delivery** — three systems built or contributed to at Frasers Hospitality, spanning GCP intelligence automation, MLOps and GPU serving, and a governed FP&A analytics agent.
-- **Independent workflow** — four runnable workbenches connecting opportunity discovery, workload sizing, solution configuration, and financial justification into one reviewable decision cycle.
+- **Independent workflow** — five runnable workbenches connecting public-signal qualification, opportunity discovery, workload sizing, solution configuration, and financial justification into one reviewable decision cycle.
 
 ## Enterprise delivery
 
@@ -91,16 +91,33 @@ Built a Google ADK and BigQuery workflow that turns natural-language finance and
 
 ## Independent AI infrastructure workflow
 
-Four runnable workbenches cover a connected customer decision cycle. Each uses a distinct interface and deterministic decision logic suited to its stage.
+Five runnable workbenches cover a connected customer decision cycle. Each uses a distinct interface and deterministic decision logic suited to its stage.
 
 | Stage | Decision | Workbench | Primary output |
 |---|---|---|---|
+| Signal | Is there grounded evidence and a cost hypothesis worth investigating? | [SCAI](https://github.com/daetan999/SCAI) | Source-linked ML signals, deterministic inference-cost range, constrained outreach, or an explicit skip |
 | Discover | Is there a specific opportunity worth pursuing? | [Opportunity & Discovery](https://github.com/daetan999/ai-infra-opportunity-workbench) | Workload hypothesis, stakeholder map, evidence gaps, and next action |
 | Size | What range and bottleneck require validation? | [Capacity & Commercial Sizing](https://github.com/daetan999/ai-infra-capacity-planner) | Low/base/high range, sensitivities, bottlenecks, and validation plan |
 | Configure | Which architecture hypothesis fits the requirements? | [Solution Configurator](https://github.com/daetan999/ai-infra-solution-configurator) | Recommendation, alternatives, risks, diagram, and validation gates |
 | Justify | Is the proposed change financially defensible? | [TCO & ROI](https://github.com/daetan999/ai-infra-tco-workbench) | TCO, unit economics, sensitivity, payback, ROI, and executive report |
 
-### 1. Opportunity & Discovery Workbench
+### 1. SCAI — Signal & Cost Engine
+
+**Public-signal qualification and deterministic inference-cost modelling**
+
+<a href="https://github.com/daetan999/SCAI">
+  <img src="https://raw.githubusercontent.com/daetan999/SCAI/main/docs/03-cost.png" alt="SCAI cost workspace showing a deterministic idle-spend range, editable assumptions, source links, and a disabled unverified pricing row" width="1200">
+</a>
+
+A source-grounded research tool that uses Gemini with Google Search to find public production-ML evidence, then computes dedicated-inference cost ranges in pure Python and drafts outreach constrained to validated signals and calculated numbers.
+
+Pricing rows carry source URLs and an `as_of` date; unverified rows are marked `TODO_VERIFY` and rejected rather than guessed. Outputs are directional estimates from public list rates—not workload observations, benchmarks, supplier quotes, or evidence that an account runs a particular architecture.
+
+[Open SCAI — Signal & Cost Engine](https://github.com/daetan999/SCAI)
+
+---
+
+### 2. Opportunity & Discovery Workbench
 
 **Account research, qualification, and bounded PoC handoff**
 <a href="https://github.com/daetan999/ai-infra-opportunity-workbench">
@@ -115,7 +132,7 @@ Deterministic qualification, persistence, workflow APIs, and JSON/Markdown expor
 
 ---
 
-### 2. Capacity & Commercial Sizing Planner
+### 3. Capacity & Commercial Sizing Planner
 
 **First-pass workload sizing for an AE-to-SE conversation**
 
@@ -131,7 +148,7 @@ The deterministic engine, YAML accelerator profiles, scenario comparison, sensit
 
 ---
 
-### 3. Enterprise AI Solution Configurator
+### 4. Enterprise AI Solution Configurator
 
 **Requirements-led architecture recommendation and validation planning**
 
@@ -147,7 +164,7 @@ Versioned recommendation rules, deterministic diagram generation, immutable asse
 
 ---
 
-### 4. TCO & ROI Workbench
+### 5. TCO & ROI Workbench
 
 **Value engineering and executive business-case review**
 

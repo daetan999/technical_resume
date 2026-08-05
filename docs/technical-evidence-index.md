@@ -16,6 +16,7 @@ This index is the fastest route through the portfolio for a recruiter, sales lea
 | Direct professional delivery | Ability to build, productionize, operate, control, and explain enterprise cloud applications | [GCP intelligence automation](https://github.com/daetan999/technical_resume/blob/main/docs/enterprise-delivery/gcp-intelligence-automation.md) |
 | Collaborative platform contribution | Ability to work across data pipelines, feature serving, model lifecycle, GPU serving, validation, and infrastructure economics | [Enterprise MLOps and GPU serving](https://github.com/daetan999/technical_resume/blob/main/docs/enterprise-delivery/enterprise-mlops-gpu-serving.md) |
 | Direct governed AI application | Ability to constrain model use with approved data, deterministic calculations, query controls, and reviewable outputs | [Governed FP&A agent blueprint](https://github.com/daetan999/adk-fpa-agent-blueprint) |
+| Independent signal-to-cost system | Ability to ground public evidence, refuse unsupported accounts, and keep every infrastructure-cost calculation outside the model | [SCAI signal and cost engine](https://github.com/daetan999/SCAI) |
 | Independent technical-commercial builds | Ability to translate discovery evidence into sizing, architecture, validation, and financial decision support | [Live Northstar walkthrough](https://daetan999.github.io/technical_resume/) |
 | Implementation quality | Ability to build runnable software with validation, persistence, exports, tests, CI, containers, and documented limitations | [Independent workflow repositories](https://github.com/daetan999/technical_resume#independent-ai-infrastructure-workflow) |
 
@@ -68,14 +69,15 @@ These are collaborative global portfolio outcomes. They are not represented as t
 
 ## Independent customer-decision workflow
 
-The four workbenches implement distinct stages of one reviewable AI-infrastructure decision:
+Five workbenches implement distinct stages of one reviewable AI-infrastructure decision:
 
-1. [Opportunity and Discovery](https://github.com/daetan999/ai-infra-opportunity-workbench) separates sourced evidence from interpretation and recommends advance, reshape, nurture, or disqualify.
-2. [Capacity and Commercial Sizing](https://github.com/daetan999/ai-infra-capacity-planner) produces indicative compute, memory, storage, network, power, and commercial ranges with sensitivities and validation requirements.
-3. [Solution Configurator](https://github.com/daetan999/ai-infra-solution-configurator) produces an explainable architecture hypothesis with alternatives, risks, and approval gates.
-4. [TCO and ROI](https://github.com/daetan999/ai-infra-tco-workbench) compares operating models through deterministic calculations, evidence confidence, sensitivity, lineage, and review-ready exports.
+1. [SCAI](https://github.com/daetan999/SCAI) grounds public ML-infrastructure signals, produces deterministic inference-cost ranges, and skips accounts when usable evidence is absent.
+2. [Opportunity and Discovery](https://github.com/daetan999/ai-infra-opportunity-workbench) separates sourced evidence from interpretation and recommends advance, reshape, nurture, or disqualify.
+3. [Capacity and Commercial Sizing](https://github.com/daetan999/ai-infra-capacity-planner) produces indicative compute, memory, storage, network, power, and commercial ranges with sensitivities and validation requirements.
+4. [Solution Configurator](https://github.com/daetan999/ai-infra-solution-configurator) produces an explainable architecture hypothesis with alternatives, risks, and approval gates.
+5. [TCO and ROI](https://github.com/daetan999/ai-infra-tco-workbench) compares operating models through deterministic calculations, evidence confidence, sensitivity, lineage, and review-ready exports.
 
-The [Northstar AE-to-SE handoff](evidence/northstar-ae-se-handoff.html) and [live walkthrough](https://daetan999.github.io/technical_resume/) show how the four stages connect without presenting fictional values as customer results.
+SCAI covers public-signal qualification before a detailed discovery record exists. The [Northstar AE-to-SE handoff](evidence/northstar-ae-se-handoff.html) and [live walkthrough](https://daetan999.github.io/technical_resume/) then show how discovery, sizing, configuration, and justification connect without presenting fictional values as customer results.
 
 ## Public-artifact standard
 
